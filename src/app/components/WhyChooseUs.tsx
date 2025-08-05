@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
   return (
     <section className="w-full px-4 py-16 bg-white" id="why-choose-us"> 
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12">
+        <h2 className="text-3xl md:text-5xl mb-12">
           Why People <span className="bg-[#e6f0ef] text-[#c28b2c] px-2">CHOOSE US</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">

@@ -56,7 +56,7 @@ export default function AboutOurOrganization() {
             <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">ABOUT</span>
             <span className="text-black">Our Organization</span>
           </h2>
-
+ 
           <p className="text-gray-700 leading-relaxed text-xl font-open-sans">
             TASK FORCE INTERIOR (P) LTD. is an organization overseen by
             individuals with extensive experience in civil engineering, interior
