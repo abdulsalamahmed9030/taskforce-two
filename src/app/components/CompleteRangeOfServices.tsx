@@ -133,7 +133,7 @@ const bgMap = {
 
 const hoverMap = {
   light: "hover:bg-yellow-600 hover:text-white",
-  sky: "hover:bg-slate-100 hover:text-primary",
+  sky: "hover:bg-slate-100 hover:text-black",
 };
 
 export default function CompleteRangeOfServices() {
