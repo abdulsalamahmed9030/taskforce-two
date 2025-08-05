@@ -3,20 +3,33 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu"; // adjust path if needed
 
-const navLinks = ["Home", "About", "Services", "Projects", "Pages", "Contact"];
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/" },
+  { label: "Services", href: "/" },
+  { label: "Portfolio", href: "/" },
+  { label: "Our Equipments", href: "/" },
+  { label: "Contact", href: "/" },
+];
+
+const dropdownLinks = [
+  { label: "Our Clients", href: "/" },
+  { label: "FAQ", href: "/" },
+  { label: "CSR", href: "/" },
+];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
-      <header
-        className="bg-transparent border-b border-white font-open
-   "
-      >
-        <div className="container mx-auto flex items-center px-6">
-          {/* Logo Section */}
+      <header className="bg-transparent border-b border-white font-open z-50 relative">
+        <div className="container mx-auto flex items-center px-6 py-4">
+          {/* Logo */}
           <div className="flex items-center space-x-3">
             <Image
               src="/logo.png"
@@ -27,33 +40,44 @@ export default function Header() {
             />
           </div>
 
-          {/* Spacer to push nav to right */}
-          <div className="ml-auto hidden md:flex items-center space-x-8">
+          {/* Desktop Menu */}
+          <nav className="ml-auto hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.href}
                 className={`text-lg font-medium ${
-                  link === "Home"
+                  link.label === "Home"
                     ? "text-yellow-700 font-semibold"
                     : "text-gray-800 hover:text-yellow-700"
                 }`}
               >
-                {link === "Pages" ? (
-                  <span className="flex items-center space-x-1">
-                    <span>{link}</span>
-                    <ChevronDown size={16} />
-                  </span>
-                ) : (
-                  link
-                )}
+                {link.label}
               </a>
             ))}
-          </div>
+
+            {/* More Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-lg text-gray-800 hover:text-yellow-700 font-medium">
+                More <ChevronDown size={16} />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
+                {dropdownLinks.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-700"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </nav>
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden ml-auto"
+            className="lg:hidden ml-auto"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,19 +85,13 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Render Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-6 py-2 bg-white shadow">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="block py-2 text-gray-700 hover:text-yellow-600"
-            >
-              {link}
-            </a>
-          ))}
-        </div>
+        <MobileMenu
+          navLinks={navLinks}
+          dropdownLinks={dropdownLinks}
+          closeMenu={closeMenu}
+        />
       )}
     </>
   );

@@ -65,11 +65,11 @@ export default function Footer() {
             Popular Link
           </h4>
           <ul className="space-y-2">
-            <li>➤ About Us</li>
-            <li>➤ Contact Us</li>
-            <li>➤ Our Projects</li>
-            <li>➤ Hospital Interiors</li>
-            <li>➤ Career</li>
+            <li>❯ About Us</li>
+            <li>❯ Contact Us</li>
+            <li>❯ Our Projects</li>
+            <li>❯ Hospital Interiors</li>
+            <li>❯ Career</li>
           </ul>
         </div>
 
@@ -79,11 +79,11 @@ export default function Footer() {
             Our Services
           </h4>
           <ul className="space-y-2">
-            <li>➤ False Ceiling</li>
-            <li>➤ Flooring Systems</li>
-            <li>➤ HVAC Works</li>
-            <li>➤ Modular Furniture</li>
-            <li>➤ ACP Cladding</li>
+            <li>❯ False Ceiling</li>
+            <li>❯ Flooring Systems</li>
+            <li>❯ HVAC Works</li>
+            <li>❯ Modular Furniture</li>
+            <li>❯ ACP Cladding</li>
           </ul>
         </div>
       </div>
