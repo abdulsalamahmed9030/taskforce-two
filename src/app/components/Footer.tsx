@@ -104,24 +104,24 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex justify-between items-center max-w-7xl mx-auto">
-        <p>
-          ©{" "}
-          <a href="#" className="underline">
-            Task Force Interiors
-          </a>
-          , All Right Reserved.
-        </p>
-        <div className="flex gap-4">
-          <a href="#">Home</a>
-          <span>|</span>
-          <a href="#">Services</a>
-          <span>|</span>
-          <a href="#">Portfolio</a>
-          <span>|</span>
-          <a href="#">Contact</a>
-        </div>
-      </div>
+   <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 max-w-7xl mx-auto">
+  <p className="text-sm md:text-base">
+    ©{" "}
+    <a href="#" className="underline">
+      Task Force Interiors
+    </a>
+    , All Rights Reserved.
+  </p>
+  <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+    <a href="#">Home</a>
+    <span className="hidden md:inline">|</span>
+    <a href="#">Services</a>
+    <span className="hidden md:inline">|</span>
+    <a href="#">Portfolio</a>
+    <span className="hidden md:inline">|</span>
+    <a href="#">Contact</a>
+  </div>
+</div>
 
       {/* Back to Top */}
       <BackToTopButton />

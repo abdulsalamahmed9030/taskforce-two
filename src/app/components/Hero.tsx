@@ -80,7 +80,7 @@ export default function Hero() {
             <div className="absolute top-[-20px] bottom-[-20px] left-[40%] sm:left-1/2 right-0 bg-[#d8d3c4] -z-10" />
 
             {/* Hero Image */}
-            <div className="relative w-[240px] h-[180px] sm:w-[380px] sm:h-[340px] md:w-[450px] md:h-[380px] lg:w-[500px] lg:h-[400px] rounded overflow-hidden shadow-lg z-10">
+            <div className="relative w-[240px] h-[180px] sm:w-[380px] sm:h-[340px] md:w-[450px] md:h-[380px] lg:w-[400px] xl:w-[500px] lg:h-[400px] rounded overflow-hidden shadow-lg z-10">
               <Image
                 src={heroImages[currentImage]}
                 alt="Office interior"
