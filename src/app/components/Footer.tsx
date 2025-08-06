@@ -94,24 +94,32 @@ export default function Footer() {
           ❯ <Link href="/services">Services</Link>
         </li>
         <li>
-          ❯ <Link href="/">Portfolio</Link>
+          ❯ <Link href="/ComingSoon">Portfolio</Link>
         </li>
         <li>
-          ❯ <Link href="/">Our Equipments</Link>
+          ❯ <Link href="/ComingSoon">Our Equipments</Link>
         </li>
       </ul>
     </div>
 
         {/* Our Services */}
-        <div>
-          <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
-          <ul className="space-y-2">
-            <li>❯ Contact</li>
-            <li>❯ Our Clients</li>
-            <li>❯ FAQ</li>
-            <li>❯ CSR</li>
-          </ul>
-        </div>
+       <div>
+  <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
+  <ul className="space-y-2 text-gray-800">
+    <li>
+      ❯ <Link href="/contact" className="hover:text-yellow-700">Contact</Link>
+    </li>
+    <li>
+      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">Our Clients</Link>
+    </li>
+    <li>
+      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">FAQ</Link>
+    </li>
+    <li>
+      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">CSR</Link>
+    </li>
+  </ul>
+</div>
       </div>
 
       {/* Bottom Bar */}

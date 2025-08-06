@@ -10,15 +10,15 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/aboutus" },
   { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/" },
-  { label: "Our Equipments", href: "/" },
+  { label: "Portfolio", href: "/gallery" },
+  { label: "Our Equipments", href: "/ComingSoon" },
   { label: "Contact", href: "/contact" },
 ];
 
 const dropdownLinks = [
-  { label: "Our Clients", href: "/" },
-  { label: "FAQ", href: "/" },
-  { label: "CSR", href: "/" },
+  { label: "Our Clients", href: "/ComingSoon" },
+  { label: "FAQ", href: "/ComingSoon" },
+  { label: "CSR", href: "/ComingSoon" },
 ];
 
 export default function Header() {
@@ -33,20 +33,20 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Link href="/">
-        <Image
-          src="/logo.png"
-          alt="Taskforce Interiors Logo"
-          width={150}
-          height={80}
-          className="object-contain cursor-pointer"
-        />
-      </Link>
+              <Image
+                src="/logo.png"
+                alt="Taskforce Interiors Logo"
+                width={150}
+                height={80}
+                className="object-contain cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <nav className="ml-auto hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className={`text-lg font-medium ${
@@ -56,7 +56,7 @@ export default function Header() {
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
 
             {/* More Dropdown */}
