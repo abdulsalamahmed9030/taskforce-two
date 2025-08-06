@@ -4,14 +4,15 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu"; // adjust path if needed
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/" },
-  { label: "Services", href: "/" },
+  { label: "About Us", href: "/aboutus" },
+  { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/" },
   { label: "Our Equipments", href: "/" },
-  { label: "Contact", href: "/" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const dropdownLinks = [
@@ -31,13 +32,15 @@ export default function Header() {
         <div className="container mx-auto flex items-center px-6 py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Image
-              src="/logo.png"
-              alt="Taskforce Interiors Logo"
-              width={150}
-              height={80}
-              className="object-contain"
-            />
+            <Link href="/">
+        <Image
+          src="/logo.png"
+          alt="Taskforce Interiors Logo"
+          width={150}
+          height={80}
+          className="object-contain cursor-pointer"
+        />
+      </Link>
           </div>
 
           {/* Desktop Menu */}

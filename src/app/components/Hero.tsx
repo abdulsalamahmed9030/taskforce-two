@@ -41,7 +41,7 @@ export default function Hero() {
       {/* Full Page Background Image */}
       <div className="absolute top-0 left-0 w-full h-[900px] lg:h-[800px] md:h-[900px]-z-10">
         <Image
-          src="/hero-bg.png"
+          src="/12.jpg"
           alt="Background pattern"
           fill
           sizes="100vw"

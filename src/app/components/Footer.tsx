@@ -8,6 +8,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import BackToTopButton from "./BackToTopButton";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -78,18 +79,28 @@ export default function Footer() {
         </div>
 
         {/* Popular Link */}
-        <div>
-          <h4 className="text-black text-2xl font-semibold mb-4">
-            Popular Link
-          </h4>
-          <ul className="space-y-2">
-            <li>❯ Home</li>
-            <li>❯About Us</li>
-            <li>❯Services</li>
-            <li>❯ Portfolio</li>
-            <li>❯ Our Equipmentsr</li>
-          </ul>
-        </div>
+      <div>
+      <h4 className="text-black text-2xl font-semibold mb-4">
+        Popular Links
+      </h4>
+      <ul className="space-y-2 text-black">
+        <li>
+          ❯ <Link href="/">Home</Link>
+        </li>
+        <li>
+          ❯ <Link href="/aboutus">About Us</Link>
+        </li>
+        <li>
+          ❯ <Link href="/services">Services</Link>
+        </li>
+        <li>
+          ❯ <Link href="/">Portfolio</Link>
+        </li>
+        <li>
+          ❯ <Link href="/">Our Equipments</Link>
+        </li>
+      </ul>
+    </div>
 
         {/* Our Services */}
         <div>
