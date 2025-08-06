@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
             <div key={index} className="flex flex-col items-center">
               {feature.icon}
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed max-w-xs font-open-sans">{feature.description}</p>
+              <p className="text-gray-600 text-base leading-relaxed max-w-xs font-open-sans md:text-justify">{feature.description}</p>
             </div>
           ))}
         </div>

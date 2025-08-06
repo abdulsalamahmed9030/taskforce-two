@@ -150,7 +150,7 @@ export default function CompleteRangeOfServices() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div
             key={index}
@@ -159,8 +159,8 @@ export default function CompleteRangeOfServices() {
             } ${hoverMap[service.color as "light" | "sky"]}`}
           >
             <div className="text-3xl mb-2">{service.icon}</div>
-            <h5 className="text-base font-semibold mb-1">{service.title}</h5>
-            <p className="text-xs leading-relaxed">{service.description}</p>
+            <h5 className="text-xl font-semibold mb-1">{service.title}</h5>
+            <p className="text-base leading-relaxed ">{service.description}</p>
           </div>
         ))}
       </div>

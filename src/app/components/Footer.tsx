@@ -11,16 +11,17 @@ import BackToTopButton from "./BackToTopButton";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#221001] text-[#c2b7aa] text-md">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+    <footer className="bg-[#e6f0ef] text-[#000000] text-md">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8 ">
         {/* Logo and About */}
         <div>
-          <div className="relative w-40 h-14">
+          <div className="w-40 md:w-38 lg:w-36">
             <Image
               src="/logo.png"
               alt="Taskforce Logo"
-              fill
-              className="object-contain"
+              width={224}
+              height={80}
+              className="w-full h-auto object-contain"
             />
           </div>
 
@@ -35,14 +36,31 @@ export default function Footer() {
 
         {/* Get In Touch */}
         <div>
-          <h4 className="text-white text-2xl font-semibold mb-4">
+          <h4 className="text-black text-2xl font-semibold mb-4">
             Get In Touch
           </h4>
           <p className="mb-1">📍 #3-5-823, Ground Floor</p>
           <p className="mb-1">Hyderabad Business Center</p>
           <p className="mb-1">Hyderguda Hyderabad - 500029</p>
-          <p className="mt-3">📞 040-23240629 / 040-66669067</p>
-          <p className="mt-1">✉️ info@taskforceinteriors.com</p>
+          <p className="mt-3">
+            📞{" "}
+            <a href="tel:04023240629" className="hover:underline">
+              040-23240629
+            </a>{" "}
+            /{" "}
+            <a href="tel:04066669067" className="hover:underline">
+              040-66669067
+            </a>
+          </p>
+          <p className="mt-1">
+            ✉️{" "}
+            <a
+              href="mailto:info@taskforceinteriors.com"
+              className="hover:underline"
+            >
+              info@taskforceinteriors.com
+            </a>
+          </p>
 
           <div className="flex gap-2 mt-4">
             {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
@@ -61,29 +79,26 @@ export default function Footer() {
 
         {/* Popular Link */}
         <div>
-          <h4 className="text-white text-2xl font-semibold mb-4">
+          <h4 className="text-black text-2xl font-semibold mb-4">
             Popular Link
           </h4>
           <ul className="space-y-2">
-            <li>❯ About Us</li>
-            <li>❯ Contact Us</li>
-            <li>❯ Our Projects</li>
-            <li>❯ Hospital Interiors</li>
-            <li>❯ Career</li>
+            <li>❯ Home</li>
+            <li>❯About Us</li>
+            <li>❯Services</li>
+            <li>❯ Portfolio</li>
+            <li>❯ Our Equipmentsr</li>
           </ul>
         </div>
 
         {/* Our Services */}
         <div>
-          <h4 className="text-white text-2xl font-semibold mb-4">
-            Our Services
-          </h4>
+          <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
           <ul className="space-y-2">
-            <li>❯ False Ceiling</li>
-            <li>❯ Flooring Systems</li>
-            <li>❯ HVAC Works</li>
-            <li>❯ Modular Furniture</li>
-            <li>❯ ACP Cladding</li>
+            <li>❯ Contact</li>
+            <li>❯ Our Clients</li>
+            <li>❯ FAQ</li>
+            <li>❯ CSR</li>
           </ul>
         </div>
       </div>

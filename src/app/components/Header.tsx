@@ -61,7 +61,7 @@ export default function Header() {
               <button className="flex items-center gap-1 text-lg text-gray-800 hover:text-yellow-700 font-medium">
                 More <ChevronDown size={16} />
               </button>
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
+              <div className="absolute top-full left-0  w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
                 {dropdownLinks.map((item) => (
                   <a
                     key={item.label}

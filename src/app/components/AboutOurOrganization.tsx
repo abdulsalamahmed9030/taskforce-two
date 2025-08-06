@@ -57,14 +57,14 @@ export default function AboutOurOrganization() {
             <span className="text-black">Our Organization</span>
           </h2>
  
-          <p className="text-gray-700 leading-relaxed text-l font-open-sans">
+          <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
             TASK FORCE INTERIOR (P) LTD. is an organization overseen by
             individuals with extensive experience in civil engineering, interior
             design, and the management of turnkey projects. We analyze the
             available space and develop efficient floor plans that maximize
             functionality, flow, and utilization of the area.
           </p>
-          <p className="text-gray-700 leading-relaxed text-l font-open-sans">
+          <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
             Our company boasts a strong history of delivering successful
             projects, spanning upscale office and showroom interior decoration,
             software centers, BPOs, and data centers. We excel in crafting
