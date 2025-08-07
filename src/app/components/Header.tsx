@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu"; // adjust path if needed
@@ -16,79 +16,103 @@ const navLinks = [
 ];
 
 const dropdownLinks = [
-  { label: "Our Clients", href: "/ComingSoon" },
+  { label: "Our Clients", href: "/clients" },
   { label: "FAQ", href: "/ComingSoon" },
   { label: "CSR", href: "/ComingSoon" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showSticky, setShowSticky] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowSticky(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const renderNav = (isSticky = false) => (
+    <>
+      {/* Logo */}
+      <div className="flex items-center space-x-3">
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            alt="Taskforce Interiors Logo"
+            width={isSticky ? 130 : 150}
+            height={isSticky ? 70 : 80}
+            className="object-contain cursor-pointer"
+          />
+        </Link>
+      </div>
+
+      {/* Desktop Menu */}
+      <nav className="ml-auto hidden lg:flex items-center space-x-8">
+        {navLinks.map((link) => (
+          <Link
+            key={link.label}
+            href={link.href}
+            className={`text-lg font-medium ${
+              link.label === "Home"
+                ? "text-yellow-700 font-semibold"
+                : "text-gray-800 hover:text-yellow-700"
+            }`}
+          >
+            {link.label}
+          </Link>
+        ))}
+
+        {/* Dropdown */}
+        <div className="relative group">
+          <button className="flex items-center gap-1 text-lg text-gray-800 hover:text-yellow-700 font-medium">
+            More <ChevronDown size={16} />
+          </button>
+          <div className="absolute top-full left-0 w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
+            {dropdownLinks.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-700"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Toggle */}
+      <button className="lg:hidden ml-auto" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+    </>
+  );
+
   return (
     <>
-      <header className="bg-transparent border-b border-white font-open z-50 relative">
+      {/* Default Header (Transparent) */}
+      <header className="bg-transparent border-b border-white font-open z-30 relative">
         <div className="container mx-auto flex items-center px-6 py-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="Taskforce Interiors Logo"
-                width={150}
-                height={80}
-                className="object-contain cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Menu */}
-          <nav className="ml-auto hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className={`text-lg font-medium ${
-                  link.label === "Home"
-                    ? "text-yellow-700 font-semibold"
-                    : "text-gray-800 hover:text-yellow-700"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-
-            {/* More Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-lg text-gray-800 hover:text-yellow-700 font-medium">
-                More <ChevronDown size={16} />
-              </button>
-              <div className="absolute top-full left-0  w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
-                {dropdownLinks.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-700"
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </nav>
-
-          {/* Mobile Toggle */}
-          <button
-            className="lg:hidden ml-auto"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {renderNav()}
         </div>
       </header>
 
-      {/* Render Mobile Menu */}
+      {/* Sticky Header (White, fades in on scroll) */}
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${
+          showSticky ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        }`}
+      >
+        <div className="container mx-auto flex items-center px-6 py-3">
+          {renderNav(true)}
+        </div>
+      </header>
+
+      {/* Mobile Menu */}
       {menuOpen && (
         <MobileMenu
           navLinks={navLinks}

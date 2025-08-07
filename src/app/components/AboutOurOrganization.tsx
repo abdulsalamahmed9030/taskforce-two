@@ -100,17 +100,34 @@ export default function AboutOurOrganization() {
 
             {/* Social Icons */}
             <div className="flex gap-3">
-              {[FaFacebookF, SiX, FaInstagram, FaLinkedinIn].map(
-                (Icon, idx) => (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="w-10 h-10 border border-[#c28b2c] text-[#c28b2c] flex items-center justify-center text-base hover:bg-[#c28b2c] hover:text-white transition"
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                )
-              )}
+              {[
+                {
+                  icon: FaFacebookF,
+                  url: "https://www.facebook.com/p/Taskforce-Interiors-61574866478910/", // Replace with your real FB link if available
+                },
+                {
+                  icon: SiX,
+                  url: "https://twitter.com/", // Replace if you use X (Twitter)
+                },
+                {
+                  icon: FaInstagram,
+                  url: "https://www.instagram.com/taskforceinteriors17/?hl=en",
+                },
+                {
+                  icon: FaLinkedinIn,
+                  url: "https://www.linkedin.com/company/taskforceinteriors/",
+                },
+              ].map(({ icon: Icon, url }, idx) => (
+                <a
+                  key={idx}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 border border-[#c28b2c] text-[#c28b2c] flex items-center justify-center text-base hover:bg-[#c28b2c] hover:text-white transition"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              ))}
             </div>
           </div>
         </motion.div>

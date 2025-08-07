@@ -3,12 +3,12 @@
 import Image from "next/image";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
 import BackToTopButton from "./BackToTopButton";
 import Link from "next/link";
+import { SiX } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -36,47 +36,66 @@ export default function Footer() {
         </div>
 
         {/* Get In Touch */}
-        <div>
-          <h4 className="text-black text-2xl font-semibold mb-4">
-            Get In Touch
-          </h4>
-          <p className="mb-1">📍 #3-5-823, Ground Floor</p>
-          <p className="mb-1">Hyderabad Business Center</p>
-          <p className="mb-1">Hyderguda Hyderabad - 500029</p>
-          <p className="mt-3">
-            📞{" "}
-            <a href="tel:04023240629" className="hover:underline">
-              040-23240629
-            </a>{" "}
-            /{" "}
-            <a href="tel:04066669067" className="hover:underline">
-              040-66669067
-            </a>
-          </p>
-          <p className="mt-1">
-            ✉️{" "}
-            <a
-              href="mailto:info@taskforceinteriors.com"
-              className="hover:underline"
-            >
-              info@taskforceinteriors.com
-            </a>
-          </p>
+       <div>
+  <h4 className="text-black text-2xl font-semibold mb-4">Get In Touch</h4>
+  <p className="mb-1">📍 #3-5-823, Ground Floor</p>
+  <p className="mb-1">Hyderabad Business Center</p>
+  <p className="mb-1">Hyderguda Hyderabad - 500029</p>
 
-          <div className="flex gap-2 mt-4">
-            {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="border border-[#c9974b] text-[#c9974b] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
-                >
-                  <Icon size={16} />
-                </a>
-              )
-            )}
-          </div>
-        </div>
+  <p className="mt-3">
+    📞{" "}
+    <a href="tel:04023240629" className="hover:underline">
+      040-23240629
+    </a>{" "}
+    /{" "}
+    <a href="tel:04066669067" className="hover:underline">
+      040-66669067
+    </a>
+  </p>
+
+  <p className="mt-1">
+    ✉️{" "}
+    <a href="mailto:info@taskforceinteriors.com" className="hover:underline">
+      info@taskforceinteriors.com
+    </a>
+  </p>
+
+  <div className="flex gap-2 mt-4">
+    <a
+      href="https://www.facebook.com/p/Taskforce-Interiors-61574866478910/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#c9974b] text-[#c9974b] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+    >
+      <FaFacebookF size={16} />
+    </a>
+    <a
+      href="https://twitter.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#c9974b] text-[#c9974b] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+    >
+      <SiX size={16} />
+    </a>
+    <a
+      href="https://www.instagram.com/taskforceinteriors17/?hl=en"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#c9974b] text-[#c9974b] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+    >
+      <FaInstagram size={16} />
+    </a>
+    <a
+      href="https://www.linkedin.com/company/taskforceinteriors/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-[#c9974b] text-[#c9974b] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+    >
+      <FaLinkedinIn size={16} />
+    </a>
+  </div>
+</div>
+
 
         {/* Popular Link */}
         <div>
@@ -94,10 +113,10 @@ export default function Footer() {
               ❯ <Link href="/services">Services</Link>
             </li>
             <li>
-              ❯ <Link href="/ComingSoon">Portfolio</Link>
+              ❯ <Link href="/gallery">Portfolio</Link>
             </li>
             <li>
-              ❯ <Link href="/ComingSoon">Our Equipments</Link>
+              ❯ <Link href="/ourequipments">Our Equipments</Link>
             </li>
           </ul>
         </div>
@@ -114,7 +133,7 @@ export default function Footer() {
             </li>
             <li>
               ❯{" "}
-              <Link href="/ComingSoon" className="hover:text-yellow-700">
+              <Link href="/clients" className="hover:text-yellow-700">
                 Our Clients
               </Link>
             </li>
@@ -135,24 +154,24 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 max-w-7xl mx-auto">
-        <p className="text-sm md:text-base">
-          ©{" "}
-          <a href="#" className="underline">
-            Task Force Interiors
-          </a>
-          , All Rights Reserved.
-        </p>
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
-          <a href="#">Home</a>
-          <span className="hidden md:inline">|</span>
-          <a href="#">Services</a>
-          <span className="hidden md:inline">|</span>
-          <a href="#">Portfolio</a>
-          <span className="hidden md:inline">|</span>
-          <a href="#">Contact</a>
-        </div>
+       <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 max-w-7xl mx-auto">
+      <p className="text-sm md:text-base">
+        ©{" "}
+        <Link href="/" className="font-bold">
+          2025 Task Force Interiors Pvt. Ltd
+        </Link>
+        , All Rights Reserved.
+      </p>
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+        <Link href="/">Home</Link>
+        <span className="hidden md:inline">|</span>
+        <Link href="/services">Services</Link>
+        <span className="hidden md:inline">|</span>
+        <Link href="/gallery">Portfolio</Link>
+        <span className="hidden md:inline">|</span>
+        <Link href="/contact">Contact</Link>
       </div>
+    </div>
 
       {/* Back to Top */}
       <BackToTopButton />

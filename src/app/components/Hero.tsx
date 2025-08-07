@@ -5,24 +5,28 @@ import Image from "next/image";
 import clsx from "clsx";
 import Header from "./Header";
 
+// Import Font Awesome icons
+import { FaBuilding, FaHospital, FaToolbox, FaHandshake } from "react-icons/fa";
+
 const heroImages = ["/office1.jpg", "/office2.jpg", "/office3.jpg"];
 
+// Use Font Awesome icons here
 const features = [
   {
     label: "Office Interiors",
-    icon: "/icons/office.png",
+    icon: FaBuilding,
   },
   {
     label: "Hospital Projects",
-    icon: "/icons/office.png",
+    icon: FaHospital,
   },
   {
     label: "Turnkey Solutions",
-    icon: "/icons/office.png",
+    icon: FaToolbox,
   },
   {
     label: "Corporate Trust",
-    icon: "/icons/office.png",
+    icon: FaHandshake,
   },
 ];
 
@@ -39,7 +43,7 @@ export default function Hero() {
   return (
     <div className="font-sans relative">
       {/* Full Page Background Image */}
-      <div className="absolute top-0 left-0 w-full h-[900px] lg:h-[800px] md:h-[900px]-z-10">
+      <div className="absolute top-0 left-0 w-full h-[900px] lg:h-[800px] md:h-[900px] -z-10">
         <Image
           src="/12.jpg"
           alt="Background pattern"
@@ -57,7 +61,7 @@ export default function Hero() {
 
       {/* Hero Section */}
       <section className="relative z-10 bg-transparent">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 pt-5 md:pt-31  gap-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 pt-5 md:pt-31 gap-10">
           {/* Left Column */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl text-left lg:text-[80px] font-light leading-tight text-gray-900 drop-shadow font-grotesk">
@@ -107,16 +111,13 @@ export default function Hero() {
         {/* Features Section */}
         <div className="px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-10">
-            {features.map(({ label, icon }) => (
-              <div key={label} className="flex items-center gap-3 p-3">
-                <div className="w-10 h-10 min-w-[40px] border-white flex items-center justify-center border-3">
-                  <Image
-                    src={icon}
-                    alt={label}
-                    width={20}
-                    height={20}
-                    className="object-contain"
-                  />
+            {features.map(({ label, icon: Icon }) => (
+              <div
+                key={label}
+                className="flex items-center gap-3 p-3 hover:bg-white/60 rounded-md transition"
+              >
+                <div className="w-10 h-10 min-w-[40px] border-white border-2 flex items-center justify-center rounded">
+                  <Icon className="text-yellow-700 w-5 h-5" />
                 </div>
                 <span className="text-xl text-gray-800">{label}</span>
               </div>
