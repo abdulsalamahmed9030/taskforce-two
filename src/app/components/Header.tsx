@@ -106,7 +106,10 @@ export default function Header() {
       </nav>
 
       {/* Mobile Toggle */}
-      <button className="lg:hidden ml-auto" onClick={() => setMenuOpen(!menuOpen)}>
+      <button
+        className="lg:hidden ml-auto"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
     </>
@@ -124,7 +127,9 @@ export default function Header() {
       {/* Sticky Header (White, fades in on scroll) */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${
-          showSticky ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+          showSticky
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0"
         }`}
       >
         <div className="container mx-auto flex items-center px-6 py-3">

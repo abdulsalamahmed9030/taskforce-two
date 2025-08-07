@@ -12,7 +12,6 @@ import Map from "./Map";
 export default function ContactUs() {
   return (
     <section className="bg-gray-50 py-16 px-4">
-     
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pt-8">
         {/* Left - Form */}
         <div>
@@ -116,7 +115,7 @@ export default function ContactUs() {
           </p>
         </div>
       </div>
-       <Map />
+      <Map />
     </section>
   );
 }
