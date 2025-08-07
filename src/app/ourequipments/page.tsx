@@ -1,15 +1,15 @@
 import React from 'react'
-import ComingSoon from '../components/ComingSoon'
 import Header from '../components/Header'
+import GalleryTwo from '../components/GalleryTwo'
 import Footer from '../components/Footer'
 
 const page = () => {
   return (
     <>
-   <div className="bg-[#e6f0ef]">
+      <div className="bg-[#e6f0ef]">
   <Header />
 </div>
-      <ComingSoon />
+      <GalleryTwo />
       <Footer />
     </>
   )

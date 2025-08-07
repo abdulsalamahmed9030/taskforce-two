@@ -6,7 +6,9 @@ import Footer from '../components/Footer'
 const page = () => {
   return (
     <>
-      <Header />
+     <div className="bg-[#e6f0ef]">
+  <Header />
+</div>
       <ContactUs />
       <Footer />
     </>
