@@ -145,7 +145,7 @@ export default function Footer() {
             </li>
             <li>
               ❯{" "}
-              <Link href="/ComingSoon" className="hover:text-yellow-700">
+              <Link href="/csr" className="hover:text-yellow-700">
                 CSR
               </Link>
             </li>

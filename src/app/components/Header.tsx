@@ -19,7 +19,7 @@ const navLinks = [
 const dropdownLinks = [
   { label: "Our Clients", href: "/clients" },
   { label: "FAQ", href: "/faq" },
-  { label: "CSR", href: "/ComingSoon" },
+  { label: "CSR", href: "/csr" },
 ];
 
 export default function Header() {
