@@ -17,7 +17,7 @@ const navLinks = [
 
 const dropdownLinks = [
   { label: "Our Clients", href: "/clients" },
-  { label: "FAQ", href: "/ComingSoon" },
+  { label: "FAQ", href: "/faq" },
   { label: "CSR", href: "/ComingSoon" },
 ];
 

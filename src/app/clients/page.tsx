@@ -6,7 +6,7 @@ import Clients from '../components/Clients'
 const page = () => {
   return (
     <>
-      <div className="bg-[#e6f0ef]">
+      <div className="bg-[#eef9f9]">
   <Header />
 </div>
       <Clients />

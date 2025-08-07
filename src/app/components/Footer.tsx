@@ -12,7 +12,7 @@ import { SiX } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#e6f0ef] text-[#000000] text-md">
+    <footer className="bg-[#eef9f9] text-[#000000] text-md">
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8 ">
         {/* Logo and About */}
         <div>
@@ -139,7 +139,7 @@ export default function Footer() {
             </li>
             <li>
               ❯{" "}
-              <Link href="/ComingSoon" className="hover:text-yellow-700">
+              <Link href="/faq" className="hover:text-yellow-700">
                 FAQ
               </Link>
             </li>
