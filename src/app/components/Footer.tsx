@@ -167,7 +167,7 @@ export default function Footer() {
         <span className="hidden md:inline">|</span>
         <Link href="/services">Services</Link>
         <span className="hidden md:inline">|</span>
-        <Link href="/gallery">Portfolio</Link>
+        <Link href="/gallery">Gallery</Link>
         <span className="hidden md:inline">|</span>
         <Link href="/contact">Contact</Link>
       </div>
