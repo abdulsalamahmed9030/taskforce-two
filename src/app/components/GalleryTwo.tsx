@@ -4,12 +4,20 @@ import { useState } from "react";
 import Image from "next/image";
 
 const products = [
-  { id: 1, name: "CNC Processing Center CENTATEQ P-100", src: "/gallery/1.jpg" },
+  {
+    id: 1,
+    name: "CNC Processing Center CENTATEQ P-100",
+    src: "/gallery/1.jpg",
+  },
   { id: 2, name: "SAWTEQ-B-500 Beam Saw", src: "/gallery/2.jpg" },
   { id: 3, name: "EDGETEQ S-300 Edge Banding3", src: "/gallery/3.jpg" },
   { id: 4, name: "DRILLTEQ Drilling", src: "/gallery/4.jpg" },
   { id: 5, name: "CNC Laser Cutting Machine", src: "/gallery/5.jpg" },
-  { id: 6, name: "Felder K700S Sliding Table Panel Saw Machine", src: "/gallery/6.jpg" },
+  {
+    id: 6,
+    name: "Felder K700S Sliding Table Panel Saw Machine",
+    src: "/gallery/6.jpg",
+  },
   { id: 7, name: "Manual Edge Banding Machine", src: "/gallery/7.jpg" },
   { id: 8, name: "OptiDrill Three Head Boring", src: "/gallery/8.jpg" },
   { id: 9, name: "Post Forming machine-j5100", src: "/gallery/9.jpg" },
@@ -44,18 +52,35 @@ export default function GalleryTwo() {
         </h2>
 
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify mb-4">
-        Taskforce Interiors is a renowned company led by a team of seasoned professionals specializing in civil works, interior decorating, and overseeing turnkey projects. With a proven track record in the industry, we take pride in our ability to deliver exceptional results with unmatched precision and creativity.
+          Taskforce Interiors is a renowned company led by a team of seasoned
+          professionals specializing in civil works, interior decorating, and
+          overseeing turnkey projects. With a proven track record in the
+          industry, we take pride in our ability to deliver exceptional results
+          with unmatched precision and creativity.
         </p>
 
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-          Throughout the years, we have achieved remarkable milestones that stand as a testament to our expertise. Our portfolio boasts an array of successful projects, ranging from opulent interior decoration of high-end offices and showrooms to the design and outfitting of cutting-edge software centers, BPO facilities, and data centers. Our proficiency extends to architectural feats such as the fabrication of atriums and the application of ACP cladding and glass cladding for multi-storey buildings across Hyderabad and other metropolitan areas. Our esteemed clientele includes multinational corporations and prominent corporate entities, attesting to the trust they place in us for translating their visions into reality.
-
-
+          Throughout the years, we have achieved remarkable milestones that
+          stand as a testament to our expertise. Our portfolio boasts an array
+          of successful projects, ranging from opulent interior decoration of
+          high-end offices and showrooms to the design and outfitting of
+          cutting-edge software centers, BPO facilities, and data centers. Our
+          proficiency extends to architectural feats such as the fabrication of
+          atriums and the application of ACP cladding and glass cladding for
+          multi-storey buildings across Hyderabad and other metropolitan areas.
+          Our esteemed clientele includes multinational corporations and
+          prominent corporate entities, attesting to the trust they place in us
+          for translating their visions into reality.
         </p>
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-          One of our standout achievements lies in the healthcare sector, where we have played a pivotal role in transforming over thirty-eight hospitals&apos; interiors throughout India. Our understanding of the unique demands of healthcare spaces, combined with our commitment to creating functional yet aesthetically pleasing environments, has resulted in spaces that foster healing and comfort. Our dedicated approach to each project, regardless of its scale, reflects our unwavering commitment to delivering excellence.
-
-
+          One of our standout achievements lies in the healthcare sector, where
+          we have played a pivotal role in transforming over thirty-eight
+          hospitals&apos; interiors throughout India. Our understanding of the
+          unique demands of healthcare spaces, combined with our commitment to
+          creating functional yet aesthetically pleasing environments, has
+          resulted in spaces that foster healing and comfort. Our dedicated
+          approach to each project, regardless of its scale, reflects our
+          unwavering commitment to delivering excellence.
         </p>
       </div>
 

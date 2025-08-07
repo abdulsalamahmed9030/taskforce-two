@@ -19,21 +19,81 @@ import {
 } from "react-icons/fa";
 
 const services = [
-  { title: "Building MGMT Systems", icon: <FaBuilding />, desc: "Comprehensive building management and automation systems." },
-  { title: "CCTV Systems", icon: <FaVideo />, desc: "Advanced surveillance and security camera installations." },
-  { title: "Kitchen Works", icon: <FaUtensils />, desc: "Complete kitchen installations with modern equipment." },
-  { title: "Fabrication Works", icon: <FaTools />, desc: "Custom metal fabrication and structural steelwork." },
-  { title: "Soft Furniture", icon: <FaCouch />, desc: "Seating solutions, upholstery, and soft furnishing installs." },
-  { title: "Plumbing & Sanitary", icon: <FaTint />, desc: "Plumbing systems, sanitary installations, and water solutions." },
-  { title: "Fire Detection", icon: <FaFireExtinguisher />, desc: "Fire detection systems and emergency safety equipment." },
-  { title: "Joinery Works", icon: <FaHammer />, desc: "Custom woodwork, partitions, and joinery services." },
-  { title: "HVAC Systems", icon: <FaSnowflake />, desc: "Heating, ventilation, and air conditioning systems." },
-  { title: "Painting Works", icon: <FaPaintRoller />, desc: "Interior and exterior painting with premium finishes." },
-  { title: "Seating Systems", icon: <FaChair />, desc: "Ergonomic and auditorium seating solutions." },
-  { title: "Civil Works", icon: <FaHardHat />, desc: "Civil construction, modifications, and renovations." },
-  { title: "Laboratory Setup", icon: <FaFlask />, desc: "Laboratory installations and scientific workspace setup." },
-  { title: "Access Control", icon: <FaKey />, desc: "Access systems, biometric security, and management." },
-  { title: "Electrical Works", icon: <FaBolt />, desc: "Electrical wiring, lighting, and power distribution." },
+  {
+    title: "Building MGMT Systems",
+    icon: <FaBuilding />,
+    desc: "Comprehensive building management and automation systems.",
+  },
+  {
+    title: "CCTV Systems",
+    icon: <FaVideo />,
+    desc: "Advanced surveillance and security camera installations.",
+  },
+  {
+    title: "Kitchen Works",
+    icon: <FaUtensils />,
+    desc: "Complete kitchen installations with modern equipment.",
+  },
+  {
+    title: "Fabrication Works",
+    icon: <FaTools />,
+    desc: "Custom metal fabrication and structural steelwork.",
+  },
+  {
+    title: "Soft Furniture",
+    icon: <FaCouch />,
+    desc: "Seating solutions, upholstery, and soft furnishing installs.",
+  },
+  {
+    title: "Plumbing & Sanitary",
+    icon: <FaTint />,
+    desc: "Plumbing systems, sanitary installations, and water solutions.",
+  },
+  {
+    title: "Fire Detection",
+    icon: <FaFireExtinguisher />,
+    desc: "Fire detection systems and emergency safety equipment.",
+  },
+  {
+    title: "Joinery Works",
+    icon: <FaHammer />,
+    desc: "Custom woodwork, partitions, and joinery services.",
+  },
+  {
+    title: "HVAC Systems",
+    icon: <FaSnowflake />,
+    desc: "Heating, ventilation, and air conditioning systems.",
+  },
+  {
+    title: "Painting Works",
+    icon: <FaPaintRoller />,
+    desc: "Interior and exterior painting with premium finishes.",
+  },
+  {
+    title: "Seating Systems",
+    icon: <FaChair />,
+    desc: "Ergonomic and auditorium seating solutions.",
+  },
+  {
+    title: "Civil Works",
+    icon: <FaHardHat />,
+    desc: "Civil construction, modifications, and renovations.",
+  },
+  {
+    title: "Laboratory Setup",
+    icon: <FaFlask />,
+    desc: "Laboratory installations and scientific workspace setup.",
+  },
+  {
+    title: "Access Control",
+    icon: <FaKey />,
+    desc: "Access systems, biometric security, and management.",
+  },
+  {
+    title: "Electrical Works",
+    icon: <FaBolt />,
+    desc: "Electrical wiring, lighting, and power distribution.",
+  },
 ];
 
 const lgYellowIndices = [1, 3, 4, 6, 9, 11, 12, 14]; // 0-based indices for yellow (sky) on large screens
@@ -57,12 +117,16 @@ export default function CompleteRangeOfServices() {
           const isLgYellow = lgYellowIndices.includes(index);
           const isSmallAlt = index % 2 === 0;
 
-          const smallBg = isSmallAlt ? "bg-yellow-600 text-white" : "bg-slate-100 text-gray-900";
+          const smallBg = isSmallAlt
+            ? "bg-yellow-600 text-white"
+            : "bg-slate-100 text-gray-900";
           const smallHover = isSmallAlt
             ? "hover:bg-slate-100 hover:text-black"
             : "hover:bg-yellow-600 hover:text-white";
 
-          const lgBg = isLgYellow ? "lg:bg-yellow-600 lg:text-white" : "lg:bg-slate-100 lg:text-gray-900";
+          const lgBg = isLgYellow
+            ? "lg:bg-yellow-600 lg:text-white"
+            : "lg:bg-slate-100 lg:text-gray-900";
           const lgHover = isLgYellow
             ? "lg:hover:bg-slate-100 lg:hover:text-black"
             : "lg:hover:bg-yellow-600 lg:hover:text-white";

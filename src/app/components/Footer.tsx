@@ -79,68 +79,80 @@ export default function Footer() {
         </div>
 
         {/* Popular Link */}
-      <div>
-      <h4 className="text-black text-2xl font-semibold mb-4">
-        Popular Links
-      </h4>
-      <ul className="space-y-2 text-black">
-        <li>
-          ❯ <Link href="/">Home</Link>
-        </li>
-        <li>
-          ❯ <Link href="/aboutus">About Us</Link>
-        </li>
-        <li>
-          ❯ <Link href="/services">Services</Link>
-        </li>
-        <li>
-          ❯ <Link href="/ComingSoon">Portfolio</Link>
-        </li>
-        <li>
-          ❯ <Link href="/ComingSoon">Our Equipments</Link>
-        </li>
-      </ul>
-    </div>
+        <div>
+          <h4 className="text-black text-2xl font-semibold mb-4">
+            Popular Links
+          </h4>
+          <ul className="space-y-2 text-black">
+            <li>
+              ❯ <Link href="/">Home</Link>
+            </li>
+            <li>
+              ❯ <Link href="/aboutus">About Us</Link>
+            </li>
+            <li>
+              ❯ <Link href="/services">Services</Link>
+            </li>
+            <li>
+              ❯ <Link href="/ComingSoon">Portfolio</Link>
+            </li>
+            <li>
+              ❯ <Link href="/ComingSoon">Our Equipments</Link>
+            </li>
+          </ul>
+        </div>
 
         {/* Our Services */}
-       <div>
-  <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
-  <ul className="space-y-2 text-gray-800">
-    <li>
-      ❯ <Link href="/contact" className="hover:text-yellow-700">Contact</Link>
-    </li>
-    <li>
-      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">Our Clients</Link>
-    </li>
-    <li>
-      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">FAQ</Link>
-    </li>
-    <li>
-      ❯ <Link href="/ComingSoon" className="hover:text-yellow-700">CSR</Link>
-    </li>
-  </ul>
-</div>
+        <div>
+          <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
+          <ul className="space-y-2 text-gray-800">
+            <li>
+              ❯{" "}
+              <Link href="/contact" className="hover:text-yellow-700">
+                Contact
+              </Link>
+            </li>
+            <li>
+              ❯{" "}
+              <Link href="/ComingSoon" className="hover:text-yellow-700">
+                Our Clients
+              </Link>
+            </li>
+            <li>
+              ❯{" "}
+              <Link href="/ComingSoon" className="hover:text-yellow-700">
+                FAQ
+              </Link>
+            </li>
+            <li>
+              ❯{" "}
+              <Link href="/ComingSoon" className="hover:text-yellow-700">
+                CSR
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Bottom Bar */}
-   <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 max-w-7xl mx-auto">
-  <p className="text-sm md:text-base">
-    ©{" "}
-    <a href="#" className="underline">
-      Task Force Interiors
-    </a>
-    , All Rights Reserved.
-  </p>
-  <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
-    <a href="#">Home</a>
-    <span className="hidden md:inline">|</span>
-    <a href="#">Services</a>
-    <span className="hidden md:inline">|</span>
-    <a href="#">Portfolio</a>
-    <span className="hidden md:inline">|</span>
-    <a href="#">Contact</a>
-  </div>
-</div>
+      <div className="border-t border-[#2d1b0a] py-4 px-6 text-center text-lx flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0 max-w-7xl mx-auto">
+        <p className="text-sm md:text-base">
+          ©{" "}
+          <a href="#" className="underline">
+            Task Force Interiors
+          </a>
+          , All Rights Reserved.
+        </p>
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm md:text-base">
+          <a href="#">Home</a>
+          <span className="hidden md:inline">|</span>
+          <a href="#">Services</a>
+          <span className="hidden md:inline">|</span>
+          <a href="#">Portfolio</a>
+          <span className="hidden md:inline">|</span>
+          <a href="#">Contact</a>
+        </div>
+      </div>
 
       {/* Back to Top */}
       <BackToTopButton />

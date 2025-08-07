@@ -25,8 +25,7 @@ export default function OurTeam() {
     <section className="w-full px-4 py-16 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl mb-12">
-          Meet Our{" "}
-          <span className="text-[#bf852b]">LEADERSHIP</span>
+          Meet Our <span className="text-[#bf852b]">LEADERSHIP</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-10">

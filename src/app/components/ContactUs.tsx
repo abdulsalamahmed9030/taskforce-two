@@ -1,6 +1,12 @@
 "use client";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaClock,
+  FaPaperPlane,
+} from "react-icons/fa";
 import Map from "./Map";
 
 export default function ContactUs() {
@@ -10,9 +16,12 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pt-8">
         {/* Left - Form */}
         <div>
-          <h2 className="text-3xl md:text-5xl text-center text-[#bf852b] mb-2">Send Us A Message</h2>
+          <h2 className="text-3xl md:text-5xl text-center text-[#bf852b] mb-2">
+            Send Us A Message
+          </h2>
           <p className="text-center text-gray-600 mb-10">
-            Have a project in mind? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
+            Have a project in mind? We&apos;d love to hear from you. Send us a
+            message and we&apos;ll respond as soon as possible.
           </p>
 
           <form className="space-y-6">
@@ -53,7 +62,9 @@ export default function ContactUs() {
 
         {/* Right - Contact Info */}
         <div className="bg-white shadow-md rounded-lg p-10">
-          <h3 className="text-3xl md:text-4xl text-[#bf852b] mb-8 text-center">Contact US</h3>
+          <h3 className="text-3xl md:text-4xl text-[#bf852b] mb-8 text-center">
+            Contact US
+          </h3>
 
           <div className="space-y-6 text-gray-700">
             <div className="flex items-start gap-3">
@@ -81,7 +92,10 @@ export default function ContactUs() {
               <div>
                 <p className="font-medium text-[#bf852b]">Email Us</p>
                 <p>
-                  <a href="mailto:info@taskforceinteriors.com" className="hover:underline">
+                  <a
+                    href="mailto:info@taskforceinteriors.com"
+                    className="hover:underline"
+                  >
                     info@taskforceinteriors.com
                   </a>
                 </p>

@@ -48,13 +48,7 @@ export default function MobileMenu({
     >
       {/* Logo */}
       <div className="mb-6 flex justify-center">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={140}
-          height={50}
-          priority
-        />
+        <Image src="/logo.png" alt="Logo" width={140} height={50} priority />
       </div>
 
       {/* Main nav links */}
@@ -97,11 +91,21 @@ export default function MobileMenu({
         <p>Hyderabad Business Center</p>
         <p>Hyderguda, Hyderabad - 500029</p>
         <p className="mt-2">
-          📞 <a href="tel:04023240629" className="hover:text-yellow-600">040-23240629</a> /{" "}
-          <a href="tel:04066669067" className="hover:text-yellow-600">040-66669067</a>
+          📞{" "}
+          <a href="tel:04023240629" className="hover:text-yellow-600">
+            040-23240629
+          </a>{" "}
+          /{" "}
+          <a href="tel:04066669067" className="hover:text-yellow-600">
+            040-66669067
+          </a>
         </p>
         <p className="mt-1">
-          ✉️ <a href="mailto:info@taskforceinteriors.com" className="hover:text-yellow-600">
+          ✉️{" "}
+          <a
+            href="mailto:info@taskforceinteriors.com"
+            className="hover:text-yellow-600"
+          >
             info@taskforceinteriors.com
           </a>
         </p>
