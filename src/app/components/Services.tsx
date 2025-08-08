@@ -34,19 +34,23 @@ export default function Services() {
             </p>
 
             {/* Phone Box */}
-            <div className="flex w-full max-w-md rounded overflow-hidden shadow-sm">
-              <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
-                <FaPhoneAlt className="text-2xl" />
-              </div>
-              <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
-                <span className="text-xl font-semibold text-black">
-                  040-23240629
-                </span>
-                <span className="text-sm text-gray-700 mt-1">
-                  Call us direct for turnkey interior solutions
-                </span>
-              </div>
-            </div>
+            <a
+  href="tel:04023240629"
+  className="flex w-full max-w-md rounded overflow-hidden shadow-sm cursor-pointer"
+>
+  <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
+    <FaPhoneAlt className="text-2xl" />
+  </div>
+  <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
+    <span className="text-xl font-semibold text-black">
+      040-23240629
+    </span>
+    <span className="text-sm text-gray-700 mt-1">
+      Call us direct for turnkey interior solutions
+    </span>
+  </div>
+</a>
+
           </div>
 
           {/* RIGHT SIDE - Services Grid */}

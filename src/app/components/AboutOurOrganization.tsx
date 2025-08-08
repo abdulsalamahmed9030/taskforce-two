@@ -9,6 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { SiX } from "react-icons/si"; // ✅ X (Twitter) icon
+import Link from "next/link";
 
 export default function AboutOurOrganization() {
   return (
@@ -94,9 +95,12 @@ export default function AboutOurOrganization() {
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-3 pt-4">
             {/* Square Read More button */}
-            <button className="w-30 h-10 flex items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition">
-              <span className="leading-none">Read More</span>
-            </button>
+            <Link
+  href="/aboutus"
+  className="w-30 h-10 flex items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition"
+>
+  <span className="leading-none">Read More</span>
+</Link>
 
             {/* Social Icons */}
             <div className="flex gap-3">
