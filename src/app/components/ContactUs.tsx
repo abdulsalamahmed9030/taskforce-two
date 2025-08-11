@@ -14,7 +14,7 @@ export default function ContactUs() {
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pt-8">
         {/* Left - Form */}
-        <div>
+        <div className="pb-10">
           <h2 className="text-3xl md:text-5xl text-center text-[#bf852b] mb-2">
             Send Us A Message
           </h2>

@@ -10,9 +10,9 @@ import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/aboutus" },
-  { label: "Services", href: "/services" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Our Equipments", href: "/ourequipments" },
+  { label: "History", href: "/services" },
+  { label: "Testimonials", href: "/gallery" },
+  { label: "Manufacturing Plant", href: "/ourequipments" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -20,6 +20,7 @@ const dropdownLinks = [
   { label: "Our Clients", href: "/clients" },
   { label: "FAQ", href: "/faq" },
   { label: "CSR", href: "/csr" },
+    { label: "Our Team", href: "/ourteam" },
 ];
 
 export default function Header() {

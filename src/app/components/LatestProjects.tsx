@@ -75,12 +75,13 @@ export default function LatestProjects() {
 
               {/* Gradient Overlay */}
               <div
-                className="absolute inset-0 z-0"
-                style={{
-                  background:
-                    "linear-gradient(rgba(255,255,255,0.1) 50%, #03201f)",
-                }}
-              />
+  className="absolute inset-0 z-0"
+  style={{
+    background:
+      "linear-gradient(rgba(255,255,255,0.1) 50%, #facc15)",
+  }}
+/>
+
 
               {/* Text Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">

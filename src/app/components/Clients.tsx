@@ -31,7 +31,26 @@ const clients = [
   { src: "/logos/27.jpg", alt: "27" },
   { src: "/logos/28.png", alt: "28" },
   { src: "/logos/29.jpg", alt: "29" },
-  { src: "/logos/30.jpg", alt: "30" },
+ { src: "/logos/30.jpg", alt: "30" },
+{ src: "/logos/31.png", alt: "31" },
+{ src: "/logos/32.png", alt: "32" },
+{ src: "/logos/33.png", alt: "33" },
+{ src: "/logos/34.png", alt: "34" },
+{ src: "/logos/35.png", alt: "35" },
+{ src: "/logos/36.png", alt: "36" },
+{ src: "/logos/37.png", alt: "37" },
+{ src: "/logos/38.png", alt: "38" },
+{ src: "/logos/39.png", alt: "39" },
+{ src: "/logos/40.png", alt: "40" },
+{ src: "/logos/41.png", alt: "41" },
+{ src: "/logos/42.png", alt: "42" },
+{ src: "/logos/43.png", alt: "43" },
+{ src: "/logos/44.png", alt: "44" },
+{ src: "/logos/45.png", alt: "45" },
+{ src: "/logos/46.png", alt: "46" },
+{ src: "/logos/47.png", alt: "47" },
+{ src: "/logos/48.png", alt: "48" },
+
 ];
 const Clients = () => {
   return (

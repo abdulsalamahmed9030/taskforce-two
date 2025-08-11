@@ -5,80 +5,79 @@ import clsx from "clsx";
 
 export default function Services() {
   return (
-    <section className="w-full px-4 py-12 md:py-20 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Title */}
-        <h2 className="text-3xl md:text-5xl text-black mb-6">
-          Our Creative{" "}
-          <span className="px-2 py-1 bg-[#e6f0ef] text-[#be892c]">
-            SERVICES
-          </span>
-        </h2>
+   <section className="w-full px-4 py-10 md:py-16 bg-white">
+  <div className="max-w-7xl mx-auto">
+    {/* Title */}
+    <h2 className="text-3xl md:text-5xl text-black mb-6">
+      Interior Fit-Out{" "}
+      <span className="px-2 py-1 bg-[#e6f0ef] text-[#be892c]">
+        SERVICES
+      </span>
+    </h2>
 
-        {/* Layout wrapper: Left Content + Right Cards */}
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* LEFT SIDE */}
-          <div className="w-full md:w-1/2">
-            <p className="text-gray-700 mb-4 leading-relaxed text-base font-open-sans md:text-justify">
-              Our specialization encompasses a comprehensive array of services,
-              spanning false ceiling installation, flooring solutions, cladding,
-              furnishing, carpentry, electrical work, painting, polishing, and
-              partitioning utilizing diverse materials.
-            </p>
-            <p className="text-gray-700 mb-8 leading-relaxed text-base font-open-sans md:text-justify">
-              We excel in manufacturing MS furniture, casting, railings, and
-              bespoke designer items tailored to our clients&apos;
-              specifications. Furthermore, our capabilities extend to the
-              construction of skylight atriums for exterior spaces and domes to
-              enhance building connectivity.
-            </p>
+    {/* Layout wrapper: Left Content + Right Cards */}
+    <div className="flex flex-col md:flex-row gap-8">
+      {/* LEFT SIDE */}
+      <div className="w-full md:w-1/2">
+        <p className="text-gray-700 mb-4 leading-relaxed text-base font-open-sans md:text-justify">
+          We specialize in delivering complete <strong>interior fit-out solutions</strong> 
+          that transform empty spaces into functional, aesthetically refined environments. 
+          From initial design to final execution, our team manages every aspect to ensure 
+          seamless integration of style, comfort, and utility.
+        </p>
+        <p className="text-gray-700 mb-8 leading-relaxed text-base font-open-sans md:text-justify">
+          Our expertise covers a wide range of applications including 
+          corporate offices, commercial complexes, retail spaces, hospitality 
+          projects, and luxury residences — all executed to the highest 
+          standards of craftsmanship and project management.
+        </p>
 
-            {/* Phone Box */}
-            <a
-  href="tel:04023240629"
-  className="flex w-full max-w-md rounded overflow-hidden shadow-sm cursor-pointer"
->
-  <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
-    <FaPhoneAlt className="text-2xl" />
-  </div>
-  <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
-    <span className="text-xl font-semibold text-black">
-      040-23240629
-    </span>
-    <span className="text-sm text-gray-700 mt-1">
-      Call us direct for turnkey interior solutions
-    </span>
-  </div>
-</a>
-
+        {/* Phone Box */}
+        <a
+          href="tel:04023240629"
+          className="flex w-full max-w-md rounded overflow-hidden shadow-sm cursor-pointer"
+        >
+          <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
+            <FaPhoneAlt className="text-2xl" />
           </div>
-
-          {/* RIGHT SIDE - Services Grid */}
-          <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <ServiceCard
-              title="False Ceiling"
-              description="Modern false ceiling designs using quality materials for commercial spaces."
-              color="yellow"
-            />
-            <ServiceCard
-              title="Flooring Systems"
-              description="Complete flooring installation and maintenance for all sectors."
-              color="sky"
-            />
-            <ServiceCard
-              title="ACP Cladding"
-              description="Expert ACP and glass cladding services for high-rise buildings."
-              color="sky"
-            />
-            <ServiceCard
-              title="Modular Furniture"
-              description="Custom modular and MS furniture tailored to client needs."
-              color="yellow"
-            />
+          <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
+            <span className="text-xl font-semibold text-black">
+              040-23240629
+            </span>
+            <span className="text-sm text-gray-700 mt-1">
+              Call us for turnkey interior fit-out solutions
+            </span>
           </div>
-        </div>
+        </a>
       </div>
-    </section>
+
+      {/* RIGHT SIDE - Services Grid */}
+      <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ServiceCard
+          title="False Ceiling"
+          description="Modern false ceiling designs using premium materials."
+          color="yellow"
+        />
+        <ServiceCard
+          title="Flooring Systems"
+          description="Complete flooring installation and finishing."
+          color="sky"
+        />
+        <ServiceCard
+          title="ACP Cladding"
+          description="ACP and glass cladding for stylish exteriors."
+          color="sky"
+        />
+        <ServiceCard
+          title="Modular Furniture"
+          description="Custom modular and MS furniture solutions."
+          color="yellow"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 }
 

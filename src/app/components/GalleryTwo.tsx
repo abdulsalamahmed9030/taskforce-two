@@ -47,8 +47,8 @@ export default function GalleryTwo() {
       {/* Content Section */}
       <div className="max-w-6xl mx-auto mb-12 text-center">
         <h2 className="text-3xl md:text-5xl text-gray-800 mb-6">
-          <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">ABOUT</span>
-          <span className="text-black">Our Organization</span>
+          <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">Manufacturing</span>
+          <span className="text-black">Plant</span>
         </h2>
 
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify mb-4">
@@ -83,6 +83,18 @@ export default function GalleryTwo() {
           unwavering commitment to delivering excellence.
         </p>
       </div>
+<div className="max-w-6xl mx-auto mb-12">
+  <div className="aspect-video">
+    <video
+      controls
+      className="w-full h-full object-cover rounded-lg shadow-lg"
+      poster="/videos/video-thumbnail.png"
+    >
+      <source src="/videos/videoone.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -99,7 +111,8 @@ export default function GalleryTwo() {
               height={400}
               className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-yellow-600 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+
               <span className="text-white text-lg font-semibold px-2 text-center">
                 {product.name}
               </span>

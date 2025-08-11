@@ -96,11 +96,11 @@ export default function AboutOurOrganization() {
           <div className="flex flex-wrap items-center gap-3 pt-4">
             {/* Square Read More button */}
             <Link
-  href="/aboutus"
-  className="w-30 h-10 flex items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition"
->
-  <span className="leading-none">Read More</span>
-</Link>
+              href="/aboutus"
+              className="w-30 h-10 flex items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition"
+            >
+              <span className="leading-none">Read More</span>
+            </Link>
 
             {/* Social Icons */}
             <div className="flex gap-3">
