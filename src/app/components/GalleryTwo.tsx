@@ -83,7 +83,7 @@ export default function GalleryTwo() {
           unwavering commitment to delivering excellence.
         </p>
       </div>
-<div className="max-w-6xl mx-auto mb-12">
+{/* <div className="max-w-6xl mx-auto mb-12">
   <div className="aspect-video">
     <video
       controls
@@ -94,7 +94,7 @@ export default function GalleryTwo() {
       Your browser does not support the video tag.
     </video>
   </div>
-</div>
+</div> */}
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
