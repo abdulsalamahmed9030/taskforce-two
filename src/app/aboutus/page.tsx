@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import AboutUs from '../components/AboutUs'
+import AboutTwo from '../components/AboutTwo'
 
 const page = () => {
   return (
@@ -9,7 +9,7 @@ const page = () => {
       <div className="bg-[#eef9f9]">
   <Header />
 </div>
-      <AboutUs />
+    <AboutTwo />
       <Footer />
     </>
   )
