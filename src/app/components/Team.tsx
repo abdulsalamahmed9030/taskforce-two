@@ -47,7 +47,6 @@ const teamMembers: TeamMember[] = [
   { name: "Yusuf Patel", role: "Support Engineer", image: "/team/22.jpg" },
 ];
 
- 
 export default function Team() {
   return (
     <section className="py-16 px-8 md:px-40 bg-gray-50">
@@ -60,8 +59,10 @@ export default function Team() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900">Meet Our Team</h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl mb-4">
+            Meet Our <span className="text-yellow-600">Team</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             We’re a group of passionate professionals dedicated to delivering
             excellence.
           </p>
@@ -134,7 +135,7 @@ export default function Team() {
 
               {/* Info */}
               <div className="p-5 text-center">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-yellow-600">
                   {member.name}
                 </h3>
                 <p className="text-gray-500 text-sm">{member.role}</p>
