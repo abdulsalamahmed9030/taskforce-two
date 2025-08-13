@@ -50,6 +50,21 @@ const clients = [
   { src: "/logos/46.png", alt: "46" },
   { src: "/logos/47.png", alt: "47" },
   { src: "/logos/48.png", alt: "48" },
+  { src: "/logos/49.png", alt: "49" },
+  { src: "/logos/50.png", alt: "50" },
+  { src: "/logos/51.png", alt: "51" },
+  { src: "/logos/52.png", alt: "52" },
+  { src: "/logos/53.png", alt: "53" },
+  { src: "/logos/54.png", alt: "54" },
+  { src: "/logos/55.png", alt: "55" },
+  { src: "/logos/56.png", alt: "56" },
+  { src: "/logos/57.png", alt: "57" },
+  { src: "/logos/58.png", alt: "58" },
+  { src: "/logos/59.png", alt: "59" },
+  { src: "/logos/60.png", alt: "60" },
+  { src: "/logos/61.png", alt: "61" },
+  { src: "/logos/62.png", alt: "62" },
+  { src: "/logos/63.png", alt: "63" },
 ];
 const Clients = () => {
   return (

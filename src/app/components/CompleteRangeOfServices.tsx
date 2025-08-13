@@ -102,7 +102,7 @@ export default function CompleteRangeOfServices() {
     <section className="px-4 md:px-16 py-12">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl mb-4">
-          Complete Range of{" "}
+          Civil and interiors{" "}
           <span className="text-yellow-600">General Contracting</span>
         </h2>
         <p className="text-gray-600 text-lg">

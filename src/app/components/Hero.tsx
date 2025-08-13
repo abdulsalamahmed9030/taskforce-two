@@ -61,7 +61,7 @@ export default function Hero() {
 
       {/* Hero Section */}
       <section className="relative z-10 bg-transparent">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 pt-5 md:pt-31 gap-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 pt-5 md:pt-10 gap-10">
           {/* Left Column */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-3xl text-left lg:text-[80px] font-light leading-tight text-gray-900 drop-shadow font-grotesk">

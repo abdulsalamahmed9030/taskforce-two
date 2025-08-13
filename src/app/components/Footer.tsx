@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Popular Link */}
+        {/* Popular Link */} 
         <div>
           <h4 className="text-black text-2xl font-semibold mb-4">
             Popular Links
@@ -100,14 +100,15 @@ export default function Footer() {
               ❯ <Link href="/aboutus">About Us</Link>
             </li>
             <li>
+              ❯ <Link href="/ourteam">Our Team</Link>
+            </li>
+            <li>
+              ❯ <Link href="/gallery">Our Projects</Link>
+            </li>
+            <li>
               ❯ <Link href="/services">Services</Link>
             </li>
-            <li>
-              ❯ <Link href="/gallery">Portfolio</Link>
-            </li>
-            <li>
-              ❯ <Link href="/ourequipments">Manufacturing Plant</Link>
-            </li>
+           
           </ul>
         </div>
 
@@ -115,6 +116,12 @@ export default function Footer() {
         <div>
           <h4 className="text-black text-2xl font-semibold mb-4">More</h4>
           <ul className="space-y-2 text-gray-800">
+            <li>
+              ❯{" "}
+              <Link href="/ourequipments" className="hover:text-yellow-700">
+               Manufacturing Plant
+              </Link>
+            </li>
             <li>
               ❯{" "}
               <Link href="/contact" className="hover:text-yellow-700">
@@ -139,12 +146,7 @@ export default function Footer() {
                 CSR
               </Link>
             </li>
-            <li>
-              ❯{" "}
-              <Link href="/ourteam" className="hover:text-yellow-700">
-                Our Team
-              </Link>
-            </li>
+            
           </ul>
         </div>
       </div>
