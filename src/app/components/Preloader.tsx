@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function PreloaderFlipPause() {
   const [progress, setProgress] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const loadingTime = 3000;
+  const loadingTime = 1000;
 
   useEffect(() => {
     const interval = 30;
