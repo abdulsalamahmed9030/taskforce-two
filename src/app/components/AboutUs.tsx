@@ -7,7 +7,7 @@ export default function AboutUs() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 60 }}

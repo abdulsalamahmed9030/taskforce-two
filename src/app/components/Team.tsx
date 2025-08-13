@@ -17,35 +17,28 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-  { name: "Amit Sharma", role: "Founder & CEO", image: "/team/1.jpg" },
-  { name: "Karan Malhotra", role: "Business Analyst", image: "/team/12.jpg" },
-  { name: "Priya Nair", role: "Chief Marketing Officer", image: "/team/3.jpg" },
-  { name: "Mohammed Imran", role: "Lead Developer", image: "/team/4.jpg" },
-  { name: "Ananya Verma", role: "Senior UI/UX Designer", image: "/team/5.jpg" },
-  { name: "Rahul Iyer", role: "Head of Operations", image: "/team/6.jpg" },
-  { name: "Sana Fatima", role: "Project Manager", image: "/team/7.jpg" },
-  { name: "Ravi Deshmukh", role: "Software Engineer", image: "/team/8.jpg" },
-  { name: "Zoya Ali", role: "Front-End Developer", image: "/team/9.jpg" },
-  { name: "Arjun Mehta", role: "Back-End Developer", image: "/team/10.jpg" },
-  { name: "Hina Sheikh", role: "QA Specialist", image: "/team/11.jpg" },
-  {
-    name: "Ayesha Siddiqui",
-    role: "Content Strategist",
-    image: "/team/13.jpg",
-  },
-  {
-    name: "Vikram Joshi",
-    role: "Digital Marketing Lead",
-    image: "/team/14.jpg",
-  },
-  { name: "Nazia Parveen", role: "SEO Specialist", image: "/team/15.jpg" },
-  { name: "Manish Gupta", role: "Mobile App Developer", image: "/team/16.jpg" },
-  { name: "Shabana Begum", role: "HR Manager", image: "/team/17.jpg" },
-  { name: "Rohit Kulkarni", role: "Graphic Designer", image: "/team/18.jpg" },
-  { name: "Samira Khan", role: "Social Media Manager", image: "/team/19.jpg" },
-  { name: "Abdul Rahman", role: "DevOps Engineer", image: "/team/20.jpg" },
-  { name: "Yusuf Patel", role: "Support Engineer", image: "/team/22.jpg" },
+  { name: "1", role: "Founder & CEO", image: "/team/1.jpg" },
+  { name: "2", role: "Business Analyst", image: "/team/12.jpg" },
+  { name: "3", role: "Chief Marketing Officer", image: "/team/3.jpg" },
+  { name: "4", role: "Lead Developer", image: "/team/4.jpg" },
+  { name: "5", role: "Senior UI/UX Designer", image: "/team/5.jpg" },
+  { name: "6", role: "Head of Operations", image: "/team/6.jpg" },
+  { name: "7", role: "Project Manager", image: "/team/7.jpg" },
+  { name: "8", role: "Software Engineer", image: "/team/8.jpg" },
+  { name: "9", role: "Front-End Developer", image: "/team/9.jpg" },
+  { name: "10", role: "Back-End Developer", image: "/team/10.jpg" },
+  { name: "11", role: "QA Specialist", image: "/team/11.jpg" },
+  { name: "12", role: "Content Strategist", image: "/team/13.jpg" },
+  { name: "13", role: "Digital Marketing Lead", image: "/team/14.jpg" },
+  { name: "14", role: "SEO Specialist", image: "/team/15.jpg" },
+  { name: "15", role: "Mobile App Developer", image: "/team/16.jpg" },
+  { name: "16", role: "HR Manager", image: "/team/17.jpg" },
+  { name: "17", role: "Graphic Designer", image: "/team/18.jpg" },
+  { name: "18", role: "Social Media Manager", image: "/team/19.jpg" },
+  { name: "19", role: "DevOps Engineer", image: "/team/20.jpg" },
+  { name: "20", role: "Support Engineer", image: "/team/22.jpg" },
 ];
+
 
 export default function Team() {
   return (

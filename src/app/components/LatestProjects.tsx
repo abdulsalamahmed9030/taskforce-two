@@ -38,7 +38,7 @@ const projects = [
 
 export default function LatestProjects() {
   return (
-    <section className="w-full px-4 py-16 bg-white">
+    <section className="w-full px-4 py-10 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
         {/* Left Section */}
         <div className="bg-[#bf852b] text-white p-10 lg:w-1/3 flex flex-col justify-center items-start space-y-6 min-h-[450px]">
@@ -74,11 +74,10 @@ export default function LatestProjects() {
               />
 
               {/* Gradient Overlay */}
-              <div
+             <div
   className="absolute inset-0 z-0"
   style={{
-    background:
-      "linear-gradient(rgba(255,255,255,0.1) 50%, #facc15)",
+    background: "linear-gradient(rgba(255,255,255,0.2) 50%, #bf852b )",
   }}
 />
 
