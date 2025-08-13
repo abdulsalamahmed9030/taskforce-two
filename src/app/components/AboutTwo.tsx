@@ -25,14 +25,16 @@ export default function AboutTwo() {
               Introduction
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
-              <strong>Task Force Interior (P) Ltd.</strong> is led by seasoned professionals
-              with extensive expertise in civil engineering and interior design, prioritizing
-              the efficient management of turnkey projects. Our company boasts a strong
-              history of delivering successful projects, including upscale offices, showrooms,
-              software centers, BPOs, and data centers. We have crafted atriums, provided ACP
-              and glass cladding for multi-storey buildings in Hyderabad and other major
-              cities, and completed interiors for over <strong>38 hospitals across India</strong>,
-              showcasing our versatility and commitment to excellence.
+              <strong>Task Force Interior (P) Ltd.</strong> is led by seasoned
+              professionals with extensive expertise in civil engineering and
+              interior design, prioritizing the efficient management of turnkey
+              projects. Our company boasts a strong history of delivering
+              successful projects, including upscale offices, showrooms,
+              software centers, BPOs, and data centers. We have crafted atriums,
+              provided ACP and glass cladding for multi-storey buildings in
+              Hyderabad and other major cities, and completed interiors for over{" "}
+              <strong>38 hospitals across India</strong>, showcasing our
+              versatility and commitment to excellence.
             </p>
           </div>
 
@@ -42,10 +44,11 @@ export default function AboutTwo() {
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
-              To be the most trusted and innovative interior solutions provider in India,
-              delivering spaces that inspire, function seamlessly, and stand the test of time.
-              We aim to set benchmarks in design quality, project execution, and client
-              satisfaction while expanding our footprint across diverse sectors nationwide.
+              To be the most trusted and innovative interior solutions provider
+              in India, delivering spaces that inspire, function seamlessly, and
+              stand the test of time. We aim to set benchmarks in design
+              quality, project execution, and client satisfaction while
+              expanding our footprint across diverse sectors nationwide.
             </p>
           </div>
 
@@ -55,14 +58,14 @@ export default function AboutTwo() {
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
-              Our mission is to provide complete turnkey interior solutions — from
-              concept to execution — with an unwavering focus on quality, precision,
-              and customer satisfaction. We specialize in false ceiling installation,
-              flooring, cladding, furnishing, carpentry, electrical work, painting,
-              polishing, and partitions. In addition, we manufacture MS furniture,
-              designer elements, and architectural features like skylight atriums
-              and domes, ensuring every project reflects our client’s vision and
-              our dedication to craftsmanship.
+              Our mission is to provide complete turnkey interior solutions —
+              from concept to execution — with an unwavering focus on quality,
+              precision, and customer satisfaction. We specialize in false
+              ceiling installation, flooring, cladding, furnishing, carpentry,
+              electrical work, painting, polishing, and partitions. In addition,
+              we manufacture MS furniture, designer elements, and architectural
+              features like skylight atriums and domes, ensuring every project
+              reflects our client’s vision and our dedication to craftsmanship.
             </p>
           </div>
         </motion.div>

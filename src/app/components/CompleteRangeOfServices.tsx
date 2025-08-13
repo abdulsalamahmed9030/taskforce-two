@@ -1,102 +1,101 @@
 "use client";
 
-import {
-  FaBuilding,
-  FaVideo,
-  FaUtensils,
-  FaTools,
-  FaCouch,
-  FaTint,
-  FaFireExtinguisher,
-  FaHammer,
-  FaSnowflake,
-  FaPaintRoller,
-  FaChair,
-  FaHardHat,
-  FaFlask,
-  FaKey,
-  FaBolt,
-} from "react-icons/fa";
+import Image from "next/image";
 
 const services = [
   {
-    title: "Building MGMT Systems",
-    icon: <FaBuilding />,
+    name: "Building MGMT Systems",
+    img: "/icon/skyline.png",
     desc: "Comprehensive building management and automation systems.",
   },
   {
-    title: "CCTV Systems",
-    icon: <FaVideo />,
+    name: "CCTV",
+    img: "/icon/cctv-camera.png",
     desc: "Advanced surveillance and security camera installations.",
   },
   {
-    title: "Kitchen Works",
-    icon: <FaUtensils />,
+    name: "Kitchen Works",
+    img: "/icon/kitchen.png",
     desc: "Complete kitchen installations with modern equipment.",
   },
   {
-    title: "Fabrication Works",
-    icon: <FaTools />,
+    name: "Fabrication Works",
+    img: "/icon/bending.png",
     desc: "Custom metal fabrication and structural steelwork.",
   },
   {
-    title: "Soft Furniture",
-    icon: <FaCouch />,
+    name: "Soft Furniture",
+    img: "/icon/sofa.png",
     desc: "Seating solutions, upholstery, and soft furnishing installs.",
   },
   {
-    title: "Plumbing & Sanitary",
-    icon: <FaTint />,
+    name: "Plumbing & Sanitary Works",
+    img: "/icon/plumbing.png",
     desc: "Plumbing systems, sanitary installations, and water solutions.",
   },
   {
-    title: "Fire Detection",
-    icon: <FaFireExtinguisher />,
+    name: "Fire Detection",
+    img: "/icon/fire.png",
     desc: "Fire detection systems and emergency safety equipment.",
   },
   {
-    title: "Joinery Works",
-    icon: <FaHammer />,
+    name: "Flooring Systems",
+    img: "/icon/floor.png",
+    desc: "High-quality flooring installations for commercial and residential spaces.",
+  },
+  {
+    name: "Joinery Works - partitions",
+    img: "/icon/joint.png",
     desc: "Custom woodwork, partitions, and joinery services.",
   },
   {
-    title: "HVAC Systems",
-    icon: <FaSnowflake />,
+    name: "HVAC",
+    img: "/icon/air-conditioning.png",
     desc: "Heating, ventilation, and air conditioning systems.",
   },
   {
-    title: "Painting Works",
-    icon: <FaPaintRoller />,
+    name: "Painting Works",
+    img: "/icon/paint-roller.png",
     desc: "Interior and exterior painting with premium finishes.",
   },
   {
-    title: "Seating Systems",
-    icon: <FaChair />,
+    name: "Seating Systems",
+    img: "/icon/car-seat.png",
     desc: "Ergonomic and auditorium seating solutions.",
   },
   {
-    title: "Civil Works",
-    icon: <FaHardHat />,
+    name: "Modular Furniture",
+    img: "/icon/nightstand.png",
+    desc: "Modern modular furniture design and installation.",
+  },
+  {
+    name: "Civil Works",
+    img: "/icon/civil.png",
     desc: "Civil construction, modifications, and renovations.",
   },
   {
-    title: "Laboratory Setup",
-    icon: <FaFlask />,
+    name: "Labs",
+    img: "/icon/microscope.png",
     desc: "Laboratory installations and scientific workspace setup.",
   },
   {
-    title: "Access Control",
-    icon: <FaKey />,
+    name: "Access control Systems",
+    img: "/icon/money-transfer.png",
     desc: "Access systems, biometric security, and management.",
   },
   {
-    title: "Electrical Works",
-    icon: <FaBolt />,
+    name: "False Ceiling",
+    img: "/icon/ceiling.png",
+    desc: "False ceiling design and installation services.",
+  },
+  {
+    name: "Electrical Works",
+    img: "/icon/electric-panel.png",
     desc: "Electrical wiring, lighting, and power distribution.",
   },
 ];
 
-const lgYellowIndices = [1, 3, 4, 6, 9, 11, 12, 14]; // 0-based indices for yellow (sky) on large screens
+const lgYellowIndices = [1, 3, 4, 6, 9, 11, 12, 14];
 
 export default function CompleteRangeOfServices() {
   return (
@@ -104,9 +103,9 @@ export default function CompleteRangeOfServices() {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl mb-4">
           Complete Range of{" "}
-          <span className="text-yellow-600">Professional Services</span>
+          <span className="text-yellow-600">General Contracting</span>
         </h2>
-        <p className="ext-grayt-600 text-lg">
+        <p className="text-gray-600 text-lg">
           From concept to completion, we deliver excellence across all
           construction and interior domains.
         </p>
@@ -137,8 +136,14 @@ export default function CompleteRangeOfServices() {
               className={`w-full max-w-[340px] aspect-[1/1] mx-auto px-4 py-6 text-center transition-all duration-300 cursor-pointer flex flex-col justify-center items-center 
               ${smallBg} ${smallHover} ${lgBg} ${lgHover}`}
             >
-              <div className="text-3xl mb-2">{service.icon}</div>
-              <h5 className="text-xl font-semibold mb-1">{service.title}</h5>
+              <Image
+                src={service.img}
+                alt={service.name}
+                width={48}
+                height={48}
+                className="mb-3"
+              />
+              <h5 className="text-xl font-semibold mb-1">{service.name}</h5>
               <p className="text-base leading-relaxed">{service.desc}</p>
             </div>
           );

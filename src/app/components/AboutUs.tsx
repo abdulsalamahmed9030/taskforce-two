@@ -75,7 +75,8 @@ export default function AboutUs() {
                   3. State-of-the-Art Manufacturing
                 </h3>
                 <p className="text-gray-700 leading-relaxed md:text-justify">
-                  Our <strong>2-acre manufacturing facility in Hyderabad</strong>{" "}
+                  Our{" "}
+                  <strong>2-acre manufacturing facility in Hyderabad</strong>{" "}
                   produces world-class modular furniture, laminates, and
                   plywood. This in-house capability guarantees superior quality,
                   consistency, and faster project delivery while keeping costs
@@ -92,9 +93,8 @@ export default function AboutUs() {
                   With a proven footprint of{" "}
                   <strong>over 20 million sq. ft.</strong> of completed projects
                   across India, we bring versatility and expertise to spaces of
-                  every scale. From premium office interiors to
-                  high-performance healthcare environments, our adaptability
-                  sets us apart.
+                  every scale. From premium office interiors to high-performance
+                  healthcare environments, our adaptability sets us apart.
                 </p>
               </div>
 

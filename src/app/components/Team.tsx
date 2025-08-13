@@ -39,7 +39,6 @@ const teamMembers: TeamMember[] = [
   { name: "20", role: "Support Engineer", image: "/team/22.jpg" },
 ];
 
-
 export default function Team() {
   return (
     <section className="py-16 px-8 md:px-40 bg-gray-50">
