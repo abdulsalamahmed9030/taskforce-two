@@ -14,10 +14,10 @@ export default function AboutTwo() {
           className="space-y-6"
         >
           {/* Heading */}
-          <h2 className="text-3xl md:text-5xl text-gray-800">
-            <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">ABOUT</span>
-            <span className="text-black">Task Force Interiors</span>
-          </h2>
+         <h2 className="text-3xl md:text-5xl text-gray-800 text-center">
+  <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">ABOUT</span>
+  <span className="text-black">Task Force Interiors</span>
+</h2>
 
           {/* Introduction */}
           <div className="space-y-2">
@@ -40,7 +40,7 @@ export default function AboutTwo() {
 
           {/* Vision */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c]">
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
@@ -54,7 +54,7 @@ export default function AboutTwo() {
 
           {/* Mission */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c]">
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">

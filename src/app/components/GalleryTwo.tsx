@@ -53,14 +53,13 @@ export default function GalleryTwo() {
           <span className="text-black">Plant</span>
         </h2>
 
-        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify mb-4">
+        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
           Taskforce Interiors is a renowned company led by a team of seasoned
           professionals specializing in civil works, interior decorating, and
           overseeing turnkey projects. With a proven track record in the
           industry, we take pride in our ability to deliver exceptional results
           with unmatched precision and creativity.
         </p>
-
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
           Throughout the years, we have achieved remarkable milestones that
           stand as a testament to our expertise. Our portfolio boasts an array
@@ -85,7 +84,7 @@ export default function GalleryTwo() {
           unwavering commitment to delivering excellence.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto mb-12">
+      <div className="max-full mx-auto mb-12">
         <div className="aspect-video">
           <video
             controls

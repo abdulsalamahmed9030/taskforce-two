@@ -54,28 +54,29 @@ export default function Services() {
           </div>
 
           {/* RIGHT SIDE - Services Grid */}
-          <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <ServiceCard
-              title="False Ceiling"
-              description="Modern false ceiling designs using premium materials."
-              color="yellow"
-            />
-            <ServiceCard
-              title="Flooring Systems"
-              description="Complete flooring installation and finishing."
-              color="sky"
-            />
-            <ServiceCard
-              title="ACP Cladding"
-              description="ACP and glass cladding for stylish exteriors."
-              color="sky"
-            />
-            <ServiceCard
-              title="Modular Furniture"
-              description="Custom modular and MS furniture solutions."
-              color="yellow"
-            />
-          </div>
+         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <ServiceCard
+    title="False Ceiling"
+    description="Modern false ceiling designs using premium materials."
+    color="yellow"
+  />
+  <ServiceCard
+    title="Flooring Systems"
+    description="Complete flooring installation and finishing."
+    color="sky"
+  />
+  <ServiceCard
+    title="Mill Work"
+    description="Precision-crafted mill work for interiors and exteriors."
+    color="sky"
+  />
+  <ServiceCard
+    title="Modular Furniture"
+    description="Custom modular and MS furniture solutions."
+    color="yellow"
+  />
+</div>
+
         </div>
       </div>
     </section>

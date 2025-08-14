@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 import React from "react";
 
 const clients = [
@@ -62,28 +65,34 @@ const clients = [
   { src: "/logos/58.png", alt: "58" },
   { src: "/logos/59.png", alt: "59" },
   { src: "/logos/60.png", alt: "60" },
-  { src: "/logos/61.png", alt: "61" },
-  { src: "/logos/62.png", alt: "62" },
-  { src: "/logos/63.png", alt: "63" },
 ];
+
 const Clients = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 items-center">
           {clients.map((client, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.03,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
               className="w-full aspect-[3/2] flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <Image
                 src={client.src}
                 alt={client.alt}
-                width={450} // bigger width
-                height={300} // 3:2 aspect ratio
-                className="object-contain max-h-44" // bigger max height
+                width={450}
+                height={300}
+                className="object-contain max-h-44"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

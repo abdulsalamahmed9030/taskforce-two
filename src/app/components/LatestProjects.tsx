@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
-  { title: "Hospitals", subtitle: "35+ Projects", image: "/images/hospitals.jpg" },
-  { title: "Office Interiors", subtitle: "Multiple Projects", image: "/images/office.jpg" },
-  { title: "Software Centers", subtitle: "BPOs & IT Hubs", image: "/images/software.jpg" },
-  { title: "Data Centers", subtitle: "Corporate Projects", image: "/images/data.jpg" },
+  { title: "Healthcare", subtitle: "35+ Projects", image: "/images/hospitals.jpg" },
+  { title: "office fit out", subtitle: "Multiple Projects", image: "/images/office.jpg" },
+  { title: "office fit out", subtitle: "BPOs & IT Hubs", image: "/images/software.jpg" },
+  { title: "Hospitality", subtitle: "Corporate Projects", image: "/images/data.jpg" },
   { title: "Showrooms", subtitle: "Premium Spaces", image: "/images/showroom.jpg" },
   { title: "ACP Cladding", subtitle: "Multi-storey Buildings", image: "/images/acp.jpg" },
 ];
@@ -52,7 +52,7 @@ export default function LatestProjects() {
               <div
                 className="absolute inset-0 z-0"
                 style={{
-                  background: "linear-gradient(rgba(255,255,255,0.2) 50%, #bf852b )",
+                  background: "linear-gradient(rgba(255,255,255,0.2) 70%, #bf852b )",
                 }}
               />
               <div className="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -100,16 +101,23 @@ const lgYellowIndices = [1, 3, 4, 6, 9, 11, 12, 14];
 export default function CompleteRangeOfServices() {
   return (
     <section className="px-4 md:px-16 py-12">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl mb-4">
-          Civil and interiors{" "}
-          <span className="text-yellow-600">General Contracting</span>
-        </h2>
-        <p className="text-gray-600 text-lg">
-          From concept to completion, we deliver excellence across all
-          construction and interior domains.
-        </p>
-      </div>
+     
+
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-5xl mb-4">
+      General contacting &{" "}
+      <span className="text-yellow-600">Civil and Interiors</span>
+    </h2>
+    <div className="text-center mb-6">
+    <p className="text-yellow-600 text-lg md:text-3xl font-medium">
+      A PAN India Leader in Workplace and Commercial Fitout: Design-Build | Base Build | General Contract |
+    </p>
+  </div>
+    <p className="text-gray-600 text-lg">
+      From concept to completion, we deliver excellence across all
+      construction and interior domains.
+    </p>
+  </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => {
@@ -131,8 +139,12 @@ export default function CompleteRangeOfServices() {
             : "lg:hover:bg-yellow-600 lg:hover:text-white";
 
           return (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              viewport={{ once: true }}
               className={`w-full max-w-[340px] aspect-[1/1] mx-auto px-4 py-6 text-center transition-all duration-300 cursor-pointer flex flex-col justify-center items-center 
               ${smallBg} ${smallHover} ${lgBg} ${lgHover}`}
             >
@@ -145,7 +157,7 @@ export default function CompleteRangeOfServices() {
               />
               <h5 className="text-xl font-semibold mb-1">{service.name}</h5>
               <p className="text-base leading-relaxed">{service.desc}</p>
-            </div>
+            </motion.div>
           );
         })}
       </div>

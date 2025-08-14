@@ -81,9 +81,6 @@ export default function Gallery() {
                 <span className="bg-yellow-600 text-base px-2 py-1 rounded-sm mb-2 inline-block font-medium">
                   {project.category}
                 </span>
-                <h3 className="text-xl font-semibold leading-snug">
-                  {project.title}
-                </h3>
               </div>
             </div>
           ))}
