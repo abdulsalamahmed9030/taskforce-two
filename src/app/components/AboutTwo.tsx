@@ -21,9 +21,10 @@ export default function AboutTwo() {
 
           {/* Introduction */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
-              Introduction
-            </h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
+  Introduction
+</h3>
+
             <p className="text-gray-700 leading-relaxed md:text-justify">
               <strong>Task Force Interior (P) Ltd.</strong> is led by seasoned
               professionals with extensive expertise in civil engineering and
@@ -40,7 +41,7 @@ export default function AboutTwo() {
 
           {/* Vision */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c]">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
@@ -54,7 +55,7 @@ export default function AboutTwo() {
 
           {/* Mission */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c]">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">

@@ -17,10 +17,11 @@ export default function AboutUs() {
           className="space-y-6"
         >
           {/* Heading */}
-          <h2 className="text-3xl md:text-5xl text-gray-800">
-            <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">WHY</span>
-            <span className="text-black">Choose Us</span>
-          </h2>
+         <h2 className="text-3xl md:text-5xl text-gray-800 text-center">
+  <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">WHY</span>
+  <span className="text-black">Choose Us</span>
+</h2>
+
 
           {/* Intro */}
           <p className="text-gray-700 leading-relaxed text-base md:text-lg md:text-justify">

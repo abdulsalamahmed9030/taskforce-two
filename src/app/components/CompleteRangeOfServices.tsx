@@ -110,7 +110,7 @@ export default function CompleteRangeOfServices() {
     </h2>
     <div className="text-center mb-6">
     <p className="text-yellow-600 text-lg md:text-3xl font-medium">
-      A PAN India Leader in Workplace and Commercial Fitout: Design-Build | Base Build | General Contract |
+      A PAN India Leader in Commercial and Workplace Fitout: Design-Build | Base Build | General Contract |
     </p>
   </div>
     <p className="text-gray-600 text-lg">
