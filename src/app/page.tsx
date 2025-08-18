@@ -11,10 +11,10 @@ import Services from "./components/Services";
 export default function Home() {
   return (
     <>
-    <Preloader />
+      <Preloader />
       <Hero />
       <AboutOurOrganization />
-<AboutUs />
+      <AboutUs />
       <LatestProjects />
       <Services />
       <OurTeam />
