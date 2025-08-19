@@ -11,22 +11,22 @@ const projects = [
   },
   {
     title: "Premium Office Interiors",
-    category: "Corporate",
+    category: "Hospitality",
     image: "/gallery/gallery2.png",
   },
   {
     title: "Data Center Solutions",
-    category: "Technology",
+    category: "Corporate IT",
     image: "/gallery/gallery3.png",
   },
   {
     title: "Atrium & Cladding Work",
-    category: "Architecture",
+    category: "Commercial",
     image: "/gallery/gallery4.png",
   },
   {
     title: "Showroom Design",
-    category: "Retail",
+    category: "Residential",
     image: "/gallery/gallery5.png",
   },
   {
