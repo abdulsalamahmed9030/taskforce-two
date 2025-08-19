@@ -82,7 +82,7 @@ export default function Team() {
                          group-hover:scale-110 grayscale group-hover:grayscale-0"
             />
             {/* Overlay on Hover */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center space-x-3">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center space-x-3">
               {member.socials?.facebook && (
                 <Link
                   href={member.socials.facebook}

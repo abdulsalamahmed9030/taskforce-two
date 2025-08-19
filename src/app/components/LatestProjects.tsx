@@ -9,7 +9,7 @@ const projects = [
   { title: "office fit out", subtitle: "Multiple Projects", image: "/images/office.jpg" },
   { title: "office fit out", subtitle: "BPOs & IT Hubs", image: "/images/software.jpg" },
   { title: "Hospitality", subtitle: "Corporate Projects", image: "/images/data.jpg" },
-  { title: "Showrooms", subtitle: "Premium Spaces", image: "/images/showroom.jpg" },
+  { title: "Showrooms", subtitle: "Premium Spaces", image: "/images/office1.jpg" },
   { title: "ACP Cladding", subtitle: "Multi-storey Buildings", image: "/images/acp.jpg" },
 ];
 
