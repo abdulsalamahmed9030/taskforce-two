@@ -89,7 +89,7 @@ export default function ProcessManufacturing() {
         <div className="relative w-full">
           <div className="relative w-full" style={{ aspectRatio: "12 / 6" }}>
             <motion.svg
-              viewBox="0 0 1200 750"
+              viewBox="100 100 1200 750"
               preserveAspectRatio="xMidYMid meet"
               className="absolute inset-0 h-full w-full"
               initial="hidden"
@@ -215,7 +215,7 @@ export default function ProcessManufacturing() {
                           width={boxWidth}
                           height={boxHeight}
                           rx={radius}
-                          className="fill-amber-50"
+                          fill="#e6f0ef"
                           stroke="#d97706"
                           strokeWidth={0.8}
                         />
@@ -224,11 +224,11 @@ export default function ProcessManufacturing() {
                           y={s.y + 35 + boxHeight / 2}
                           textAnchor="middle"
                           dominantBaseline="middle"
-                          className="fill-amber-900"
                           style={{
                             fontSize: 14,
                             fontWeight: 600,
                             fontFamily: "ui-sans-serif, system-ui",
+                            fill: "#c28b2c", // ✅ custom text color
                           }}
                         >
                           {s.label}
@@ -246,7 +246,7 @@ export default function ProcessManufacturing() {
                           width={boxWidth}
                           height={boxHeight}
                           rx={radius}
-                          className="fill-amber-50"
+                          fill="#e6f0ef"
                           stroke="#d97706"
                           strokeWidth={0.8}
                         />
@@ -259,11 +259,11 @@ export default function ProcessManufacturing() {
                           y={s.y}
                           textAnchor={anchor}
                           dominantBaseline="middle"
-                          className="fill-amber-900"
                           style={{
                             fontSize: 14,
                             fontWeight: 600,
                             fontFamily: "ui-sans-serif, system-ui",
+                            fill: "#c28b2c", // ✅ custom text color
                           }}
                         >
                           {s.label}
