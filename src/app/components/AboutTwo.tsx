@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import ProcessManufacturing from "./ProcessManufacturing";
 
 export default function AboutTwo() {
   return (
@@ -43,7 +44,7 @@ export default function AboutTwo() {
               commitment to quality, and focus on client satisfaction.
             </p>
           </div>
-
+<ProcessManufacturing />
           {/* Vision */}
           <div className="space-y-2">
             <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
