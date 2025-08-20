@@ -30,26 +30,35 @@ function CustomSelect({
 
   useEffect(() => {
     const onDocClick = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+      if (ref.current && !ref.current.contains(e.target as Node))
+        setOpen(false);
     };
     document.addEventListener("mousedown", onDocClick);
     return () => document.removeEventListener("mousedown", onDocClick);
   }, []);
 
   const onKeyDown = (e: React.KeyboardEvent) => {
-    if (!open && (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ")) {
+    if (
+      !open &&
+      (e.key === "ArrowDown" || e.key === "Enter" || e.key === " ")
+    ) {
       e.preventDefault();
       setOpen(true);
-      setActiveIdx(Math.max(0, options.findIndex(o => o.value === value?.value)));
+      setActiveIdx(
+        Math.max(
+          0,
+          options.findIndex((o) => o.value === value?.value)
+        )
+      );
       return;
     }
     if (!open) return;
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      setActiveIdx(i => (i + 1) % options.length);
+      setActiveIdx((i) => (i + 1) % options.length);
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      setActiveIdx(i => (i - 1 + options.length) % options.length);
+      setActiveIdx((i) => (i - 1 + options.length) % options.length);
     } else if (e.key === "Enter") {
       e.preventDefault();
       const opt = options[activeIdx] ?? options[0];
@@ -64,7 +73,7 @@ function CustomSelect({
     <div className="relative" ref={ref}>
       <button
         type="button"
-        onClick={() => setOpen(o => !o)}
+        onClick={() => setOpen((o) => !o)}
         onKeyDown={onKeyDown}
         aria-haspopup="listbox"
         aria-expanded={open}
@@ -72,7 +81,9 @@ function CustomSelect({
       >
         <span>{value?.label ?? placeholder}</span>
         <svg
-          className={`h-4 w-4 text-gray-500 transition-transform ${open ? "rotate-180" : ""}`}
+          className={`h-4 w-4 text-gray-500 transition-transform ${
+            open ? "rotate-180" : ""
+          }`}
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -97,7 +108,9 @@ function CustomSelect({
                 role="option"
                 aria-selected={selected}
                 className={`cursor-pointer px-4 py-2 ${
-                  active ? "bg-[#c18832] text-white" : "text-gray-700 hover:bg-[#c18832]/10"
+                  active
+                    ? "bg-[#c18832] text-white"
+                    : "text-gray-700 hover:bg-[#c18832]/10"
                 } ${selected ? "font-medium" : ""}`}
                 onMouseEnter={() => setActiveIdx(idx)}
                 onClick={() => {
@@ -108,7 +121,11 @@ function CustomSelect({
                 <div className="flex items-center justify-between">
                   <span>{opt.label}</span>
                   {selected && (
-                    <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M16.704 5.29a1 1 0 010 1.42l-7.406 7.41a1 1 0 01-1.415 0L3.296 9.934a1 1 0 111.415-1.414l3.171 3.17 6.699-6.7a1 1 0 011.423 0z"
@@ -133,17 +150,22 @@ export default function ContactUs() {
     { label: "Join the Team (HR)", value: "hr" },
     { label: "Sub-contractor", value: "subcontractor" },
   ];
-  const [selectedType, setSelectedType] = useState<{ label: string; value: string } | null>(null);
+  const [selectedType, setSelectedType] = useState<{
+    label: string;
+    value: string;
+  } | null>(null);
 
   return (
     <section className="bg-[#eef9f9] py-16 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pt-8">
         {/* Left - Contact Form (unchanged) */}
         <div className="pb-10">
-          <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">Send Us A Message</h2>
+          <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">
+            Send Us A Message
+          </h2>
           <p className="text-center text-gray-600 mb-10">
-            Have a project in mind? We&apos;d love to hear from you. Send us a message and we&apos;ll
-            respond as soon as possible.
+            Have a project in mind? We&apos;d love to hear from you. Send us a
+            message and we&apos;ll respond as soon as possible.
           </p>
 
           <form className="space-y-6">
@@ -184,9 +206,12 @@ export default function ContactUs() {
 
         {/* Right - Partner With Us (uses CustomSelect) */}
         <div className="pb-10">
-          <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">Partner With Us</h2>
+          <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">
+            Partner With Us
+          </h2>
           <p className="text-center text-gray-600 mb-10">
-            Connect as a supplier, apply to join our team, or register as a subcontractor.
+            Connect as a supplier, apply to join our team, or register as a
+            subcontractor.
           </p>
 
           <form className="space-y-6">
@@ -237,7 +262,9 @@ export default function ContactUs() {
 
       {/* Contact Info */}
       <div className="max-w-5xl mx-auto mt-16 bg-white shadow-md rounded-lg p-10">
-        <h3 className="text-3xl md:text-4xl text-[#c18832] mb-8 text-center">Contact Info</h3>
+        <h3 className="text-3xl md:text-4xl text-[#c18832] mb-8 text-center">
+          Contact Info
+        </h3>
 
         <div className="grid sm:grid-cols-2 gap-8 text-gray-700">
           <div className="flex items-start gap-3">
@@ -262,7 +289,10 @@ export default function ContactUs() {
             <FaEnvelope className="text-[#c18832] mt-1" />
             <div>
               <p className="font-medium text-[#c18832]">Email Us</p>
-              <a href="mailto:info@taskforceinteriors.com" className="hover:underline">
+              <a
+                href="mailto:info@taskforceinteriors.com"
+                className="hover:underline"
+              >
                 info@taskforceinteriors.com
               </a>
             </div>

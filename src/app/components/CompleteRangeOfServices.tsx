@@ -101,23 +101,22 @@ const lgYellowIndices = [1, 3, 4, 6, 9, 11, 12, 14];
 export default function CompleteRangeOfServices() {
   return (
     <section className="px-4 md:px-16 py-12">
-     
-
-  <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-5xl mb-4">
-      General contacting &{" "}
-      <span className="text-yellow-600">Civil and Interiors</span>
-    </h2>
-    <div className="text-center mb-6">
-    <p className="text-yellow-600 text-lg md:text-3xl font-medium">
-      A PAN India Leader in Commercial and Workplace Fitout: Design-Build | Base Build | General Contract |
-    </p>
-  </div>
-    <p className="text-gray-600 text-lg">
-      From concept to completion, we deliver excellence across all
-      construction and interior domains.
-    </p>
-  </div>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl mb-4">
+          General contacting &{" "}
+          <span className="text-yellow-600">Civil and Interiors</span>
+        </h2>
+        <div className="text-center mb-6">
+          <p className="text-yellow-600 text-lg md:text-3xl font-medium">
+            A PAN India Leader in Commercial and Workplace Fitout: Design-Build
+            | Base Build | General Contract |
+          </p>
+        </div>
+        <p className="text-gray-600 text-lg">
+          From concept to completion, we deliver excellence across all
+          construction and interior domains.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => {

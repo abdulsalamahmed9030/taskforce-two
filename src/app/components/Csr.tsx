@@ -15,9 +15,7 @@ export default function Csr() {
           className="text-3xl md:text-5xl text-gray-800 mb-6"
         >
           <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">CSR</span>
-          <span className="text-black">
-            Corporate Social Responsibility
-          </span>
+          <span className="text-black">Corporate Social Responsibility</span>
         </motion.h2>
 
         {/* Paragraphs Animation */}

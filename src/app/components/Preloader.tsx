@@ -12,29 +12,29 @@ export default function LuxuryPreloader() {
   // Animation sequence for logo pop
   const animateLogoPop = (isEntering: boolean) => {
     if (!logoRef.current) return;
-    
+
     if (isEntering) {
       // Entrance pop - more exaggerated with larger size
-      logoRef.current.style.transform = 'scale(1.3)';
-      logoRef.current.style.opacity = '0.7';
+      logoRef.current.style.transform = "scale(1.3)";
+      logoRef.current.style.opacity = "0.7";
       setTimeout(() => {
         if (logoRef.current) {
-          logoRef.current.style.transform = 'scale(0.97)';
+          logoRef.current.style.transform = "scale(0.97)";
           setTimeout(() => {
             if (logoRef.current) {
-              logoRef.current.style.transform = 'scale(1)';
-              logoRef.current.style.opacity = '1';
+              logoRef.current.style.transform = "scale(1)";
+              logoRef.current.style.opacity = "1";
             }
           }, 150);
         }
       }, 100);
     } else {
       // Exit pop - matching exaggerated scale
-      logoRef.current.style.transform = 'scale(1.2)';
+      logoRef.current.style.transform = "scale(1.2)";
       setTimeout(() => {
         if (logoRef.current) {
-          logoRef.current.style.transform = 'scale(0.7)';
-          logoRef.current.style.opacity = '0.5';
+          logoRef.current.style.transform = "scale(0.7)";
+          logoRef.current.style.opacity = "0.5";
         }
       }, 100);
     }
@@ -50,8 +50,8 @@ export default function LuxuryPreloader() {
           // Trigger exit animations
           animateLogoPop(false);
           if (containerRef.current) {
-            containerRef.current.style.opacity = '0';
-            containerRef.current.style.transform = 'translateY(10px)';
+            containerRef.current.style.opacity = "0";
+            containerRef.current.style.transform = "translateY(10px)";
           }
           setTimeout(() => setIsVisible(false), 500);
           return 100;
@@ -63,8 +63,8 @@ export default function LuxuryPreloader() {
     // Entrance animations
     setTimeout(() => {
       if (containerRef.current) {
-        containerRef.current.style.opacity = '1';
-        containerRef.current.style.transform = 'translateY(0)';
+        containerRef.current.style.opacity = "1";
+        containerRef.current.style.transform = "translateY(0)";
       }
       animateLogoPop(true);
     }, 50);
@@ -75,31 +75,33 @@ export default function LuxuryPreloader() {
   if (!isVisible) return null;
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="fixed inset-0 z-[9999] bg-[#EDFAFD] flex flex-col items-center justify-center"
       style={{
         opacity: 0,
-        transform: 'translateY(-10px)',
-        transition: 'opacity 400ms ease-out, transform 500ms cubic-bezier(0.22, 1, 0.36, 1)'
+        transform: "translateY(-10px)",
+        transition:
+          "opacity 400ms ease-out, transform 500ms cubic-bezier(0.22, 1, 0.36, 1)",
       }}
     >
       {/* Larger logo for more prominent effect */}
-      <div 
+      <div
         ref={logoRef}
         className="relative w-64 h-64 mb-10" // Increased from w-52 h-52
         style={{
-          transition: 'transform 300ms cubic-bezier(0.68, -0.6, 0.32, 1.8), opacity 200ms ease-out',
-          transform: 'scale(1)',
-          opacity: 1
+          transition:
+            "transform 300ms cubic-bezier(0.68, -0.6, 0.32, 1.8), opacity 200ms ease-out",
+          transform: "scale(1)",
+          opacity: 1,
         }}
       >
         <Image
-          src="/images/taskforce-preloader2.png" 
+          src="/images/taskforce-preloader2.png"
           alt=""
           fill
           className="object-contain"
-          style={{ 
+          style={{
             filter: "sepia(16%) brightness(90%) contrast(120%)",
           }}
         />
@@ -119,7 +121,7 @@ export default function LuxuryPreloader() {
       </div>
 
       {/* Micro-label */}
-      <p 
+      <p
         className="text-[#583A04]/50 text-xs tracking-[0.2em] mt-4 transition-opacity duration-300"
         style={{ opacity: progress < 100 ? 1 : 0 }}
       >

@@ -35,18 +35,16 @@ export default function Hero() {
       {/* Hero Section below header */}
       <section className="relative z-10 flex flex-col md:flex-row items-center justify-center min-h-[90vh] px-4 md:px-14 py-10 ">
         {/* Full-Width Background Image */}
-      <div className="absolute inset-0 -z-10">
-  <Image
-    src={heroImages[currentImage]}
-    alt="Hero background"
-    fill
-    className="object-cover object-center brightness-75"
-    priority
-    sizes="100vw"
-  />
-</div>
-
-
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src={heroImages[currentImage]}
+            alt="Hero background"
+            fill
+            className="object-cover object-center brightness-75"
+            priority
+            sizes="100vw"
+          />
+        </div>
 
         {/* Left Column: Text */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left text-white z-10">

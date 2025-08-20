@@ -5,12 +5,36 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const projects = [
-  { title: "Healthcare", subtitle: "35+ Projects", image: "/images/hospitals.jpg" },
-  { title: "office fit out", subtitle: "Multiple Projects", image: "/images/office.jpg" },
-  { title: "office fit out", subtitle: "BPOs & IT Hubs", image: "/images/software.jpg" },
-  { title: "Hospitality", subtitle: "Corporate Projects", image: "/images/data.jpg" },
-  { title: "Showrooms", subtitle: "Premium Spaces", image: "/images/office1.jpg" },
-  { title: "ACP Cladding", subtitle: "Multi-storey Buildings", image: "/images/acp.jpg" },
+  {
+    title: "Healthcare",
+    subtitle: "35+ Projects",
+    image: "/images/hospitals.jpg",
+  },
+  {
+    title: "office fit out",
+    subtitle: "Multiple Projects",
+    image: "/images/office.jpg",
+  },
+  {
+    title: "office fit out",
+    subtitle: "BPOs & IT Hubs",
+    image: "/images/software.jpg",
+  },
+  {
+    title: "Hospitality",
+    subtitle: "Corporate Projects",
+    image: "/images/data.jpg",
+  },
+  {
+    title: "Showrooms",
+    subtitle: "Premium Spaces",
+    image: "/images/office1.jpg",
+  },
+  {
+    title: "ACP Cladding",
+    subtitle: "Multi-storey Buildings",
+    image: "/images/acp.jpg",
+  },
 ];
 
 export default function LatestProjects() {
@@ -19,7 +43,6 @@ export default function LatestProjects() {
   return (
     <section className="w-full px-4 py-10 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
-        
         {/* Left Section */}
         <div className="bg-[#bf852b] text-white p-10 lg:w-1/3 flex flex-col justify-center items-start space-y-6 min-h-[450px]">
           <h2 className="text-4xl font-light">
@@ -52,7 +75,8 @@ export default function LatestProjects() {
               <div
                 className="absolute inset-0 z-0"
                 style={{
-                  background: "linear-gradient(rgba(255,255,255,0.2) 70%, #bf852b )",
+                  background:
+                    "linear-gradient(rgba(255,255,255,0.2) 70%, #bf852b )",
                 }}
               />
               <div className="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">

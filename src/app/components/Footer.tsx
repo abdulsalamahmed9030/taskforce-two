@@ -26,7 +26,7 @@ export default function Footer() {
           <h4 className="text-black text-2xl font-semibold mb-4">
             Get In Touch
           </h4>
-          <p className="mb-1">📍 #3-5-823, Ground Floor</p>
+          <p className="mb-1">📍 3-5-823, Ground Floor</p>
           <p className="mb-1">Hyderabad Business Center</p>
           <p className="mb-1">Hyderguda Hyderabad - 500029</p>
 
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Popular Link */} 
+        {/* Popular Link */}
         <div>
           <h4 className="text-black text-2xl font-semibold mb-4">
             Popular Links
@@ -108,7 +108,6 @@ export default function Footer() {
             <li>
               ❯ <Link href="/services">Services</Link>
             </li>
-           
           </ul>
         </div>
 
@@ -119,7 +118,7 @@ export default function Footer() {
             <li>
               ❯{" "}
               <Link href="/ourequipments" className="hover:text-yellow-700">
-               Manufacturing Plant
+                Manufacturing Plant
               </Link>
             </li>
             <li>
@@ -146,7 +145,6 @@ export default function Footer() {
                 CSR
               </Link>
             </li>
-            
           </ul>
         </div>
       </div>
