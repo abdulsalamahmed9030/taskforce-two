@@ -89,7 +89,7 @@ export default function ProcessManufacturing() {
         <div className="relative w-full">
           <div className="relative w-full" style={{ aspectRatio: "12 / 6" }}>
             <motion.svg
-              viewBox="0 0 1200 600"
+              viewBox="0 0 1200 750"
               preserveAspectRatio="xMidYMid meet"
               className="absolute inset-0 h-full w-full"
               initial="hidden"
@@ -183,71 +183,96 @@ export default function ProcessManufacturing() {
 
               {/* Labels */}
               {STEPS.map((s, i) => {
-  const dx = s.side === 'right' ? 60 : -60;
-  const anchor = s.side === 'right' ? 'start' : 'end';
-  const labelDelay = duration + i * circleStagger + 0.15;
+                const dx = s.side === "right" ? 60 : -60;
+                const anchor = s.side === "right" ? "start" : "end";
+                const labelDelay = duration + i * circleStagger + 0.15;
+                const isBelow = s.id === 3 || s.id === 8;
 
-  // Special case for step 3 & 8 → put label below circle
-  const isBelow = s.id === 3 || s.id === 8;
+                // Dynamically adjust width
+                const paddingX = 16;
+                const approxCharWidth = 7; // tweak if your font is wider
+                const boxWidth =
+                  s.label.length * approxCharWidth + paddingX * 2;
+                const boxHeight = 36;
+                const radius = 6;
 
-  return (
-    <motion.g
-      key={`label-${s.id}`}
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: labelDelay, duration: 0.4, ease: 'easeOut' }}
-    >
-      {isBelow ? (
-        <>
-          {/* Background box below the circle */}
-          <rect
-            x={s.x - 110} // center rect under circle
-            y={s.y + 35}
-            width={220}
-            height={34}
-            rx={6}
-            className="fill-amber-50"
-            stroke="#d97706"
-            strokeWidth={0.8}
-          />
-          <text
-            x={s.x}
-            y={s.y + 57} // aligned vertically inside box
-            textAnchor="middle"
-            className="fill-amber-900"
-            style={{ fontSize: 14, fontWeight: 600, fontFamily: 'ui-sans-serif, system-ui' }}
-          >
-            {s.label}
-          </text>
-        </>
-      ) : (
-        <>
-          {/* Default left/right labels */}
-          <rect
-            x={s.x + dx - (s.side === 'right' ? 0 : 220)}
-            y={s.y - 20}
-            width={220}
-            height={34}
-            rx={6}
-            className="fill-amber-50"
-            stroke="#d97706"
-            strokeWidth={0.8}
-          />
-          <text
-            x={s.x + dx}
-            y={s.y + 5}
-            textAnchor={anchor}
-            className="fill-amber-900"
-            style={{ fontSize: 14, fontWeight: 600, fontFamily: 'ui-sans-serif, system-ui' }}
-          >
-            {s.label}
-          </text>
-        </>
-      )}
-    </motion.g>
-  );
-})}
-
+                return (
+                  <motion.g
+                    key={`label-${s.id}`}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: labelDelay,
+                      duration: 0.4,
+                      ease: "easeOut",
+                    }}
+                  >
+                    {isBelow ? (
+                      <>
+                        <rect
+                          x={s.x - boxWidth / 2}
+                          y={s.y + 35}
+                          width={boxWidth}
+                          height={boxHeight}
+                          rx={radius}
+                          className="fill-amber-50"
+                          stroke="#d97706"
+                          strokeWidth={0.8}
+                        />
+                        <text
+                          x={s.x}
+                          y={s.y + 35 + boxHeight / 2}
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          className="fill-amber-900"
+                          style={{
+                            fontSize: 14,
+                            fontWeight: 600,
+                            fontFamily: "ui-sans-serif, system-ui",
+                          }}
+                        >
+                          {s.label}
+                        </text>
+                      </>
+                    ) : (
+                      <>
+                        <rect
+                          x={
+                            s.side === "right"
+                              ? s.x + dx // box starts right of circle
+                              : s.x + dx - boxWidth // box ends left of circle
+                          }
+                          y={s.y - boxHeight / 2}
+                          width={boxWidth}
+                          height={boxHeight}
+                          rx={radius}
+                          className="fill-amber-50"
+                          stroke="#d97706"
+                          strokeWidth={0.8}
+                        />
+                        <text
+                          x={
+                            s.side === "right"
+                              ? s.x + dx + paddingX
+                              : s.x + dx - paddingX
+                          }
+                          y={s.y}
+                          textAnchor={anchor}
+                          dominantBaseline="middle"
+                          className="fill-amber-900"
+                          style={{
+                            fontSize: 14,
+                            fontWeight: 600,
+                            fontFamily: "ui-sans-serif, system-ui",
+                          }}
+                        >
+                          {s.label}
+                        </text>
+                      </>
+                    )}
+                  </motion.g>
+                );
+              })}
             </motion.svg>
           </div>
         </div>
