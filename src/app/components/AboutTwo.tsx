@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import ProcessManufacturing from "./ProcessManufacturing";
+import { Eye, Target } from "lucide-react"; // 👈 icons for Vision & Mission
 
 export default function AboutTwo() {
   return (
@@ -44,10 +45,13 @@ export default function AboutTwo() {
               commitment to quality, and focus on client satisfaction.
             </p>
           </div>
-<ProcessManufacturing />
+
+          <ProcessManufacturing />
+
           {/* Vision */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+            <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
+              <Eye className="w-6 h-6 text-[#c28b2c]" />
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
@@ -63,7 +67,8 @@ export default function AboutTwo() {
 
           {/* Mission */}
           <div className="space-y-2">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+            <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
+              <Target className="w-6 h-6 text-[#c28b2c]" />
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed md:text-justify">
