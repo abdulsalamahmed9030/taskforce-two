@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import AboutTwo from '../components/AboutTwo'
-import ProcessManufacturing from '../components/ProcessManufacturing'
 
 const page = () => {
   return (
@@ -11,7 +10,7 @@ const page = () => {
   <Header />
 </div>
     <AboutTwo />
-    <ProcessManufacturing />
+   
       <Footer />
     </>
   )
