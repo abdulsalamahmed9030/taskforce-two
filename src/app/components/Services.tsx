@@ -1,6 +1,6 @@
 "use client";
 
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import clsx from "clsx";
 
 export default function Services() {
@@ -36,21 +36,21 @@ export default function Services() {
 
             {/* Phone Box */}
             <a
-              href="tel:04023240629"
-              className="flex w-full max-w-md rounded overflow-hidden shadow-sm cursor-pointer"
-            >
-              <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
-                <FaPhoneAlt className="text-2xl" />
-              </div>
-              <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
-                <span className="text-xl font-semibold text-black">
-                  040-23240629
-                </span>
-                <span className="text-sm text-gray-700 mt-1">
-                  Call us for turnkey interior fit-out solutions
-                </span>
-              </div>
-            </a>
+  href="mailto:info@taskforceinteriors.com"
+  className="flex w-full max-w-md rounded overflow-hidden shadow-sm cursor-pointer mt-4"
+>
+  <div className="bg-[#be892c] text-white p-6 flex items-center justify-center">
+    <FaEnvelope className="text-2xl" />
+  </div>
+  <div className="bg-[#e6f0ef] p-4 flex flex-col justify-center w-full">
+    <span className="text-xl font-semibold text-black">
+      info@taskforceinteriors.com
+    </span>
+    <span className="text-sm text-gray-700 mt-1">
+      Write to us for project inquiries and collaborations
+    </span>
+  </div>
+</a>
           </div>
 
           {/* RIGHT SIDE - Services Grid */}

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import Header from "./Header";
+import Link from "next/link";
 // import { FaBuilding, FaHospital, FaToolbox, FaHandshake } from "react-icons/fa";
 
 const heroImages = ["/office1.jpg", "/office2.jpg", "/office3.jpg"];
@@ -47,14 +48,16 @@ export default function Hero() {
         </div>
 
         {/* Left Column: Text */}
-        <div className="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left text-white z-10">
+        <div className="flex-1 flex flex-col justify-center items-center text-center text-white z-10">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[60px] font-light leading-tight drop-shadow font-grotesk">
             We Make Your <span className="text-yellow-500 block">Space</span>
             Better
           </h1>
-          <button className="mt-6 border-[3px] border-white text-white px-10 py-3 hover:bg-white hover:text-yellow-500 transition-all shadow-lg">
-            Taskforce Interiors
-          </button>
+          <Link href="/aboutus">
+            <button className="mt-6 border-[3px] border-white text-white px-10 py-3 hover:bg-white hover:text-yellow-500 transition-all shadow-lg">
+              Taskforce Interiors
+            </button>
+          </Link>
         </div>
       </section>
 

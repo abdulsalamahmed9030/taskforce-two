@@ -11,27 +11,27 @@ const projects = [
     image: "/images/hospitals.jpg",
   },
   {
-    title: "office fit out",
+    title: "Corporate office fit out",
     subtitle: "Multiple Projects",
     image: "/images/office.jpg",
   },
   {
-    title: "office fit out",
+    title: "Government institutions",
     subtitle: "BPOs & IT Hubs",
     image: "/images/software.jpg",
   },
   {
-    title: "Hospitality",
+    title: "University fit out",
     subtitle: "Corporate Projects",
     image: "/images/data.jpg",
   },
   {
-    title: "Showrooms",
+    title: "Hospitality",
     subtitle: "Premium Spaces",
     image: "/images/office1.jpg",
   },
   {
-    title: "ACP Cladding",
+    title: "Social lobby",
     subtitle: "Multi-storey Buildings",
     image: "/images/acp.jpg",
   },

@@ -48,41 +48,91 @@ export default function GalleryTwo() {
       <div className="max-w-6xl mx-auto mb-12 text-center">
         <h2 className="text-3xl md:text-5xl text-gray-800 mb-6">
           <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">
-            Manufacturing
+           Manufacturing Excellence at
           </span>
-          <span className="text-black">Plant</span>
+          <span className="text-black">Task Force Interiors</span>
         </h2>
 
         <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-          Taskforce Interiors is a renowned company led by a team of seasoned
-          professionals specializing in civil works, interior decorating, and
-          overseeing turnkey projects. With a proven track record in the
-          industry, we take pride in our ability to deliver exceptional results
-          with unmatched precision and creativity.
+         At <strong> [Task Force Interiors]</strong>, our in-house manufacturing capability is the backbone of our turnkey delivery model. By operating fully integrated facilities, we ensure <strong> complete control over quality, timelines, and costs,</strong> giving our clients a seamless experience from design to execution.
         </p>
-        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-          Throughout the years, we have achieved remarkable milestones that
-          stand as a testament to our expertise. Our portfolio boasts an array
-          of successful projects, ranging from opulent interior decoration of
-          high-end offices and showrooms to the design and outfitting of
-          cutting-edge software centers, BPO facilities, and data centers. Our
-          proficiency extends to architectural feats such as the fabrication of
-          atriums and the application of ACP cladding and glass cladding for
-          multi-storey buildings across Hyderabad and other metropolitan areas.
-          Our esteemed clientele includes multinational corporations and
-          prominent corporate entities, attesting to the trust they place in us
-          for translating their visions into reality.
-        </p>
-        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-          One of our standout achievements lies in the healthcare sector, where
-          we have played a pivotal role in transforming over thirty-eight
-          hospitals&apos; interiors throughout India. Our understanding of the
-          unique demands of healthcare spaces, combined with our commitment to
-          creating functional yet aesthetically pleasing environments, has
-          resulted in spaces that foster healing and comfort. Our dedicated
-          approach to each project, regardless of its scale, reflects our
-          unwavering commitment to delivering excellence.
-        </p>
+       <div className="space-y-2">
+  <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+    Our Facilities &amp; Capabilities
+  </h3>
+
+  <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
+    <li>
+      <strong>Modular Furniture Production –</strong> Precision-built
+      workstations, partitions, storage solutions, and customized furniture
+      tailored to modern corporate, healthcare, and hospitality environments.
+    </li>
+    <li>
+      <strong>Plywood &amp; Laminates Unit –</strong> In-house production of
+      plywood, laminates, and allied finishes, ensuring consistency, durability,
+      and superior finishing across projects.
+    </li>
+    <li>
+      <strong>Advanced Machinery –</strong> CNC cutting, edge-banding, press
+      machines, and automated finishing lines to achieve scale, accuracy, and
+      efficiency.
+    </li>
+    <li>
+      <strong>Custom Solutions –</strong> Ability to design and manufacture
+      bespoke elements that align with project-specific aesthetics and
+      functionality.
+    </li>
+  </ul>
+</div>
+<div className="space-y-6">
+  {/* Our People */}
+  <div className="space-y-2">
+    <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+      Our People
+    </h3>
+    <p className="text-gray-700 leading-relaxed md:text-justify">
+      Over <strong>500+ skilled professionals</strong> across carpentry,
+      finishing, and allied trades bring craftsmanship and expertise into
+      every piece produced. Their skill, combined with modern technology,
+      allows us to deliver both volume-driven orders and high-end customized
+      requirements with equal excellence.
+    </p>
+  </div>
+
+  {/* In-House Manufacturing Advantage */}
+  <div className="space-y-2">
+    <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+      The Advantage of In-House Manufacturing
+    </h3>
+
+    <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
+      <li>
+        <strong>Consistency in Quality –</strong> Uniform standards across
+        projects
+      </li>
+      <li>
+        <strong>Time Efficiency –</strong> Reduced dependency on external
+        vendors ensures faster turnaround
+      </li>
+      <li>
+        <strong>Cost Control –</strong> Optimized procurement and production
+        processes
+      </li>
+      <li>
+        <strong>Flexibility –</strong> Agile to meet unique project
+        specifications and timelines
+      </li>
+    </ul>
+
+    <p className="text-gray-700 leading-relaxed md:text-justify">
+      AtTask Force Interiors, manufacturing is not just a
+      support function — it is a  <strong>strategic advantage </strong> that empowers us to
+      deliver projects with <strong> speed, precision, and unmatched value.</strong>
+    </p>
+  </div>
+</div>
+
+
       </div>
       <div className="max-full mx-auto mb-12">
         <div className="aspect-video">

@@ -28,26 +28,64 @@ export default function AboutTwo() {
             </h3>
 
             <p className="text-gray-700 leading-relaxed md:text-justify">
-              <strong>Task Force Interior (P) Ltd.</strong> Task Force Interior
-              (P) Ltd. is a trusted name in the field of civil engineering and
-              interior design, managed by a team of highly experienced
-              professionals. We specialize in handling turnkey projects with
-              complete efficiency and dedication.
-              <br />
-              Over the years, we have successfully executed a wide range of
-              prestigious projects including modern offices, showrooms, software
-              development centers, BPOs, and data centers. Our expertise also
-              extends to creating atriums, ACP and glass cladding for
-              multi-storey buildings in Hyderabad as well as other major cities
-              across the country. <br />
-              With more than 38 hospital interiors completed across India, we
-              have consistently delivered projects that reflect our versatility,
-              commitment to quality, and focus on client satisfaction.
+              <strong>Task Force Interior (P) Ltd.</strong> is a leading name in
+              the interior fit-out industry, delivering turnkey solutions with
+              precision, speed, and reliability. With a strong foundation built
+              on expertise and innovation, we specialize in executing
+              large-scale Healthcare,corporate, retail and hospitality projects
+              across India.
             </p>
           </div>
+          {/* Strengths at a Glance */}
+          <div className="space-y-2">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
+              Our Strengths at a Glance
+            </h3>
 
-          <ProcessManufacturing />
+            <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
+              <li>
+                30+ years of industry experience in delivering end-to-end
+                fit-out solutions
+              </li>
+              <li>
+                500+ in-house skilled professionals across carpentry, MEP,
+                civil, and finishing works
+              </li>
+              <li>
+                Fully integrated factory with in-house manufacturing of modular
+                furniture, plywood, and laminates
+              </li>
+              <li>
+                Proven track record of on-time delivery with uncompromised
+                quality and safety standards
+              </li>
+              <li>
+                Long-standing partnerships with top architects, developers, and
+                PMC
+              </li>
+            </ul>
+          </div>
 
+         
+          <div className="space-y-2">
+            <p className="text-gray-700 leading-relaxed md:text-justify">
+              With <strong> vertical integration </strong> at the core of our
+              operations, we maintain complete control over quality, timelines,
+              and costs. This unique model allows us to deliver projects
+              efficiently, ensuring maximum value for our clients.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-gray-700 leading-relaxed md:text-justify">
+              At , <strong>[Task Force Interiors]</strong> we stand for <strong>quality, transparency, and long-term relationships. </strong>Our focus remains on creating functional, sustainable, and aesthetically superior spaces that exceed expectations.
+
+            </p>
+            <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl font-semibold text-[#c28b2c]">
+              
+              &quot;Your Partner in End-to-End Interior Fit-Out.&quot;
+
+            </h3>
+          </div>
           {/* Vision */}
           <div className="space-y-2">
             <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
@@ -84,6 +122,7 @@ export default function AboutTwo() {
               our expertise, dedication, and commitment to excellence.
             </p>
           </div>
+           <ProcessManufacturing />
         </motion.div>
       </div>
     </section>
