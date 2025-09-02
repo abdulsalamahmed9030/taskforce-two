@@ -7,18 +7,18 @@ export interface Project {
 }
 
 const projects = [
-  {
-    name: "MARKFED-GUNTUR",
-    cover: "/projects/markfed-cover.jpg",
-    images: [
-      "/projects/markfed-1.jpg",
-      "/projects/markfed-2.jpg",
-      "/projects/markfed-3.jpg",
-      "/projects/markfed-4.jpg",
-      "/projects/markfed-5.jpg",
-      "/projects/markfed-6.jpg",
-    ],
-  },
+  // {
+  //   name: "MARKFED-GUNTUR",
+  //   cover: "/projects/markfed-cover.jpg",
+  //   images: [
+  //     "/projects/markfed-1.jpg",
+  //     "/projects/markfed-2.jpg",
+  //     "/projects/markfed-3.jpg",
+  //     "/projects/markfed-4.jpg",
+  //     "/projects/markfed-5.jpg",
+  //     "/projects/markfed-6.jpg",
+  //   ],
+  // },
   {
     name: "Idea Corp",
     cover: "/projects/ideacorp-8.jpg",
