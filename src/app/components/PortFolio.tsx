@@ -27,12 +27,6 @@ export default function PortFolio() {
   }, [lightboxIndex, currentImages]);
 
   useEffect(() => {
-    if (projects.length > 0 && !selectedProject) {
-      setSelectedProject(projects[0].name);
-    }
-  }, [selectedProject]);
-
-  useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (lightboxIndex === null) return;
       if (e.key === "ArrowLeft") prevImage();
