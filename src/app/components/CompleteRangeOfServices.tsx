@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 
 const services = [
   {
+    name: "Modular Furniture",
+    img: "/icon/nightstand.png",
+    desc: "Modern modular furniture design and installation.",
+  },
+  {
+    name: "Civil Works",
+    img: "/icon/civil.png",
+    desc: "Civil construction, modifications, and renovations.",
+  },
+  {
     name: "Building MGMT Systems",
     img: "/icon/skyline.png",
     desc: "Comprehensive building management and automation systems.",
@@ -64,16 +74,7 @@ const services = [
     img: "/icon/car-seat.png",
     desc: "Ergonomic and auditorium seating solutions.",
   },
-  {
-    name: "Modular Furniture",
-    img: "/icon/nightstand.png",
-    desc: "Modern modular furniture design and installation.",
-  },
-  {
-    name: "Civil Works",
-    img: "/icon/civil.png",
-    desc: "Civil construction, modifications, and renovations.",
-  },
+
   {
     name: "Labs",
     img: "/icon/microscope.png",
@@ -102,10 +103,10 @@ export default function CompleteRangeOfServices() {
   return (
     <section className="px-4 md:px-16 py-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl mb-4">
+        {/* <h2 className="text-3xl md:text-5xl mb-4">
           General contacting &{" "}
           <span className="text-yellow-600">Civil and Interiors</span>
-        </h2>
+        </h2> */}
         <div className="text-center mb-6">
           <p className="text-yellow-600 text-lg md:text-3xl font-medium">
             A PAN India Leader in Commercial and Workplace Fitout: Design-Build

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import ProcessManufacturing from "./ProcessManufacturing";
 
 const products = [
   {
@@ -129,6 +130,7 @@ export default function GalleryTwo() {
       support function — it is a  <strong>strategic advantage </strong> that empowers us to
       deliver projects with <strong> speed, precision, and unmatched value.</strong>
     </p>
+    <ProcessManufacturing />
   </div>
 </div>
 

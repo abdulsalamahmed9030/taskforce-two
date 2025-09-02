@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ProcessManufacturing from "./ProcessManufacturing";
-import { Eye, Target } from "lucide-react"; // 👈 icons for Vision & Mission
+import { Eye, Target, Award } from "lucide-react"; // 👈 Added Award icon for Certifications
+import Image from "next/image";
 
 export default function AboutTwo() {
   return (
@@ -32,16 +32,16 @@ export default function AboutTwo() {
               the interior fit-out industry, delivering turnkey solutions with
               precision, speed, and reliability. With a strong foundation built
               on expertise and innovation, we specialize in executing
-              large-scale Healthcare,corporate, retail and hospitality projects
+              large-scale Healthcare, corporate, retail and hospitality projects
               across India.
             </p>
           </div>
-          {/* Strengths at a Glance */}
+
+          {/* Strengths */}
           <div className="space-y-2">
             <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
               Our Strengths at a Glance
             </h3>
-
             <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
               <li>
                 30+ years of industry experience in delivering end-to-end
@@ -66,7 +66,7 @@ export default function AboutTwo() {
             </ul>
           </div>
 
-         
+          {/* Values */}
           <div className="space-y-2">
             <p className="text-gray-700 leading-relaxed md:text-justify">
               With <strong> vertical integration </strong> at the core of our
@@ -77,15 +77,18 @@ export default function AboutTwo() {
           </div>
           <div className="space-y-2">
             <p className="text-gray-700 leading-relaxed md:text-justify">
-              At , <strong>[Task Force Interiors]</strong> we stand for <strong>quality, transparency, and long-term relationships. </strong>Our focus remains on creating functional, sustainable, and aesthetically superior spaces that exceed expectations.
-
+              At <strong>Task Force Interiors</strong>, we stand for{" "}
+              <strong>
+                quality, transparency, and long-term relationships.
+              </strong>{" "}
+              Our focus remains on creating functional, sustainable, and
+              aesthetically superior spaces that exceed expectations.
             </p>
             <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl font-semibold text-[#c28b2c]">
-              
               &quot;Your Partner in End-to-End Interior Fit-Out.&quot;
-
             </h3>
           </div>
+
           {/* Vision */}
           <div className="space-y-2">
             <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
@@ -122,7 +125,22 @@ export default function AboutTwo() {
               our expertise, dedication, and commitment to excellence.
             </p>
           </div>
-           <ProcessManufacturing />
+
+          {/* Certifications */}
+          <div className="space-y-4 pt-6">
+            <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
+              <Award className="w-6 h-6 text-[#c28b2c]" />
+              Our Certifications
+            </h3>
+            <div className="w-full h-[400px] relative">
+              <Image
+                src="/certificates.png" // 👈 Replace with your certificates image
+                alt="Task Force Interiors Certifications"
+                fill
+                className="rounded-lg object-contain md:object-cover"
+              />
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

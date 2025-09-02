@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaCheck,
@@ -8,10 +9,12 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { SiX } from "react-icons/si"; // ✅ X (Twitter) icon
+import { SiX } from "react-icons/si";
 import Link from "next/link";
 
 export default function AboutOurOrganization() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <section className="w-full px-4 py-12 md:py-20 bg-white" id="about">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
@@ -59,77 +62,116 @@ export default function AboutOurOrganization() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-            TASK FORCE INTERIOR (P) LTD. is a team of seasoned professionals in
-            civil engineering, interior design, and turnkey project management.
-            With a passion for innovation and precision, we specialize in
-            developing floor plans that not only maximize functionality and flow
-            but also transform spaces into inspiring environments.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-            Over the years, we have successfully delivered premium office
-            spaces, corporate headquarters, retail showrooms, healthcare
-            facilities, and commercial establishments. Our expertise also
-            extends to designing striking atriums and executing precision ACP
-            and glass cladding for multi-storey buildings across Hyderabad and
-            other major cities in India.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-            Our commitment is to create aesthetically refined, future-ready, and
-            highly functional spaces that exceed client expectations.
+            <span className="font-semibold">Task Force Interiors</span> is a leading name in the
+            <span className="font-semibold"> interior fit-out industry</span>, delivering turnkey
+            solutions with precision, speed, and reliability. With a strong foundation built on
+            expertise and innovation, we specialize in executing large-scale{" "}
+            <span className="font-semibold">healthcare, corporate, retail,</span> and
+            <span className="font-semibold"> hospitality</span> projects across India.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 text-sm font-medium text-gray-800 font-open-sans">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+            Our Strengths at a Glance:
+          </h3>
+
+          {/* First 3 bullets (always visible) */}
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm md:text-base text-gray-800 font-open-sans">
             {[
-              "80+ Hospital & Healthcare Projects",
-              "Highly Experienced Engineers & Designers",
-              "Trusted by Multinational Clients",
-              " Complete End-to-End Interior & Civil Solutions",
+              "30+ years of industry experience in delivering end-to-end fit-out solutions",
+              "500+ in-house skilled professionals across carpentry, MEP, civil, and finishing works",
+              "Fully integrated factory with in-house manufacturing of modular furniture, plywood, and laminates",
+              "Proven track record of on-time delivery with uncompromised quality and safety standards",
             ].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <FaCheck className="text-[#c28b2c]" />
-                {item}
-              </div>
+              <li key={idx} className="flex items-start gap-2">
+                <FaCheck className="mt-1 shrink-0 text-[#c28b2c]" />
+                <span>{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          {/* Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-4">
-            {/* Read More button */}
-            <Link
-              href="/aboutus"
-              className="px-6 h-10 flex items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition"
+          {/* Read More / Read Less toggle */}
+          <div className="relative">
+            <div
+              className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+                expanded ? "max-h-[1500px]" : "max-h-0"
+              }`}
+              aria-hidden={!expanded}
             >
-              Read More
-            </Link>
+              {/* Hidden content starts here */}
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm md:text-base text-gray-800 font-open-sans mt-3">
+                <li className="flex items-start gap-2">
+                  <FaCheck className="mt-1 shrink-0 text-[#c28b2c]" />
+                  <span>
+                    Long-standing partnerships with top architects, developers, and PMC
+                  </span>
+                </li>
+              </ul>
 
-            {/* Social Icons */}
-            <div className="flex gap-3">
-              {[
-                {
-                  icon: FaFacebookF,
-                  url: "https://www.facebook.com/p/Taskforce-Interiors-61574866478910/",
-                },
-                { icon: SiX, url: "https://twitter.com/" },
-                {
-                  icon: FaInstagram,
-                  url: "https://www.instagram.com/taskforceinteriors17/?hl=en",
-                },
-                {
-                  icon: FaLinkedinIn,
-                  url: "https://www.linkedin.com/company/taskforceinteriors/",
-                },
-              ].map(({ icon: Icon, url }, idx) => (
-                <a
-                  key={idx}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 border border-[#c28b2c] text-[#c28b2c] flex items-center justify-center text-base hover:bg-[#c28b2c] hover:text-white transition"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <div className="space-y-4 pt-4">
+                <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
+                  With <span className="font-semibold">vertical integration</span> at the core of our
+                  operations, we maintain complete control over quality, timelines, and costs. This
+                  unique model allows us to deliver projects efficiently, ensuring maximum value for
+                  our clients.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
+                  At <span className="font-semibold">Task Force Interiors</span>, we stand for
+                  <span className="font-semibold"> quality, transparency,</span> and
+                  <span className="font-semibold"> long-term relationships</span>. Our focus remains
+                  on creating functional, sustainable, and aesthetically superior spaces that exceed
+                  expectations.
+                </p>
+
+                {/* Optional CTA */}
+                <div className="pt-2">
+                  <Link
+                    href="/aboutus"
+                    className="inline-flex px-6 h-10 items-center justify-center bg-[#c28b2c] text-white text-lg font-grotesk hover:bg-[#a97c20] transition"
+                  >
+                    Visit Full About Page
+                  </Link>
+                </div>
+
+                {/* Socials */}
+                <div className="flex gap-3 pt-4">
+                  {[
+                    {
+                      icon: FaFacebookF,
+                      url: "https://www.facebook.com/p/Taskforce-Interiors-61574866478910/",
+                    },
+                    { icon: SiX, url: "https://twitter.com/" },
+                    {
+                      icon: FaInstagram,
+                      url: "https://www.instagram.com/taskforceinteriors17/?hl=en",
+                    },
+                    {
+                      icon: FaLinkedinIn,
+                      url: "https://www.linkedin.com/company/taskforceinteriors/",
+                    },
+                  ].map(({ icon: Icon, url }, idx) => (
+                    <a
+                      key={idx}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 border border-[#c28b2c] text-[#c28b2c] flex items-center justify-center text-base hover:bg-[#c28b2c] hover:text-white transition"
+                      aria-label="Social link"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            <button
+              onClick={() => setExpanded((v) => !v)}
+              aria-expanded={expanded}
+              className="mt-3 inline-flex items-center gap-2 text-[#c28b2c] font-semibold hover:underline"
+            >
+              {expanded ? "Read Less" : "Read More"}
+            </button>
           </div>
         </motion.div>
       </div>
