@@ -58,13 +58,13 @@ export default function PortFolio() {
                 fill
                 className="object-cover rounded"
               />
-              <div className="absolute bottom-0 w-full bg-black bg-opacity-80 text-white text-sm font-bold text-center py-1">
+              <div className="absolute bottom-0 w-full bg-yellow-600 bg-opacity-80 text-white text-sm font-bold text-center py-1">
                 {project.name}
               </div>
             </div>
           </div>
         ))}
-      </div>
+      </div> 
 
       {/* Display Images of Selected Project */}
       {selectedProject && (
@@ -82,7 +82,7 @@ export default function PortFolio() {
                   fill
                   className="object-cover rounded"
                 />
-                <div className="absolute bottom-0 w-full bg-black bg-opacity-80 text-white text-xs text-center py-1">
+                <div className="absolute bottom-0 w-full bg-yellow-600 bg-opacity-80 text-white text-xs text-center py-1">
                   {selectedProject}
                 </div>
               </div>
