@@ -111,7 +111,7 @@ export default function Certificates() {
               key={`${src}-${i}`}
               className={clsx(
                 "p-3 shrink-0",
-                // responsive widths: 1 / 2 / 3 per row
+               
                 "w-full md:w-1/2 lg:w-1/3"
               )}
             >

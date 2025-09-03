@@ -23,7 +23,6 @@ const projects = [
     name: "Idea Corp",
     cover: "/projects/ideacorp-8.jpg",
     images: [
-      
       "/projects/ideacorp-6.jpg",
       "/projects/ideacorp-7.jpg",
       "/projects/ideacorp-8.jpg",
@@ -53,22 +52,19 @@ const projects = [
     name: " MALLAREDDY-HOSPITAL",
     cover: "/projects/mallareddy1.jpg",
     images: [
-     
       "/projects/mallareddy1.jpg",
       "/projects/mallareddy3.jpg",
       "/projects/mallareddy4.jpg",
       "/projects/mallareddy5.jpg",
       "/projects/mallareddy6.jpg",
       "/projects/mallareddy7.jpg",
-      "/projects/mallareddy8.jpg",  
-      
+      "/projects/mallareddy8.jpg",
     ],
   },
   {
     name: "AHRAR-HOSPITAL",
     cover: "/projects/ahrar.jpg",
     images: [
-      
       "/projects/ahrar2.jpg",
       "/projects/ahrar3.jpg",
       "/projects/ahrar4.jpg",
@@ -89,7 +85,7 @@ const projects = [
     name: "KARIMNAGAR-IT-PARK",
     cover: "/projects/itpark.jpg",
     images: [
-      "/projects/itpark1.jpg",  
+      "/projects/itpark1.jpg",
       "/projects/itpark3.jpg",
       "/projects/itpark4.jpg",
       "/projects/itpark5.jpg",
@@ -136,7 +132,7 @@ const projects = [
       "/projects/symbiosis5.jpeg",
     ],
   },
-  
+
   {
     name: " TS-TRANSCO",
     cover: "/projects/tstransco.jpeg",
@@ -182,7 +178,7 @@ const projects = [
       "/projects/imax3.jpeg",
     ],
   },
-  
+
   {
     name: "BAJAJ-ALLIANZ",
     cover: "/projects/bajaj.jpeg",
