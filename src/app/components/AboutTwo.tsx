@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Eye, Target, Award } from "lucide-react"; // 👈 Added Award icon for Certifications
 import Image from "next/image";
+import Certificates from "./certificates";
 
 export default function AboutTwo() {
   return (
@@ -135,14 +136,7 @@ export default function AboutTwo() {
               <Award className="w-6 h-6 text-[#c28b2c]" />
               Our Certifications
             </h3>
-            <div className="w-full h-[400px] relative">
-              <Image
-                src="/certificates.png" // 👈 Replace with your certificates image
-                alt="Task Force Interiors Certifications"
-                fill
-                className="rounded-lg object-contain md:object-cover"
-              />
-            </div>
+            <Certificates />
           </div>
         </motion.div>
       </div>

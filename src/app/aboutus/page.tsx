@@ -10,6 +10,7 @@ const page = () => {
   <Header />
 </div>
     <AboutTwo />
+    
    
       <Footer />
     </>

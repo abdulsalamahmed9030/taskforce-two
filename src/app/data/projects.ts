@@ -50,6 +50,33 @@ const projects = [
     ],
   },
   {
+    name: " MALLAREDDY-HOSPITAL",
+    cover: "/projects/mallareddy1.jpg",
+    images: [
+     
+      "/projects/mallareddy1.jpg",
+      "/projects/mallareddy3.jpg",
+      "/projects/mallareddy4.jpg",
+      "/projects/mallareddy5.jpg",
+      "/projects/mallareddy6.jpg",
+      "/projects/mallareddy7.jpg",
+      "/projects/mallareddy8.jpg",  
+      
+    ],
+  },
+  {
+    name: "AHRAR-HOSPITAL",
+    cover: "/projects/ahrar.jpg",
+    images: [
+      
+      "/projects/ahrar2.jpg",
+      "/projects/ahrar3.jpg",
+      "/projects/ahrar4.jpg",
+      "/projects/ahrar5.jpg",
+      "/projects/ahrar6.jpg",
+    ],
+  },
+  {
     name: "GHMC-NORTHZONE",
     cover: "/projects/ghmc.jpg",
     images: [
@@ -90,11 +117,8 @@ const projects = [
     images: [
       "/projects/kingsway1.jpeg",
       "/projects/kingsway2.jpeg",
-      "/projects/kingsway3.jpeg",
-      "/projects/kingsway4.jpeg",
       "/projects/kingsway5.jpeg",
       "/projects/kingsway6.jpeg",
-      "/projects/kingsway7.jpeg",
       "/projects/kingsway8.jpeg",
       "/projects/kingsway9.jpeg",
       "/projects/kingsway10.jpeg",
@@ -112,30 +136,7 @@ const projects = [
       "/projects/symbiosis5.jpeg",
     ],
   },
-  {
-    name: "AHRAR-HOSPITAL",
-    cover: "/projects/ahrar.jpg",
-    images: [
-      "/projects/ahrar1.jpg",
-      "/projects/ahrar2.jpg",
-      "/projects/ahrar3.jpg",
-      "/projects/ahrar4.jpg",
-      "/projects/ahrar5.jpg",
-      "/projects/ahrar6.jpg",
-      "/projects/ahrar7.jpg",
-      "/projects/ahrar8.jpg",
-      "/projects/ahrar9.jpg",
-      "/projects/ahrar10.jpg",
-      "/projects/ahrar12.jpg",
-      "/projects/ahrar13.jpg",
-      "/projects/ahrar14.jpg",
-      "/projects/ahrar15.jpg",
-      "/projects/ahrar16.jpg",
-      "/projects/ahrar17.jpg",
-      "/projects/ahrar18.jpg",
-      "/projects/ahrar19.jpg",
-    ],
-  },
+  
   {
     name: " TS-TRANSCO",
     cover: "/projects/tstransco.jpeg",
@@ -181,18 +182,7 @@ const projects = [
       "/projects/imax3.jpeg",
     ],
   },
-  {
-    name: " MALLAREDDY-HOSPITAL",
-    cover: "/projects/mallareddy.jpeg",
-    images: [
-      "/projects/mallareddy.jpeg",
-      "/projects/mallareddy1.jpeg",
-      "/projects/mallareddy2.jpeg",
-      "/projects/mallareddy3.jpeg",
-      "/projects/mallareddy4.jpeg",
-      "/projects/mallareddy5.jpeg",
-    ],
-  },
+  
   {
     name: "BAJAJ-ALLIANZ",
     cover: "/projects/bajaj.jpeg",
