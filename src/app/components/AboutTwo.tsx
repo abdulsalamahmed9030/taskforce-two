@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Eye, Target, Award } from "lucide-react"; // 👈 Added Award icon for Certifications
 import Image from "next/image";
 import Certificates from "./certificates";
+import MapVideo from "./MapVideo";
 
 export default function AboutTwo() {
   return (
@@ -138,6 +139,9 @@ export default function AboutTwo() {
             </h3>
             <Certificates />
           </div>
+         <div className="max-w-sm w-full mx-auto">
+  <MapVideo />
+</div>
         </motion.div>
       </div>
     </section>

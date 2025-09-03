@@ -20,7 +20,7 @@ const projects = [
   //   ],
   // },
   {
-    name: "Idea Corp",
+    name: "IDEA CORP",
     cover: "/projects/ideacorp-8.jpg",
     images: [
       "/projects/ideacorp-6.jpg",
