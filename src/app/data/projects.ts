@@ -23,17 +23,11 @@ const projects = [
     name: "Idea Corp",
     cover: "/projects/ideacorp-8.jpg",
     images: [
-      "/projects/ideacorp-1.jpg",
-      "/projects/ideacorp-4.jpg",
-      "/projects/ideacorp-5.jpg",
+      
       "/projects/ideacorp-6.jpg",
       "/projects/ideacorp-7.jpg",
       "/projects/ideacorp-8.jpg",
       "/projects/ideacorp-9.jpg",
-      "/projects/ideacorp-14.jpg",
-      "/projects/ideacorp-15.jpg",
-      "/projects/ideacorp-16.jpg",
-      "/projects/ideacorp-17.jpg",
       "/projects/ideacorp-18.jpg",
       "/projects/ideacorp-19.jpg",
       "/projects/ideacorp-20.jpg",
@@ -53,8 +47,6 @@ const projects = [
       "/projects/ideacorp-35.jpg",
       "/projects/ideacorp-36.jpg",
       "/projects/ideacorp-38.jpg",
-      "/projects/ideacorp-39.jpg",
-      "/projects/ideacorp-40.jpg",
     ],
   },
   {
@@ -70,13 +62,11 @@ const projects = [
     name: "KARIMNAGAR-IT-PARK",
     cover: "/projects/itpark.jpg",
     images: [
-      "/projects/itpark1.jpg",
-      "/projects/itpark2.jpg",
+      "/projects/itpark1.jpg",  
       "/projects/itpark3.jpg",
       "/projects/itpark4.jpg",
       "/projects/itpark5.jpg",
       "/projects/itpark6.jpg",
-      "/projects/itpark7.jpg",
     ],
   },
   {

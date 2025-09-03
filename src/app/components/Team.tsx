@@ -17,26 +17,89 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-  { name: "1", role: "Founder & CEO", image: "/team/1.jpg" },
-  { name: "2", role: "Business Analyst", image: "/team/12.jpg" },
-  { name: "3", role: "Chief Marketing Officer", image: "/team/3.jpg" },
-  { name: "wahas", role: "director of projects", image: "/team/4.jpg" },
-  { name: "azmath", role: "director", image: "/team/5.jpg" },
-  { name: "6", role: "Head of Operations", image: "/team/6.jpg" },
-  { name: "Taj", role: "General Mangaer", image: "/team/7.jpg" },
-  { name: "mustafa", role: "manager", image: "/team/8.jpg" },
-  { name: "9", role: "Front-End Developer", image: "/team/9.jpg" },
-  { name: "10", role: "Back-End Developer", image: "/team/10.jpg" },
-  { name: "11", role: "QA Specialist", image: "/team/11.jpg" },
-  { name: "12", role: "Content Strategist", image: "/team/13.jpg" },
-  { name: "13", role: "Digital Marketing Lead", image: "/team/14.jpg" },
-  { name: "samreen", role: "HR", image: "/team/15.jpg" },
-  { name: "15", role: "Mobile App Developer", image: "/team/16.jpg" },
-  { name: "Chandra shekar", role: "finanace manager", image: "/team/17.jpg" },
-  { name: "17", role: "Graphic Designer", image: "/team/18.jpg" },
-  { name: "18", role: "Social Media Manager", image: "/team/19.jpg" },
-  { name: "19", role: "DevOps Engineer", image: "/team/20.jpg" },
-  { name: "20", role: "Support Engineer", image: "/team/22.jpg" },
+  {
+    name: "Farruk Ali Khan",
+    role: "Managing Director",
+    image: "/team/Farruk Ali Khan - Managing Director.jpg",
+  },
+  {
+    name: "Abid Ali Khan",
+    role: "Director",
+    image: "/team/Abid Ali Khan- Director.jpg",
+  },
+  {
+    name: "Kashif Ali Khan",
+    role: "Managing Partner",
+    image: "/team/Kashif Ali Khan - Managing Partner.jpg",
+  },
+  {
+    name: "Abdul Samad Wahas",
+    role: "Director - Projects",
+    image: "/team/Abdul Samad Wahas - Director - Projects.jpg",
+  },
+
+  {
+    name: "ChandraShekar Goteti",
+    role: "Finance Manager",
+    image: "/team/ChandraShekar Goteti - Finance Manager.jpg",
+  },
+
+  {
+    name: "Jayanti Raju",
+    role: "Accounts Manager",
+    image: "/team/Jayanti Raju - Accounts Manager.jpg",
+  },
+
+  {
+    name: "Mohammed Azmath Ullah Khan",
+    role: "Director - Public Relations",
+    image: "/team/Mohammed Azmath Ullah Khan - Director - Public Relations.jpg",
+  },
+  {
+    name: "Mohammed Sameer Uddin",
+    role: "Procurement Manager",
+    image: "/team/Mohammed Sameer Uddin - Procurement Manager.jpg",
+  },
+  {
+    name: "Mustafa Ali",
+    role: "Manager (Contracts & Claims)",
+    image: "/team/Mustafa Ali - Manager (Contracts & Claims).jpg",
+  },
+  {
+    name: "Raju Khammam",
+    role: "Project Manager",
+    image: "/team/Raju Khammam - Project Manager.jpg",
+  },
+  {
+    name: "Samreen Unnisa",
+    role: "HR Generalist",
+    image: "/team/Samreen Unnisa - HR Generalist.jpg",
+  },
+  {
+    name: "Shareef Basha",
+    role: "Accountant",
+    image: "/team/Shareef Basha -  Accountant.jpg",
+  },
+  {
+    name: "Sohail Sharif",
+    role: "Project Coordinator",
+    image: "/team/Sohail Sharif  - Project Coordinator.jpg",
+  },
+  {
+    name: "Taj Uddin",
+    role: "General Manager",
+    image: "/team/Taj Uddin - General Manager.jpg",
+  },
+  {
+    name: "Tameem Zakaria",
+    role: "Associate Director",
+    image: "/team/Tameem Zakaria  - Associate Director.jpg",
+  },
+  {
+    name: "Umar Farooq",
+    role: "Procurement Coordinator",
+    image: "/team/Umar Farooq - Procurement Coordinator.jpg",
+  },
 ];
 
 export default function Team() {
