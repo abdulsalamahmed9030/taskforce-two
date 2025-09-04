@@ -62,12 +62,18 @@ export default function AboutOurOrganization() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-            <span className="font-semibold">Task Force Interiors</span> is a leading name in the
-            <span className="font-semibold"> interior fit-out industry</span>, delivering turnkey
-            solutions with precision, speed, and reliability. With a strong foundation built on
-            expertise and innovation, we specialize in executing large-scale{" "}
-            <span className="font-semibold">healthcare, corporate, retail,</span> and
-            <span className="font-semibold"> hospitality</span> projects across India.
+            <span className="font-semibold">Task Force Interiors</span> is a
+            leading name in the
+            <span className="font-semibold"> interior fit-out industry</span>,
+            delivering turnkey solutions with precision, speed, and reliability.
+            With a strong foundation built on expertise and innovation, we
+            specialize in executing large-scale{" "}
+            <span className="font-semibold">
+              healthcare, corporate, retail,
+            </span>{" "}
+            and
+            <span className="font-semibold"> hospitality</span> projects across
+            India.
           </p>
 
           <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
@@ -102,25 +108,36 @@ export default function AboutOurOrganization() {
                 <li className="flex items-start gap-2">
                   <FaCheck className="mt-1 shrink-0 text-[#c28b2c]" />
                   <span>
-                    Long-standing partnerships with top architects, developers, and PMC
+                    Long-standing partnerships with top architects, developers,
+                    and PMC
                   </span>
                 </li>
               </ul>
 
               <div className="space-y-4 pt-4">
                 <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-                  With <span className="font-semibold">vertical integration</span> at the core of our
-                  operations, we maintain complete control over quality, timelines, and costs. This
-                  unique model allows us to deliver projects efficiently, ensuring maximum value for
-                  our clients.
+                  With{" "}
+                  <span className="font-semibold">vertical integration</span> at
+                  the core of our operations, we maintain complete control over
+                  quality, timelines, and costs. This unique model allows us to
+                  deliver projects efficiently, ensuring maximum value for our
+                  clients.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed text-base font-open-sans md:text-justify">
-                  At <span className="font-semibold">Task Force Interiors</span>, we stand for
-                  <span className="font-semibold"> quality, transparency,</span> and
-                  <span className="font-semibold"> long-term relationships</span>. Our focus remains
-                  on creating functional, sustainable, and aesthetically superior spaces that exceed
-                  expectations.
+                  At <span className="font-semibold">Task Force Interiors</span>
+                  , we stand for
+                  <span className="font-semibold">
+                    {" "}
+                    quality, transparency,
+                  </span>{" "}
+                  and
+                  <span className="font-semibold">
+                    {" "}
+                    long-term relationships
+                  </span>
+                  . Our focus remains on creating functional, sustainable, and
+                  aesthetically superior spaces that exceed expectations.
                 </p>
 
                 {/* Optional CTA */}

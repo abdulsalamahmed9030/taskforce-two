@@ -41,35 +41,43 @@ export default function AboutTwo() {
 
           {/* Strengths */}
           <div className="space-y-2 font-open-sans">
-  <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
-    Our Strengths at a Glance
-  </h3>
-  <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
-    <li>
-      <span className="font-bold text-black">30+ years</span> of industry experience 
-      in delivering end-to-end fit-out solutions
-    </li>
-    <li>
-      <span className="font-bold text-black">500+ skilled professionals</span> across 
-      carpentry, MEP, civil, and finishing works
-    </li>
-    <li>
-      <span className="font-bold text-black">Fully integrated factory</span> with 
-      in-house manufacturing of modular furniture, plywood, and laminates
-    </li>
-    <li>
-      Proven track record of <span className="font-bold text-black">on-time delivery</span> 
-      with uncompromised <span className="font-bold text-black">quality</span> 
-      and <span className="font-bold text-black">safety standards</span>
-    </li>
-    <li>
-      Long-standing partnerships with top <span className="font-bold text-black">architects</span>, 
-      <span className="font-bold text-black">developers</span>, and 
-      <span className="font-bold text-black">PMC</span>
-    </li>
-  </ul>
-</div>
-
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
+              Our Strengths at a Glance
+            </h3>
+            <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
+              <li>
+                <span className="font-bold text-black">30+ years</span> of
+                industry experience in delivering end-to-end fit-out solutions
+              </li>
+              <li>
+                <span className="font-bold text-black">
+                  500+ skilled professionals
+                </span>{" "}
+                across carpentry, MEP, civil, and finishing works
+              </li>
+              <li>
+                <span className="font-bold text-black">
+                  Fully integrated factory
+                </span>{" "}
+                with in-house manufacturing of modular furniture, plywood, and
+                laminates
+              </li>
+              <li>
+                Proven track record of{" "}
+                <span className="font-bold text-black">on-time delivery</span>
+                with uncompromised{" "}
+                <span className="font-bold text-black">quality</span>
+                and{" "}
+                <span className="font-bold text-black">safety standards</span>
+              </li>
+              <li>
+                Long-standing partnerships with top{" "}
+                <span className="font-bold text-black">architects</span>,
+                <span className="font-bold text-black">developers</span>, and
+                <span className="font-bold text-black">PMC</span>
+              </li>
+            </ul>
+          </div>
 
           {/* Values */}
           <div className="space-y-2 font-open-sans">
@@ -132,10 +140,10 @@ export default function AboutTwo() {
           </div>
 
           {/* Certifications */}
-         
-         <div className="max-w-sm w-full mx-auto">
-  <MapVideo />
-</div>
+
+          <div className="max-w-sm w-full mx-auto">
+            <MapVideo />
+          </div>
         </motion.div>
       </div>
     </section>

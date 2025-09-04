@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         {/* Get In Touch */}
-        <div >
+        <div>
           <h4 className="text-black text-2xl font-semibold mb-4">
             Get In Touch
           </h4>
@@ -32,11 +32,17 @@ export default function Footer() {
 
           <p className="mt-3">
             📞{" "}
-            <a href="tel:04023240629" className="hover:underline font-open-sans">
+            <a
+              href="tel:04023240629"
+              className="hover:underline font-open-sans"
+            >
               040-23240629
             </a>{" "}
             /{" "}
-            <a href="tel:04066669067" className="hover:underline font-open-sans">
+            <a
+              href="tel:04066669067"
+              className="hover:underline font-open-sans"
+            >
               040-66669067
             </a>
           </p>

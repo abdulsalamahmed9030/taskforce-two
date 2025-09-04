@@ -156,7 +156,9 @@ export default function CompleteRangeOfServices() {
                 className="mb-3"
               />
               <h5 className="text-xl font-semibold mb-1">{service.name}</h5>
-              <p className="text-base leading-relaxed font-open-sans">{service.desc}</p>
+              <p className="text-base leading-relaxed font-open-sans">
+                {service.desc}
+              </p>
             </motion.div>
           );
         })}

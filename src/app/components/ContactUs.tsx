@@ -279,7 +279,10 @@ export default function ContactUs() {
             <FaPhoneAlt className="text-[#c18832] mt-1" />
             <div>
               <p className="font-medium text-[#c18832]">Call Us</p>
-              <a href="tel:04023240629" className="hover:underline font-open-sans">
+              <a
+                href="tel:04023240629"
+                className="hover:underline font-open-sans"
+              >
                 040-23240629
               </a>
             </div>

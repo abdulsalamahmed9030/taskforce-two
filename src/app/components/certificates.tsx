@@ -71,7 +71,7 @@ export default function Certificates() {
     const high = total * 2 - 1; // last index of the middle block
     if (index < low || index > high) {
       // snap into the middle block without transition
-      const normalized = total + ((index % total) + total) % total;
+      const normalized = total + (((index % total) + total) % total);
       setInstant(true);
       const id = requestAnimationFrame(() => {
         setIndex(normalized);
@@ -100,7 +100,9 @@ export default function Certificates() {
         <div
           className={clsx(
             "flex will-change-transform",
-            instant ? "transition-none" : "transition-transform duration-500 ease-out"
+            instant
+              ? "transition-none"
+              : "transition-transform duration-500 ease-out"
           )}
           style={{
             transform: `translateX(${translate}%)`,
@@ -111,7 +113,7 @@ export default function Certificates() {
               key={`${src}-${i}`}
               className={clsx(
                 "p-3 shrink-0",
-               
+
                 "w-full md:w-1/2 lg:w-1/3"
               )}
             >
@@ -147,7 +149,13 @@ export default function Certificates() {
         >
           {/* left arrow */}
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M15 6l-6 6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path
+              d="M15 6l-6 6 6 6"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
         <button
@@ -158,46 +166,56 @@ export default function Certificates() {
         >
           {/* right arrow */}
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path
+              d="M9 18l6-6-6-6"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
       </div>
 
       {/* Lightbox Modal */}
       {/* Lightbox Modal */}
-{lightboxSrc && (
-  <div
-    className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
-    onClick={() => setLightboxSrc(null)}
-    role="dialog"
-    aria-modal="true"
-  >
-    <button
-      className="absolute top-4 right-4 rounded-full bg-white/90 p-2 shadow ring-1 ring-black/5"
-      onClick={() => setLightboxSrc(null)}
-      aria-label="Close"
-    >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    </button>
+      {lightboxSrc && (
+        <div
+          className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setLightboxSrc(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <button
+            className="absolute top-4 right-4 rounded-full bg-white/90 p-2 shadow ring-1 ring-black/5"
+            onClick={() => setLightboxSrc(null)}
+            aria-label="Close"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 6l12 12M6 18L18 6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
 
-    {/* Stop overlay click from closing when clicking the image */}
-    <div
-      className="relative w-[95vw] max-w-6xl h-[90vh]"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <Image
-        src={lightboxSrc}
-        alt=""
-        fill
-        className="object-contain rounded-xl"
-        priority
-      />
-    </div>
-  </div>
-)}
-
+          {/* Stop overlay click from closing when clicking the image */}
+          <div
+            className="relative w-[95vw] max-w-6xl h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={lightboxSrc}
+              alt=""
+              fill
+              className="object-contain rounded-xl"
+              priority
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

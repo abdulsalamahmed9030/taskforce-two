@@ -267,7 +267,9 @@ export default function ProcessManufacturing() {
                           strokeWidth={0.8}
                         />
                         <text
-                          ref={(el) => { textRefs.current[i] = el; }}
+                          ref={(el) => {
+                            textRefs.current[i] = el;
+                          }}
                           x={s.x}
                           y={s.y + 35 + boxH / 2}
                           textAnchor="middle"
@@ -285,11 +287,7 @@ export default function ProcessManufacturing() {
                     ) : (
                       <>
                         <rect
-                          x={
-                            s.side === "right"
-                              ? s.x + dx
-                              : s.x + dx - boxW
-                          }
+                          x={s.side === "right" ? s.x + dx : s.x + dx - boxW}
                           y={s.y - boxH / 2}
                           width={boxW}
                           height={boxH}
@@ -299,7 +297,9 @@ export default function ProcessManufacturing() {
                           strokeWidth={0.8}
                         />
                         <text
-                          ref={(el) => { textRefs.current[i] = el; }}
+                          ref={(el) => {
+                            textRefs.current[i] = el;
+                          }}
                           x={
                             s.side === "right"
                               ? s.x + dx + boxW / 2

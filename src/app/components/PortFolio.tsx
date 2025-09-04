@@ -64,7 +64,7 @@ export default function PortFolio() {
             </div>
           </div>
         ))}
-      </div> 
+      </div>
 
       {/* Display Images of Selected Project */}
       {selectedProject && (
