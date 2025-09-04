@@ -23,7 +23,7 @@ export default function AboutUs() {
           </h2>
 
           {/* Intro */}
-          <p className="text-gray-700 leading-relaxed text-base md:text-lg md:text-justify">
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg md:text-justify font-open-sans">
             At <strong>Task Force Interiors</strong>, we don’t just design and
             build spaces — we craft environments that inspire, perform, and
             endure. With over two decades of proven expertise, we have
@@ -45,7 +45,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   1. Over 30 Years of Unmatched Experience
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   For more than three decades, Task Force Interiors has been
                   setting benchmarks in design innovation, execution quality,
                   and client satisfaction. Our experience enables us to take on
@@ -59,7 +59,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   2. Strong In-House Capabilities
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   We believe excellence starts from within. Our{" "}
                   <strong>200+ in-house professionals</strong>, including{" "}
                   <strong>50+ project operations specialists</strong>, ensure
@@ -74,7 +74,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   3. State-of-the-Art Manufacturing
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   Our{" "}
                   <strong>2-acre manufacturing facility in Hyderabad</strong>{" "}
                   produces world-class modular furniture, laminates, and
@@ -89,7 +89,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   4. Pan-India Project Delivery
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   With a proven footprint of{" "}
                   <strong>over 20 million sq. ft.</strong> of completed projects
                   across India, we bring versatility and expertise to spaces of
@@ -103,7 +103,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   5. End-to-End Turnkey Expertise
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   From concept and design to manufacturing and execution, we
                   handle it all under one roof. This integrated approach
                   streamlines timelines, eliminates dependency on multiple
@@ -116,7 +116,7 @@ export default function AboutUs() {
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                   6. Commitment to Quality & Long-Term Relationships
                 </h3>
-                <p className="text-gray-700 leading-relaxed md:text-justify">
+                <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
                   Our success is measured not just by completed projects but by
                   the lasting partnerships we build. We uphold transparency,
                   ethical practices, and unwavering dedication to delivering
@@ -125,7 +125,7 @@ export default function AboutUs() {
               </div>
 
               {/* Closing */}
-              <p className="text-gray-800 font-medium md:text-lg">
+              <p className="text-gray-800 font-medium md:text-lg font-open-sans">
                 <strong>Task Force Interiors</strong> is more than a service
                 provider — we are partners in bringing visions to life, creating
                 spaces that reflect excellence, functionality, and lasting

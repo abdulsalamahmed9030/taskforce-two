@@ -99,7 +99,7 @@ export default function ProcessManufacturing() {
             <span className="text-black"> Manufacturing</span>
           </h2>
 
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center pt-5">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center pt-5 font-open-sans">
             Follow the journey from material approval to final on-site assembly.
           </h3>
         </header>

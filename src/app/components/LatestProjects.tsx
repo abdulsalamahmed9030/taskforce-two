@@ -51,7 +51,7 @@ export default function LatestProjects() {
               PROJECTS
             </span>
           </h2>
-          <p className="text-7xl font-light">6</p>
+          <p className="text-7xl font-light font-open-sans">6</p>
           <p className="text-xl">of our latest projects</p>
         </div>
 
@@ -70,7 +70,7 @@ export default function LatestProjects() {
                 src={proj.image}
                 alt={proj.title}
                 fill
-                className="object-cover transform group-hover:scale-110 transition duration-500 ease-in-out"
+                className="object-cover transform group-hover:scale-110 transition duration-500 ease-in-out "
               />
               <div
                 className="absolute inset-0 z-0"
@@ -81,7 +81,7 @@ export default function LatestProjects() {
               />
               <div className="absolute inset-0 flex flex-col justify-end p-4 text-white z-10">
                 <h3 className="text-lg font-semibold">{proj.title}</h3>
-                <p className="text-sm">{proj.subtitle}</p>
+                <p className="text-sm font-open-sans">{proj.subtitle}</p>
               </div>
             </motion.div>
           ))}

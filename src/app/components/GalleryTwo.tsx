@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import ProcessManufacturing from "./ProcessManufacturing";
+import Certificates from "./certificates";
+import { Award } from "lucide-react";
 
 const products = [
   {
@@ -49,92 +51,104 @@ export default function GalleryTwo() {
       <div className="max-w-6xl mx-auto mb-12 text-center">
         <h2 className="text-3xl md:text-5xl text-gray-800 mb-6">
           <span className="bg-[#e6f0ef] text-[#c28b2c] px-2 mr-2">
-           Manufacturing Excellence at
+            Manufacturing Excellence at
           </span>
           <span className="text-black">Task Force Interiors</span>
         </h2>
 
-        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify">
-         At <strong> [Task Force Interiors]</strong>, our in-house manufacturing capability is the backbone of our turnkey delivery model. By operating fully integrated facilities, we ensure <strong> complete control over quality, timelines, and costs,</strong> giving our clients a seamless experience from design to execution.
+        <p className="text-gray-700 leading-relaxed text-lg font-open-sans text-justify ">
+          At <strong> [Task Force Interiors]</strong>, our in-house
+          manufacturing capability is the backbone of our turnkey delivery
+          model. By operating fully integrated facilities, we ensure{" "}
+          <strong> complete control over quality, timelines, and costs,</strong>{" "}
+          giving our clients a seamless experience from design to execution.
         </p>
-       <div className="space-y-2">
-  <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
-    Our Facilities &amp; Capabilities
-  </h3>
+        <div className="space-y-2">
+          <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+            Our Facilities &amp; Capabilities
+          </h3>
 
-  <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
-    <li>
-      <strong>Modular Furniture Production –</strong> Precision-built
-      workstations, partitions, storage solutions, and customized furniture
-      tailored to modern corporate, healthcare, and hospitality environments.
-    </li>
-    <li>
-      <strong>Plywood &amp; Laminates Unit –</strong> In-house production of
-      plywood, laminates, and allied finishes, ensuring consistency, durability,
-      and superior finishing across projects.
-    </li>
-    <li>
-      <strong>Advanced Machinery –</strong> CNC cutting, edge-banding, press
-      machines, and automated finishing lines to achieve scale, accuracy, and
-      efficiency.
-    </li>
-    <li>
-      <strong>Custom Solutions –</strong> Ability to design and manufacture
-      bespoke elements that align with project-specific aesthetics and
-      functionality.
-    </li>
-  </ul>
-</div>
-<div className="space-y-6">
-  {/* Our People */}
-  <div className="space-y-2">
-    <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
-      Our People
-    </h3>
-    <p className="text-gray-700 leading-relaxed md:text-justify">
-      Over <strong>500+ skilled professionals</strong> across carpentry,
-      finishing, and allied trades bring craftsmanship and expertise into
-      every piece produced. Their skill, combined with modern technology,
-      allows us to deliver both volume-driven orders and high-end customized
-      requirements with equal excellence.
-    </p>
-  </div>
+          <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2 font-open-sans">
+            <li>
+              <strong>Modular Furniture Production –</strong> Precision-built
+              workstations, partitions, storage solutions, and customized
+              furniture tailored to modern corporate, healthcare, and
+              hospitality environments.
+            </li>
+            <li>
+              <strong>Plywood &amp; Laminates Unit –</strong> In-house
+              production of plywood, laminates, and allied finishes, ensuring
+              consistency, durability, and superior finishing across projects.
+            </li>
+            <li>
+              <strong>Advanced Machinery –</strong> CNC cutting, edge-banding,
+              press machines, and automated finishing lines to achieve scale,
+              accuracy, and efficiency.
+            </li>
+            <li>
+              <strong>Custom Solutions –</strong> Ability to design and
+              manufacture bespoke elements that align with project-specific
+              aesthetics and functionality.
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-6">
+          {/* Our People */}
+          <div className="space-y-2">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+              Our People
+            </h3>
+            <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
+              Over <strong>500+ skilled professionals</strong> across carpentry,
+              finishing, and allied trades bring craftsmanship and expertise
+              into every piece produced. Their skill, combined with modern
+              technology, allows us to deliver both volume-driven orders and
+              high-end customized requirements with equal excellence.
+            </p>
+          </div>
 
-  {/* In-House Manufacturing Advantage */}
-  <div className="space-y-2">
-    <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
-      The Advantage of In-House Manufacturing
-    </h3>
+          {/* In-House Manufacturing Advantage */}
+          <div className="space-y-2">
+            <h3 className="text-xl md:text-2xl font-semibold text-[#c28b2c] text-center">
+              The Advantage of In-House Manufacturing
+            </h3>
 
-    <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2">
-      <li>
-        <strong>Consistency in Quality –</strong> Uniform standards across
-        projects
-      </li>
-      <li>
-        <strong>Time Efficiency –</strong> Reduced dependency on external
-        vendors ensures faster turnaround
-      </li>
-      <li>
-        <strong>Cost Control –</strong> Optimized procurement and production
-        processes
-      </li>
-      <li>
-        <strong>Flexibility –</strong> Agile to meet unique project
-        specifications and timelines
-      </li>
-    </ul>
+            <ul className="list-disc list-inside text-gray-700 leading-relaxed md:text-justify space-y-2 font-open-sans">
+              <li>
+                <strong>Consistency in Quality –</strong> Uniform standards
+                across projects
+              </li>
+              <li>
+                <strong>Time Efficiency –</strong> Reduced dependency on
+                external vendors ensures faster turnaround
+              </li>
+              <li>
+                <strong>Cost Control –</strong> Optimized procurement and
+                production processes
+              </li>
+              <li>
+                <strong>Flexibility –</strong> Agile to meet unique project
+                specifications and timelines
+              </li>
+            </ul>
 
-    <p className="text-gray-700 leading-relaxed md:text-justify">
-      AtTask Force Interiors, manufacturing is not just a
-      support function — it is a  <strong>strategic advantage </strong> that empowers us to
-      deliver projects with <strong> speed, precision, and unmatched value.</strong>
-    </p>
-    <ProcessManufacturing />
-  </div>
-</div>
+            <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
+              AtTask Force Interiors, manufacturing is not just a support
+              function — it is a <strong>strategic advantage </strong> that
+              empowers us to deliver projects with{" "}
+              <strong> speed, precision, and unmatched value.</strong>
+            </p>
+            <div className="space-y-4 pt-6">
+              <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
+                <Award className="w-6 h-6 text-[#c28b2c]" />
+                Our Certifications
+              </h3>
+              <Certificates />
+            </div>
+          </div>
 
-
+          <ProcessManufacturing />
+        </div>
       </div>
       <div className="max-full mx-auto mb-12">
         <div className="aspect-video">

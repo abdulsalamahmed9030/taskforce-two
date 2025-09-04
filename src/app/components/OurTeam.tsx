@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Mr. Kashif Ali Khan",
-    role: "Director",
+    role: "Managing Partner",
     image: "/team/kashif.jpg",
   },
 ];
@@ -47,7 +47,7 @@ export default function OurTeam() {
               <h3 className="text-xl font-medium text-gray-800">
                 {member.name}
               </h3>
-              <p className="text-sm text-gray-500 mt-2">{member.role}</p>
+              <p className="text-sm text-gray-500 mt-2 font-open-sans">{member.role}</p>
             </div>
           ))}
         </div>

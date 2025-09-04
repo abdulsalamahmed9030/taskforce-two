@@ -22,21 +22,21 @@ export default function Footer() {
         </div>
 
         {/* Get In Touch */}
-        <div>
+        <div >
           <h4 className="text-black text-2xl font-semibold mb-4">
             Get In Touch
           </h4>
-          <p className="mb-1">📍 3-5-823, Ground Floor</p>
-          <p className="mb-1">Hyderabad Business Center</p>
-          <p className="mb-1">Hyderguda Hyderabad - 500029</p>
+          <p className="mb-1 font-open-sans">📍 3-5-823, Ground Floor</p>
+          <p className="mb-1 font-open-sans">Hyderabad Business Center</p>
+          <p className="mb-1 font-open-sans">Hyderguda Hyderabad - 500029</p>
 
           <p className="mt-3">
             📞{" "}
-            <a href="tel:04023240629" className="hover:underline">
+            <a href="tel:04023240629" className="hover:underline font-open-sans">
               040-23240629
             </a>{" "}
             /{" "}
-            <a href="tel:04066669067" className="hover:underline">
+            <a href="tel:04066669067" className="hover:underline font-open-sans">
               040-66669067
             </a>
           </p>

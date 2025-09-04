@@ -29,7 +29,7 @@ export default function AboutTwo() {
               Introduction
             </h3>
 
-            <p className="text-gray-700 leading-relaxed md:text-justify">
+            <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
               <strong>Task Force Interior (P) Ltd.</strong> is a leading name in
               the interior fit-out industry, delivering turnkey solutions with
               precision, speed, and reliability. With a strong foundation built
@@ -40,7 +40,7 @@ export default function AboutTwo() {
           </div>
 
           {/* Strengths */}
-          <div className="space-y-2">
+          <div className="space-y-2 font-open-sans">
   <h3 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
     Our Strengths at a Glance
   </h3>
@@ -72,15 +72,15 @@ export default function AboutTwo() {
 
 
           {/* Values */}
-          <div className="space-y-2">
-            <p className="text-gray-700 leading-relaxed md:text-justify">
+          <div className="space-y-2 font-open-sans">
+            <p className="text-gray-700 leading-relaxed md:text-justify ">
               With <strong> vertical integration </strong> at the core of our
               operations, we maintain complete control over quality, timelines,
               and costs. This unique model allows us to deliver projects
               efficiently, ensuring maximum value for our clients.
             </p>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2 font-open-sans">
             <p className="text-gray-700 leading-relaxed md:text-justify">
               At <strong>Task Force Interiors</strong>, we stand for{" "}
               <strong>
@@ -100,7 +100,7 @@ export default function AboutTwo() {
               <Eye className="w-6 h-6 text-[#c28b2c]" />
               Our Vision
             </h3>
-            <p className="text-gray-700 leading-relaxed md:text-justify">
+            <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
               Our vision is to be recognized as one of India’s most dependable
               and innovative interior solutions companies. We aim to design and
               deliver spaces that are not only functional and long-lasting but
@@ -117,7 +117,7 @@ export default function AboutTwo() {
               <Target className="w-6 h-6 text-[#c28b2c]" />
               Our Mission
             </h3>
-            <p className="text-gray-700 leading-relaxed md:text-justify">
+            <p className="text-gray-700 leading-relaxed md:text-justify font-open-sans">
               Our mission is to provide complete turnkey interior solutions
               under one roof, right from concept to final execution. With a
               strong focus on precision, quality workmanship, and client needs,
@@ -132,13 +132,7 @@ export default function AboutTwo() {
           </div>
 
           {/* Certifications */}
-          <div className="space-y-4 pt-6">
-            <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
-              <Award className="w-6 h-6 text-[#c28b2c]" />
-              Our Certifications
-            </h3>
-            <Certificates />
-          </div>
+         
          <div className="max-w-sm w-full mx-auto">
   <MapVideo />
 </div>

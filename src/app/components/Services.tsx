@@ -100,7 +100,7 @@ const ServiceCard = ({ title, description, color }: CardProps) => {
       })}
     >
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm leading-relaxed">{description}</p>
+      <p className="text-sm leading-relaxed font-open-sans">{description}</p>
     </div>
   );
 };

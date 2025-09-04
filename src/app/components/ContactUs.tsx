@@ -163,7 +163,7 @@ export default function ContactUs() {
           <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">
             Send Us A Message
           </h2>
-          <p className="text-center text-gray-600 mb-10">
+          <p className="text-center text-gray-600 mb-10 font-open-sans">
             Have a project in mind? We&apos;d love to hear from you. Send us a
             message and we&apos;ll respond as soon as possible.
           </p>
@@ -209,7 +209,7 @@ export default function ContactUs() {
           <h2 className="text-3xl md:text-5xl text-center text-[#c18832] mb-2">
             Partner With Us
           </h2>
-          <p className="text-center text-gray-600 mb-10">
+          <p className="text-center text-gray-600 mb-10 font-open-sans">
             Connect as a supplier, apply to join our team, or register as a
             subcontractor.
           </p>
@@ -271,7 +271,7 @@ export default function ContactUs() {
             <FaMapMarkerAlt className="text-[#c18832] mt-1" />
             <div>
               <p className="font-medium text-[#c18832]">Our Location</p>
-              <p>Hyderabad, Telangana, India</p>
+              <p className="font-open-sans">Hyderabad, Telangana, India</p>
             </div>
           </div>
 
@@ -279,7 +279,7 @@ export default function ContactUs() {
             <FaPhoneAlt className="text-[#c18832] mt-1" />
             <div>
               <p className="font-medium text-[#c18832]">Call Us</p>
-              <a href="tel:04023240629" className="hover:underline">
+              <a href="tel:04023240629" className="hover:underline font-open-sans">
                 040-23240629
               </a>
             </div>
@@ -291,7 +291,7 @@ export default function ContactUs() {
               <p className="font-medium text-[#c18832]">Email Us</p>
               <a
                 href="mailto:info@taskforceinteriors.com"
-                className="hover:underline"
+                className="hover:underline font-open-sans"
               >
                 info@taskforceinteriors.com
               </a>
@@ -302,7 +302,7 @@ export default function ContactUs() {
             <FaClock className="text-[#c18832] mt-1" />
             <div>
               <p className="font-medium text-[#c18832]">Working Hours</p>
-              <p>Mon - Sat: 9AM - 6PM</p>
+              <p className="font-open-sans">Mon - Sat: 9AM - 6PM</p>
             </div>
           </div>
         </div>

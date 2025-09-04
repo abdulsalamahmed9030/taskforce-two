@@ -113,7 +113,7 @@ export default function CompleteRangeOfServices() {
             | Base Build | General Contract |
           </p>
         </div>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-lg font-open-sans">
           From concept to completion, we deliver excellence across all
           construction and interior domains.
         </p>
@@ -156,7 +156,7 @@ export default function CompleteRangeOfServices() {
                 className="mb-3"
               />
               <h5 className="text-xl font-semibold mb-1">{service.name}</h5>
-              <p className="text-base leading-relaxed">{service.desc}</p>
+              <p className="text-base leading-relaxed font-open-sans">{service.desc}</p>
             </motion.div>
           );
         })}
