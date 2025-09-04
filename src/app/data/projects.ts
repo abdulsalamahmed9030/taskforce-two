@@ -49,6 +49,38 @@ const projects = [
     ],
   },
   {
+    name: " XDLINX",
+    cover: "/projects/xdlinks1.jpg",
+    images: [
+      "/projects/xdlinks1.jpg",
+      "/projects/xdlinks2.jpg",
+      "/projects/xdlinks3.jpg",
+      "/projects/xdlinks4.jpg",
+      "/projects/xdlinks5.jpg",
+      "/projects/xdlinks6.jpg",
+      "/projects/xdlinks7.jpg",
+      "/projects/xdlinks8.jpg",
+      "/projects/xdlinks9.jpg",
+      "/projects/xdlinks10.jpg",
+      "/projects/xdlinks11.jpg",
+    ],
+  },
+  {
+    name: "APOLLO HOSPITAL HYDERABAD",
+    cover: "/projects/apollo-3.jpg",
+    images: [
+      "/projects/apollo-1.jpg",
+      "/projects/apollo-2.jpg",
+      "/projects/apollo-3.jpg",
+      "/projects/apollo-4.jpg",
+      "/projects/apollo-5.jpg",
+      "/projects/apollo-6.jpg",
+      "/projects/apollo-7.jpg",
+      "/projects/apollo-8.jpg",
+      
+    ],
+  },
+  {
     name: " MALLAREDDY-HOSPITAL",
     cover: "/projects/mallareddy1.jpg",
     images: [
