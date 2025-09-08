@@ -7,7 +7,7 @@ import { useState } from "react";
 const projects = [
   {
     title: "Healthcare",
-    subtitle: "35+ Projects",
+    subtitle: "75+ Hospitals",
     image: "/images/hospitals.jpg",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Government institutions",
-    subtitle: "BPOs & IT Hubs",
+    subtitle: " IT Parks",
     image: "/images/software.jpg",
   },
   {
