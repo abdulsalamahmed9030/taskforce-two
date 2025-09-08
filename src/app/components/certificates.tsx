@@ -10,8 +10,7 @@ const RAW_NAMES = [
   "ALDO ISO 14001 2015.jpg",
   "ALDO ISO 45001 2018.jpg",
   "ALDO QVA COMPLIANCE.jpg",
-  "Occupational Health and Safety.jpg",
-  "Quality Management System.jpg",
+ 
 ];
 
 // convert to URL-safe paths but keep the **exact** filenames on disk

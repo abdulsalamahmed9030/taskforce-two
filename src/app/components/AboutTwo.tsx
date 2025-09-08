@@ -5,6 +5,7 @@ import { Eye, Target, Award } from "lucide-react"; // 👈 Added Award icon for 
 import Image from "next/image";
 import Certificates from "./certificates";
 import MapVideo from "./MapVideo";
+import CertificatesDuo from "./CertificatesDuo";
 
 export default function AboutTwo() {
   return (
@@ -140,7 +141,7 @@ export default function AboutTwo() {
           </div>
 
           {/* Certifications */}
-
+<CertificatesDuo />
           <div className="max-w-sm w-full mx-auto">
             <MapVideo />
           </div>
