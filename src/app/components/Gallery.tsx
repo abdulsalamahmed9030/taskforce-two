@@ -17,7 +17,7 @@ const projects = [
   {
     title: "Data Center Solutions",
     category: "Corporate IT",
-    image: "/projects/ideacorp-8.jpg",
+    image: "/projects/ideacorp-8.jpg", 
   },
   {
     title: "Atrium & Cladding Work",
