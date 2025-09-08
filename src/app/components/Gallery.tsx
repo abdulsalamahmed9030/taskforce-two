@@ -7,22 +7,22 @@ const projects = [
   {
     title: "Hospital Interior Design",
     category: "Healthcare",
-    image: "/gallery/gallery1.png",
+    image: "/projects/apollo7.jpeg",
   },
   {
     title: "Premium Office Interiors",
     category: "Hospitality",
-    image: "/gallery/gallery2.png",
+    image: "/office2.jpg",
   },
   {
     title: "Data Center Solutions",
     category: "Corporate IT",
-    image: "/gallery/gallery3.png",
+    image: "/projects/ideacorp-8.jpg",
   },
   {
     title: "Atrium & Cladding Work",
     category: "Commercial",
-    image: "/gallery/gallery4.png",
+    image: "/projects/imax2.jpeg",
   },
   {
     title: "Showroom Design",
@@ -32,17 +32,17 @@ const projects = [
   {
     title: "BPO & Software Centers",
     category: "Corporate",
-    image: "/gallery/gallery6.png",
+    image: "/projects/astra2.jpeg",
   },
   {
     title: "False Ceiling Works",
     category: "Specialization",
-    image: "/gallery/gallery7.png",
+    image: "/projects/spe.jpg",
   },
   {
     title: "Modular Furniture",
-    category: "Furniture",
-    image: "/gallery/gallery8.png",
+    category: "Custom Mill work / Furniture",
+    image: "/projects/ahrar3.jpg",
   },
 ];
 
