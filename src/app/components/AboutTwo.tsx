@@ -141,6 +141,10 @@ export default function AboutTwo() {
           </div>
 
           {/* Certifications */}
+          <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-semibold text-[#c28b2c]">
+                <Award className="w-6 h-6 text-[#c28b2c]" />
+                Our Certifications
+              </h3>
 <CertificatesDuo />
           <div className="max-w-sm w-full mx-auto">
             <MapVideo />
