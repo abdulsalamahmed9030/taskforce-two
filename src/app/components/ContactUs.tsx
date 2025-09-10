@@ -296,7 +296,13 @@ export default function ContactUs() {
                 href="mailto:info@taskforceinteriors.com"
                 className="hover:underline font-open-sans"
               >
-                info@taskforceinteriors.com
+                info@taskforceinteriors.com  <br />
+              </a>
+              <a
+                href="mailto:info@taskforceinteriors.com"
+                className="hover:underline font-open-sans"
+              >
+                business@taskforceinteriors.com
               </a>
             </div>
           </div>
