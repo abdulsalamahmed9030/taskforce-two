@@ -101,7 +101,7 @@ export default function MobileMenu({
       animate="visible"
       exit="hidden"
       variants={menuVariants}
-      className="lg:hidden fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white px-6 py-8 shadow-lg z-50 overflow-y-auto"
+      className="lg:hidden fixed top-0 left-0 h-full w-3/4 max-w-xs bg-[#eef9f9] px-6 py-8 shadow-lg z-50 overflow-y-auto"
       role="dialog"
       aria-modal="true"
       aria-label="Mobile menu"
