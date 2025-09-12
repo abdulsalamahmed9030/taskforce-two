@@ -4,32 +4,61 @@ import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import Image from "next/image";
 import projects, { Project } from "../data/projects";
 
-/** ---------------------------------------
- *  Tiny pill that says "Swipe →" (mobile only)
- *  --------------------------------------- */
-function SwipeHint({ show }: { show: boolean }) {
-  if (!show) return null;
-  return (
-    <div
-      aria-hidden="true"
-      className="md:hidden absolute -top-2 right-4 z-10"
-    >
-      <span className="text-[11px] px-2 py-1 rounded-full bg-black/70 text-white select-none">
-        Swipe →
-      </span>
-    </div>
-  );
-}
-
 export default function PortFolio() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const [showHint, setShowHint] = useState(true);
 
+  // Row ref for horizontal scroll + helpers
   const scrollRowRef = useRef<HTMLDivElement | null>(null);
+  const [atEnd, setAtEnd] = useState(false);
+
+  // Track if we're at the end so we can wrap to start
+  useEffect(() => {
+    const row = scrollRowRef.current;
+    if (!row) return;
+    const checkEnd = () => {
+      const { scrollLeft, clientWidth, scrollWidth } = row;
+      const threshold = 16;
+      setAtEnd(scrollLeft + clientWidth >= scrollWidth - threshold);
+    };
+    checkEnd();
+    row.addEventListener("scroll", checkEnd, { passive: true });
+    window.addEventListener("resize", checkEnd);
+    return () => {
+      row.removeEventListener("scroll", checkEnd);
+      window.removeEventListener("resize", checkEnd);
+    };
+  }, []);
+
+  // Scroll by one card width (+ gap). Wrap to start if at end.
+  const scrollToNext = useCallback(() => {
+    const row = scrollRowRef.current;
+    if (!row) return;
+
+    const firstCard = row.firstElementChild as HTMLElement | null;
+    const cardWidth = firstCard?.getBoundingClientRect().width ?? 300;
+
+    // read the horizontal gap applied via Tailwind's gap-*
+    const gapStr =
+      (getComputedStyle(row).columnGap ||
+        getComputedStyle(row).gap ||
+        "0").replace("px", "");
+    const gap = Number.parseFloat(gapStr) || 0;
+
+    // if we're at the end, wrap back to start
+    const { scrollLeft, clientWidth, scrollWidth } = row;
+    const threshold = 16;
+    const isAtEnd = scrollLeft + clientWidth >= scrollWidth - threshold;
+
+    if (isAtEnd) {
+      row.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      row.scrollBy({ left: cardWidth + gap, behavior: "smooth" });
+    }
+  }, []);
 
   const currentImages = useMemo(() => {
-    return projects.find((proj) => proj.name === selectedProject)?.images || [];
+    return projects.find((p) => p.name === selectedProject)?.images || [];
   }, [selectedProject]);
 
   const closeLightbox = () => setLightboxIndex(null);
@@ -54,57 +83,18 @@ export default function PortFolio() {
       else if (e.key === "ArrowRight") nextImage();
       else if (e.key === "Escape") closeLightbox();
     };
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [lightboxIndex, prevImage, nextImage]);
-
-  // Mobile gentle nudge: auto-scroll ~28px ONCE per session
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const isMobile = window.matchMedia("(max-width: 767px)").matches;
-    if (!isMobile) {
-      // Desktop: never show hint, never nudge
-      setShowHint(false);
-      return;
-    }
-
-    const nudged = sessionStorage.getItem("portfolio_row_nudged");
-    const row = scrollRowRef.current;
-
-    // Hide hint after ~2.5s regardless of scroll
-    const timer = setTimeout(() => setShowHint(false), 2500);
-
-    if (!nudged && row) {
-      // Small nudge to indicate scrollability
-      row.scrollBy({ left: 28, behavior: "smooth" });
-      sessionStorage.setItem("portfolio_row_nudged", "1");
-    }
-
-    // Hide hint on first user scroll
-    const onScroll = () => setShowHint(false);
-    row?.addEventListener("scroll", onScroll, { once: true, passive: true });
-
-    return () => {
-      clearTimeout(timer);
-      row?.removeEventListener("scroll", onScroll);
-    };
-  }, []);
 
   return (
     <div className="w-full p-4">
       {/* Scrollable Projects Row */}
       <div className="relative">
-        {/* Mobile-only 'Swipe →' hint */}
-        <SwipeHint show={showHint} />
-
         <div
           ref={scrollRowRef}
           className="
             flex overflow-x-auto gap-4 pb-4
-            /* keep desktop behavior exactly the same width */
-            /* mobile: peeking helps but we keep 'as-is' feel by not changing desktop */
-            [&>*]:w-[80vw] md:[&>*]:w-[300px]
             pl-4 pr-4
           "
           aria-label="Scrollable list of projects"
@@ -112,7 +102,7 @@ export default function PortFolio() {
           {projects.map((project: Project) => (
             <div
               key={project.name}
-              className="relative cursor-pointer flex-shrink-0"
+              className="relative cursor-pointer flex-shrink-0 w-[300px]"
               onClick={() => {
                 setSelectedProject(project.name);
                 setLightboxIndex(null);
@@ -127,14 +117,13 @@ export default function PortFolio() {
                 }
               }}
             >
-              <div className="w-full h-[200px] md:w-[300px] md:h-[200px] relative rounded overflow-hidden">
+              <div className="w-full h-[200px] relative rounded overflow-hidden">
                 <Image
                   src={project.cover}
                   alt={project.name}
                   fill
                   className="object-cover rounded"
                   sizes="(max-width: 768px) 80vw, 300px"
-                  priority={false}
                 />
                 <div className="absolute bottom-0 w-full bg-yellow-600/80 text-white text-sm font-bold text-center py-1">
                   {project.name}
@@ -143,9 +132,21 @@ export default function PortFolio() {
             </div>
           ))}
         </div>
+
+        {/* Mobile-only Next button BELOW the row (desktop unchanged) */}
+        <div className="md:hidden flex justify-center mb-2">
+          <button
+            type="button"
+            onClick={scrollToNext}
+            className="mt-1 inline-flex items-center gap-1 rounded-full bg-black/80 text-white text-sm font-medium px-4 py-2 shadow-md backdrop-blur-sm hover:bg-black/90 active:scale-[0.98] transition"
+            aria-label={atEnd ? "Back to start" : "Next project"}
+          >
+            {atEnd ? "Back to start" : "Next project"} →
+          </button>
+        </div>
       </div>
 
-      {/* Display Images of Selected Project */}
+      {/* Display Images of Selected Project (grid appears BELOW the button) */}
       {selectedProject && (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-2">
           {currentImages.map((img: string, idx: number) => (
@@ -186,7 +187,7 @@ export default function PortFolio() {
           aria-modal="true"
           aria-label="Image lightbox"
         >
-          {/* Close Button in Top-Right */}
+          {/* Close Button */}
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -199,7 +200,7 @@ export default function PortFolio() {
           </button>
 
           <div className="relative max-w-5xl w-full px-4 flex items-center justify-center">
-            {/* Prev Button */}
+            {/* Prev */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -211,7 +212,7 @@ export default function PortFolio() {
               ‹
             </button>
 
-            {/* Main Image */}
+            {/* Main */}
             <Image
               src={currentImages[lightboxIndex]}
               alt="Expanded"
@@ -222,7 +223,7 @@ export default function PortFolio() {
               priority
             />
 
-            {/* Next Button */}
+            {/* Next */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
