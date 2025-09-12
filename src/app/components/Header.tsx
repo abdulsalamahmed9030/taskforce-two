@@ -10,16 +10,15 @@ import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/aboutus" },
-  { label: "Our Team", href: "/ourteam" },
+  { label: "Our Team", href: "/ourteam" },
   { label: "Our Projects", href: "/gallery" },
   { label: "Services", href: "/services" },
-  { label: "Manufacturing Plant", href: "/ourequipments" },
+  { label: "Manufacturing Plant", href: "/ourequipments" },
   { label: "Contact", href: "/contact" },
 ];
 
 const dropdownLinks = [
   { label: "Our Clients", href: "/clients" },
-
   { label: "CSR", href: "/csr" },
   { label: "FAQ", href: "/faq" },
 ];
@@ -32,9 +31,7 @@ export default function Header() {
   const closeMenu = () => setMenuOpen(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowSticky(window.scrollY > 50);
-    };
+    const handleScroll = () => setShowSticky(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -52,6 +49,7 @@ export default function Header() {
             width={isSticky ? 130 : 150}
             height={isSticky ? 70 : 80}
             className="object-contain cursor-pointer"
+            priority
           />
         </Link>
       </div>
@@ -88,13 +86,13 @@ export default function Header() {
           </button>
           <div className="absolute top-full left-0 w-48 bg-white shadow-md rounded-md hidden group-hover:block z-50">
             {dropdownLinks.map((item) => {
-              const isActive = pathname === item.href;
+              const active = pathname === item.href;
               return (
                 <Link
                   key={item.label}
                   href={item.href}
                   className={`block px-4 py-2 text-sm transition-colors ${
-                    isActive
+                    active
                       ? "text-yellow-700 font-semibold bg-yellow-50"
                       : "text-gray-700 hover:text-yellow-700 hover:bg-yellow-50"
                   }`}
@@ -110,7 +108,8 @@ export default function Header() {
       {/* Mobile Toggle */}
       <button
         className="lg:hidden ml-auto"
-        onClick={() => setMenuOpen(!menuOpen)}
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -129,9 +128,7 @@ export default function Header() {
       {/* Sticky Header (White, fades in on scroll) */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300 ease-in-out ${
-          showSticky
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0"
+          showSticky ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
         <div className="container mx-auto flex items-center px-6 py-3">
