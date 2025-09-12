@@ -57,41 +57,7 @@ export default function Footer() {
             </a>
           </p>
 
-          <div className="flex gap-2 mt-4">
-  <a
-    href="https://www.facebook.com/p/Taskforce-Interiors-61574866478910/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#c9974b] text-[#1877F2] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
-  >
-    <FaFacebookF size={16} />
-  </a>
-  <a
-    href="https://twitter.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#c9974b] text-black p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
-  >
-    <SiX size={16} />
-  </a>
-  <a
-    href="https://www.instagram.com/taskforceinteriors17/?hl=en"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#c9974b] text-[#E4405F] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
-  >
-    <FaInstagram size={16} />
-  </a>
-  <a
-    href="https://www.linkedin.com/company/taskforceinteriors/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="border border-[#c9974b] text-[#0A66C2] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
-  >
-    <FaLinkedinIn size={16} />
-  </a>
-</div>
-
+         
         </div>
 
         {/* Popular Link */}
@@ -153,7 +119,42 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
+           <div className="flex gap-2 mt-4">
+            <a
+              href="https://www.facebook.com/p/Taskforce-Interiors-61574866478910/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#c9974b] text-[#1877F2] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+            >
+              <FaFacebookF size={16} />
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#c9974b] text-black p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+            >
+              <SiX size={16} />
+            </a>
+            <a
+              href="https://www.instagram.com/taskforce.interiors/?igsh=MWx4MDJ0c2NycGpqeg%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#c9974b] text-[#E4405F] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+            >
+              <FaInstagram size={16} />
+            </a>
+            <a
+              href="https://in.linkedin.com/company/taskforceinteriors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#c9974b] text-[#0A66C2] p-2 hover:bg-[#c9974b] hover:text-[#221001] transition"
+            >
+              <FaLinkedinIn size={16} />
+            </a>
+          </div>
         </div>
+        
       </div>
 
       {/* Bottom Bar */}
