@@ -54,34 +54,34 @@ export default function MobileMenu({
       </div>
 
       {/* Main nav links */}
-      <div className="space-y-4">
-        {navLinks.map((link) => (
-          <motion.a
-            key={link.label}
-            href={link.href}
-            onClick={closeMenu}
-            variants={linkVariants}
-            className="block py-2 text-gray-700 text-base hover:text-yellow-600"
-          >
-            {link.label}
-          </motion.a>
-        ))}
-      </div>
+<div className="space-y-2"> {/* was space-y-4 */}
+  {navLinks.map((link) => (
+    <motion.a
+      key={link.label}
+      href={link.href}
+      onClick={closeMenu}
+      variants={linkVariants}
+      className="block py-1 text-gray-700 text-base hover:text-yellow-600" // also reduced py
+    >
+      {link.label}
+    </motion.a>
+  ))}
+</div>
 
-      {/* Dropdown links */}
-      <div className="mt-6 ml-4 space-y-2">
-        {dropdownLinks.map((item) => (
-          <motion.a
-            key={item.label}
-            href={item.href}
-            onClick={closeMenu}
-            variants={linkVariants}
-            className="block py-1 text-sm text-gray-600 hover:text-yellow-600"
-          >
-            {item.label}
-          </motion.a>
-        ))}
-      </div>
+{/* Dropdown links */}
+<div className="mt-6 ml-4 space-y-1"> {/* was space-y-2 */}
+  {dropdownLinks.map((item) => (
+    <motion.a
+      key={item.label}
+      href={item.href}
+      onClick={closeMenu}
+      variants={linkVariants}
+      className="block py-0.5 text-sm text-gray-600 hover:text-yellow-600"
+    >
+      {item.label}
+    </motion.a>
+  ))}
+</div>
 
       {/* Company Info */}
       <motion.div
