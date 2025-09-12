@@ -204,34 +204,7 @@ export default function MobileMenu({
           </div>
         )}
       </div>
-
-      {/* Company Info */}
-      <motion.div
-        variants={linkVariants}
-        className="mt-8 text-sm text-gray-700 leading-relaxed border-t pt-6 border-gray-200"
-      >
-        <p className="font-semibold">TASK FORCE INTERIOR (P) LTD.</p>
-        <p>3-5-823, Ground Floor</p>
-        <p>Hyderabad Business Center</p>
-        <p>Hyderguda, Hyderabad - 500029</p>
-        <p className="mt-2">
-          📞{" "}
-          <a href="tel:04023240629" className="hover:text-yellow-600">
-            040-23240629
-          </a>{" "}
-          /{" "}
-          <a href="tel:04066669067" className="hover:text-yellow-600">
-            040-66669067
-          </a>
-        </p>
-        <p className="mt-1">
-          ✉️{" "}
-          <a href="mailto:info@taskforceinteriors.com" className="hover:text-yellow-600">
-            info@taskforceinteriors.com
-          </a>
-        </p>
-
-        {/* Socials */}
+ {/* Socials */}
         <div className="flex gap-2 mt-4">
           <a
             href="https://www.facebook.com/p/Taskforce-Interiors-61574866478910/"
@@ -266,6 +239,33 @@ export default function MobileMenu({
             <FaLinkedinIn size={16} />
           </a>
         </div>
+      {/* Company Info */}
+      <motion.div
+        variants={linkVariants}
+        className="mt-8 text-sm text-gray-700 leading-relaxed border-t pt-6 border-gray-200"
+      >
+        <p className="font-semibold">TASK FORCE INTERIOR (P) LTD.</p>
+        <p>3-5-823, Ground Floor</p>
+        <p>Hyderabad Business Center</p>
+        <p>Hyderguda, Hyderabad - 500029</p>
+        <p className="mt-2">
+          📞{" "}
+          <a href="tel:04023240629" className="hover:text-yellow-600">
+            040-23240629
+          </a>{" "}
+          /{" "}
+          <a href="tel:04066669067" className="hover:text-yellow-600">
+            040-66669067
+          </a>
+        </p>
+        <p className="mt-1">
+          ✉️{" "}
+          <a href="mailto:info@taskforceinteriors.com" className="hover:text-yellow-600">
+            info@taskforceinteriors.com
+          </a>
+        </p>
+
+       
       </motion.div>
     </motion.div>
   );
